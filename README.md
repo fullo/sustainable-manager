@@ -1,46 +1,63 @@
 # Sustainable Manager - Claude Code Plugin
 
-Plugin per Claude Code che aggiunge competenze di consulenza sulla sostenibilita con approccio science-based.
+Plugin per Claude Code che aggiunge 11 skill di consulenza sulla sostenibilita con approccio science-based.
 
-## Cosa fa
+## Skills
 
-- **Analisi documenti** - Legge e analizza report di sostenibilita, bilanci ESG, dati Excel/CSV
-- **Analisi LCA** - Interpreta Life Cycle Assessment ed EPD con focus su hotspot e trade-off
-- **Rilevamento greenwashing** - Valuta criticamente claim ambientali separando dati da dichiarazioni
-- **Consulenza Socratica** - Guida l'utente nella raccolta dati per costruire un report da zero
-- **Visualizzazioni** - Genera grafici professionali con matplotlib/plotly (bar, radar, heatmap, sankey)
-- **Supporto report** - Struttura report allineati a ESRS, GRI, SASB, TCFD
-- **Assessment ESRS** - Questionario di autovalutazione per la readiness CSRD/ESRS
-- **Procurement sostenibile** - Guida ISO 20400, valutazione fornitori, life cycle costing
+### Core
+- **sustainable-manager** - Analisi documenti, report ESG, LCA/EPD, greenwashing detection, consulenza Socratica, visualizzazioni, assessment ESRS, procurement sostenibile
+
+### Tier 1 — Compliance & Reporting
+- **eu-regulation-matrix** - Matrice di applicabilita normativa EU (CSRD, CSDDD, CBAM, Taxonomy, PPWR, EUDR, SFDR)
+- **eu-taxonomy-checker** - Verifica eligibilita e allineamento EU Taxonomy (NACE, TSC, DNSH)
+- **scope3-mapper** - Mapping 15 categorie Scope 3, stima emissioni, template fornitori
+- **double-materiality** - Double Materiality Assessment guidata (ESRS 1 post-Omnibus, IRO scoring)
+
+### Tier 2 — Emerging Regulations
+- **cbam-compliance** - CBAM fase definitiva: prodotti in scope, emissioni embedded, certificati
+- **biodiversity-screener** - Screening rischi biodiversita (TNFD LEAP, ESRS E4, SBTN)
+- **circular-economy** - Metriche circolarita (MCI), compliance PPWR, ESRS E5
+
+### Tier 3 — Strategic Tools
+- **cross-framework-mapper** - Sovrapposizione data point tra framework (ESRS, GRI, ISSB, Taxonomy, CBAM, SFDR)
+- **transition-plan-builder** - Piano di transizione climatica (SBTi, ESRS E1, pathway settoriali)
+- **supplier-engagement** - Questionari ESG fornitori modulari (Scope 3, CSDDD, CBAM, Taxonomy)
 
 ## Framework supportati
 
-ESRS/CSRD, GRI, SASB, TCFD, SDGs, SBTi, ISO 14040/14044, ISO 20400
+ESRS/CSRD, GRI, SASB/ISSB, TCFD, TNFD, SDGs, SBTi, SBTN, EU Taxonomy, CBAM, CSDDD, PPWR, EUDR, SFDR, ISO 14040/14044, ISO 20400
 
 ## Installazione
 
-### Da npm
+### Da marketplace
 
 ```bash
-claude plugin install sustainable-manager@<marketplace-name>
+claude plugin install sustainable-manager@fullo-plugins
 ```
 
 ### Da GitHub
 
 ```bash
-# Clona il repository
 git clone https://github.com/fullo/sustainable-manager.git
-
-# Installa come plugin locale (dalla directory del tuo progetto)
 claude plugin add /path/to/sustainable-manager
 ```
 
 ## Uso
 
-Una volta installato, il plugin si attiva automaticamente quando menzioni temi di sostenibilita. Puoi anche invocarlo esplicitamente:
+Le skill si attivano automaticamente in base al contesto. Puoi anche invocarle esplicitamente:
 
 ```
-/sustainable-manager:sustainable-manager
+/sustainable-manager:sustainable-manager       # Core: analisi documenti, LCA, greenwashing
+/sustainable-manager:eu-regulation-matrix      # Quali regolamenti si applicano?
+/sustainable-manager:eu-taxonomy-checker       # Eligibilita/allineamento EU Taxonomy
+/sustainable-manager:scope3-mapper             # Mapping Scope 3 + template fornitori
+/sustainable-manager:double-materiality        # Assessment doppia materialita
+/sustainable-manager:cbam-compliance           # Compliance CBAM importazioni
+/sustainable-manager:biodiversity-screener     # Screening rischi biodiversita
+/sustainable-manager:circular-economy          # Metriche economia circolare + PPWR
+/sustainable-manager:cross-framework-mapper    # Sovrapposizione dati tra framework
+/sustainable-manager:transition-plan-builder   # Piano transizione climatica
+/sustainable-manager:supplier-engagement       # Questionari ESG fornitori
 ```
 
 ## Struttura
@@ -48,23 +65,24 @@ Una volta installato, il plugin si attiva automaticamente quando menzioni temi d
 ```
 sustainable-manager/
 ├── .claude-plugin/
-│   └── plugin.json              # Manifesto del plugin
+│   └── plugin.json
 ├── skills/
-│   └── sustainable-manager/
-│       ├── SKILL.md             # Definizione della skill
-│       ├── references/          # Documentazione di riferimento
-│       │   ├── frameworks.md
-│       │   ├── lca-science-based.md
-│       │   ├── greenwashing-detection.md
-│       │   ├── procurement.md
-│       │   ├── socratic-interview.md
-│       │   └── efrag-updates.md
-│       ├── scripts/             # Helper Python
-│       │   ├── chart_generator.py
-│       │   └── esrs_assessment.py
-│       └── assets/
-│           ├── benchmarks/      # Benchmark settoriali
-│           └── templates/       # Template per settore
+│   ├── sustainable-manager/        # Core skill + shared assets
+│   │   ├── SKILL.md
+│   │   ├── references/             # 6 reference files
+│   │   ├── scripts/                # chart_generator.py, esrs_assessment.py
+│   │   └── assets/                 # benchmarks + sector templates
+│   ├── eu-regulation-matrix/       # + 1 reference
+│   ├── eu-taxonomy-checker/        # + 2 references
+│   ├── scope3-mapper/              # + 2 references + scope3_calculator.py
+│   ├── double-materiality/         # + 2 references
+│   ├── cbam-compliance/            # + 2 references
+│   ├── biodiversity-screener/      # + 2 references
+│   ├── circular-economy/           # + 2 references + circularity_calculator.py
+│   ├── cross-framework-mapper/     # + 2 references
+│   ├── transition-plan-builder/    # + 2 references
+│   └── supplier-engagement/        # + 2 references + supplier_scorer.py
+├── docs/superpowers/specs/         # Design documentation
 ├── package.json
 └── README.md
 ```
@@ -72,7 +90,7 @@ sustainable-manager/
 ## Requisiti
 
 - Claude Code CLI
-- Python 3.8+ (per le visualizzazioni)
+- Python 3.8+ (per visualizzazioni e calcolatori)
 - matplotlib, numpy (per i grafici)
 
 ## Licenza

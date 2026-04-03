@@ -1,7 +1,7 @@
 {
   "name": "sustainable-manager",
-  "version": "1.0.0",
-  "description": "Sustainability Manager - Analyzes sustainability reports and LCA studies, extracts ESG insights with a science-based approach, creates charts and infographics, and guides users through Socratic consulting for CSRD/ESRS, GRI, SASB, TCFD compliance.",
+  "version": "2.0.0",
+  "description": "Sustainability Manager — 11 skills for ESG analysis, LCA studies, CSRD/ESRS compliance, EU Taxonomy, Scope 3, CBAM, biodiversity (TNFD), circular economy, double materiality, climate transition planning, supplier engagement, and cross-framework mapping.",
   "author": {
     "name": "fullo"
   },
@@ -16,7 +16,14 @@
     "LCA",
     "carbon-footprint",
     "climate",
-    "reporting"
+    "reporting",
+    "EU-Taxonomy",
+    "Scope-3",
+    "CBAM",
+    "TNFD",
+    "biodiversity",
+    "circular-economy",
+    "double-materiality"
   ],
   "skills": "./skills/"
 }

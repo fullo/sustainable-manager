@@ -1,0 +1,687 @@
+{
+  "metadata": {
+    "sources": [
+      "GHG Protocol Corporate Value Chain (Scope 3) Accounting and Reporting Standard",
+      "CDP Supply Chain Report 2023",
+      "Quantis Scope 3 Evaluator benchmarks",
+      "DEFRA Environmental Reporting Guidelines (2024)",
+      "PCAF Global GHG Accounting Standard for Financial Industry (2022)",
+      "WRI/WBCSD Scope 3 calculation guidance by sector"
+    ],
+    "notes": "Typical percentages are indicative ranges based on published sector analyses and CDP disclosures. Actual values vary significantly by company. Materiality ratings follow GHG Protocol significance thresholds: High (>10% of expected total Scope 3), Medium (3-10%), Low (<3%), NA (not applicable to sector). Percentages may not sum to exactly 100% due to rounding and sector variability."
+  },
+  "sectors": {
+    "manufacturing_general": {
+      "label": "Manufacturing (General)",
+      "label_it": "Manifattura (Generale)",
+      "description": "Broad manufacturing sector including discrete and process manufacturing, excluding food/beverage and textiles which have dedicated profiles.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 45,
+          "materiality": "high",
+          "recommended_method": "spend-based → supplier-specific",
+          "notes": "Largest category. Raw materials and components dominate. Prioritize top 20 suppliers for supplier-specific data.",
+          "typical_range_pct": [35, 60]
+        },
+        "2_capital_goods": {
+          "typical_pct": 8,
+          "materiality": "medium",
+          "recommended_method": "spend-based",
+          "notes": "Machinery, equipment, buildings. Lumpy year-over-year. Report in year of purchase.",
+          "typical_range_pct": [5, 15]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "activity-based",
+          "notes": "WTT and T&D losses. Straightforward using Scope 1/2 consumption data with WTT factors.",
+          "typical_range_pct": [3, 8]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 6,
+          "materiality": "medium",
+          "recommended_method": "distance-based → fuel-based",
+          "notes": "Inbound logistics. Need weight, distance, and transport mode data from procurement/logistics.",
+          "typical_range_pct": [3, 10]
+        },
+        "5_waste": {
+          "typical_pct": 3,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "By waste type and treatment method. Often available from waste management contracts.",
+          "typical_range_pct": [1, 5]
+        },
+        "6_business_travel": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Air, rail, hotel. Often available from travel management company or expense system.",
+          "typical_range_pct": [1, 4]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "survey + average-data",
+          "notes": "Employee survey for mode split and distance. National averages as fallback.",
+          "typical_range_pct": [1, 3]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "Only if significant leased assets not in Scope 1/2. Depends on consolidation approach.",
+          "typical_range_pct": [0, 3]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Outbound logistics to customer. Similar method to Cat 4.",
+          "typical_range_pct": [2, 8]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 8,
+          "materiality": "medium",
+          "recommended_method": "average processing energy",
+          "notes": "Only for intermediate products. Estimate downstream processing energy requirements.",
+          "typical_range_pct": [0, 15]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 10,
+          "materiality": "high",
+          "recommended_method": "product lifetime × energy use",
+          "notes": "Highly variable. Dominant for energy-using products. Based on product specs and usage patterns.",
+          "typical_range_pct": [0, 50]
+        },
+        "12_end_of_life": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "waste-type-specific",
+          "notes": "End-of-life treatment of products sold. Based on material composition and treatment assumptions.",
+          "typical_range_pct": [1, 5]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "asset-specific",
+          "notes": "Typically not applicable for manufacturing.",
+          "typical_range_pct": [0, 0]
+        },
+        "14_franchises": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "franchise-specific",
+          "notes": "Only applicable if company operates a franchise model.",
+          "typical_range_pct": [0, 0]
+        },
+        "15_investments": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "PCAF / investment-specific",
+          "notes": "Only material if company holds significant financial investments or joint ventures.",
+          "typical_range_pct": [0, 5]
+        }
+      }
+    },
+    "food_beverage": {
+      "label": "Food & Beverage",
+      "label_it": "Alimentare e Bevande",
+      "description": "Food processing, beverage production, and agricultural product companies. Agricultural supply chain emissions (land use change, livestock, fertilizer) drive high Cat 1.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 55,
+          "materiality": "high",
+          "recommended_method": "hybrid → supplier-specific",
+          "notes": "Agricultural inputs, ingredients, packaging. Land use change and farming emissions are dominant. Use sector-specific factors (e.g., ecoinvent agri-food).",
+          "typical_range_pct": [40, 70]
+        },
+        "2_capital_goods": {
+          "typical_pct": 5,
+          "materiality": "low",
+          "recommended_method": "spend-based",
+          "notes": "Processing equipment, refrigeration units, vehicles.",
+          "typical_range_pct": [2, 8]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 4,
+          "materiality": "low",
+          "recommended_method": "activity-based",
+          "notes": "WTT for fuels used in processing and cold chain.",
+          "typical_range_pct": [2, 6]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 8,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Inbound logistics including cold chain. Temperature-controlled transport has higher factors.",
+          "typical_range_pct": [4, 12]
+        },
+        "5_waste": {
+          "typical_pct": 3,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "Food waste in operations, packaging waste. Organic waste to landfill has high methane emissions.",
+          "typical_range_pct": [2, 6]
+        },
+        "6_business_travel": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Generally low relative to supply chain emissions.",
+          "typical_range_pct": [0, 2]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "average-data",
+          "notes": "Factory and office workers. Often estimated using national averages.",
+          "typical_range_pct": [0, 2]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "Leased warehouses, cold storage.",
+          "typical_range_pct": [0, 2]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 8,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Distribution to retailers including refrigerated transport.",
+          "typical_range_pct": [4, 12]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "average processing energy",
+          "notes": "Relevant for ingredient suppliers whose products are further processed.",
+          "typical_range_pct": [0, 8]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "product-specific",
+          "notes": "Refrigeration at consumer, cooking energy. Relevant for frozen/chilled products.",
+          "typical_range_pct": [1, 8]
+        },
+        "12_end_of_life": {
+          "typical_pct": 4,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "Packaging end-of-life, food waste at consumer. Growing scrutiny under EPR regulations.",
+          "typical_range_pct": [2, 7]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "asset-specific",
+          "notes": "Typically not applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "14_franchises": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "franchise-specific",
+          "notes": "Significant for restaurant/fast-food franchise models. Energy use per franchise location.",
+          "typical_range_pct": [0, 30]
+        },
+        "15_investments": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "investment-specific",
+          "notes": "Joint ventures in agricultural supply chains may be relevant.",
+          "typical_range_pct": [0, 3]
+        }
+      }
+    },
+    "fashion_textiles": {
+      "label": "Fashion & Textiles",
+      "label_it": "Moda e Tessile",
+      "description": "Apparel, footwear, and textile manufacturing. Raw material production (cotton, synthetics) and garment manufacturing in supply chain dominate emissions.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 60,
+          "materiality": "high",
+          "recommended_method": "hybrid → supplier-specific",
+          "notes": "Raw fibers, fabrics, dyes, trims. Synthetic fibers (polyester from petrochemicals) and cotton (water/pesticide intensive) are key. Use textile-specific LCA databases.",
+          "typical_range_pct": [45, 75]
+        },
+        "2_capital_goods": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "spend-based",
+          "notes": "Retail fixtures, warehouse equipment, IT systems.",
+          "typical_range_pct": [1, 5]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "activity-based",
+          "notes": "WTT for store and warehouse energy.",
+          "typical_range_pct": [1, 4]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 6,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Often global supply chains with long-distance shipping. Sea freight dominant but air freight for fast fashion.",
+          "typical_range_pct": [3, 10]
+        },
+        "5_waste": {
+          "typical_pct": 3,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "Cutting waste, defective goods, packaging. Pre-consumer textile waste.",
+          "typical_range_pct": [1, 5]
+        },
+        "6_business_travel": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Travel to suppliers, trade shows, retail operations.",
+          "typical_range_pct": [0, 3]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "average-data",
+          "notes": "Retail staff, office, and warehouse workers.",
+          "typical_range_pct": [0, 2]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "Leased retail locations if not in Scope 1/2.",
+          "typical_range_pct": [0, 3]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Distribution to stores and e-commerce deliveries. Last-mile e-commerce growing.",
+          "typical_range_pct": [2, 8]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "average processing energy",
+          "notes": "Relevant for fabric/yarn suppliers whose products are further processed.",
+          "typical_range_pct": [0, 5]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 10,
+          "materiality": "medium",
+          "recommended_method": "product lifetime × washing/drying energy",
+          "notes": "Consumer washing, drying, ironing over garment lifetime. Significant for fast-fashion with high wash frequency.",
+          "typical_range_pct": [5, 20]
+        },
+        "12_end_of_life": {
+          "typical_pct": 4,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "Textile waste largely to landfill or incineration. Low recycling rates for blended fibers. Growing EPR requirements.",
+          "typical_range_pct": [2, 7]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "asset-specific",
+          "notes": "Typically not applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "14_franchises": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "franchise-specific",
+          "notes": "Relevant for brands with franchise retail model.",
+          "typical_range_pct": [0, 10]
+        },
+        "15_investments": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "investment-specific",
+          "notes": "Generally not material.",
+          "typical_range_pct": [0, 2]
+        }
+      }
+    },
+    "energy_utilities": {
+      "label": "Energy & Utilities",
+      "label_it": "Energia e Servizi Pubblici",
+      "description": "Electricity generation, oil & gas, natural gas distribution, and water utilities. Cat 11 (use of sold products) dominates for fossil fuel sellers; Cat 3 is significant for all.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 10,
+          "materiality": "medium",
+          "recommended_method": "spend-based → hybrid",
+          "notes": "Fuels purchased for resale (if not Cat 11), equipment, chemicals for water treatment.",
+          "typical_range_pct": [5, 20]
+        },
+        "2_capital_goods": {
+          "typical_pct": 15,
+          "materiality": "high",
+          "recommended_method": "spend-based → supplier-specific",
+          "notes": "Power plants, turbines, pipelines, grid infrastructure. Large and lumpy.",
+          "typical_range_pct": [8, 25]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 20,
+          "materiality": "high",
+          "recommended_method": "activity-based",
+          "notes": "WTT of fuels used in generation, T&D losses. Very significant for fossil fuel generators.",
+          "typical_range_pct": [10, 30]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Transport of fuels (coal, gas, biomass) to generation sites.",
+          "typical_range_pct": [1, 5]
+        },
+        "5_waste": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "waste-type-specific",
+          "notes": "Ash disposal (coal plants), general operational waste.",
+          "typical_range_pct": [0, 4]
+        },
+        "6_business_travel": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Generally low.",
+          "typical_range_pct": [0, 2]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "average-data",
+          "notes": "Generally low.",
+          "typical_range_pct": [0, 2]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "Leased office space, vehicles.",
+          "typical_range_pct": [0, 2]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Fuel distribution to end users (pipelines, tankers).",
+          "typical_range_pct": [0, 5]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Energy is a final product, not intermediate.",
+          "typical_range_pct": [0, 0]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 40,
+          "materiality": "high",
+          "recommended_method": "fuel combustion factors",
+          "notes": "Combustion of sold fuels (natural gas, LPG, oil products) by end users. Dominant category for fossil fuel companies. Calculate as: volume sold x combustion emission factor.",
+          "typical_range_pct": [0, 80]
+        },
+        "12_end_of_life": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "waste-type-specific",
+          "notes": "Decommissioning of sold equipment (e.g., boilers, meters).",
+          "typical_range_pct": [0, 2]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "asset-specific",
+          "notes": "Not typically applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "14_franchises": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "franchise-specific",
+          "notes": "Not typically applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "15_investments": {
+          "typical_pct": 4,
+          "materiality": "low",
+          "recommended_method": "PCAF / investment-specific",
+          "notes": "Joint ventures in energy projects, equity investments in other energy companies.",
+          "typical_range_pct": [0, 10]
+        }
+      }
+    },
+    "construction": {
+      "label": "Construction",
+      "label_it": "Edilizia e Costruzioni",
+      "description": "Building construction, civil engineering, and construction materials. Embodied carbon in materials (Cat 1) and operational carbon of buildings delivered (Cat 11) dominate.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 40,
+          "materiality": "high",
+          "recommended_method": "hybrid → supplier-specific (EPDs)",
+          "notes": "Cement, steel, concrete, glass, insulation, timber. Use EPDs where available. CBAM relevant for imported steel and cement.",
+          "typical_range_pct": [30, 55]
+        },
+        "2_capital_goods": {
+          "typical_pct": 12,
+          "materiality": "medium",
+          "recommended_method": "spend-based",
+          "notes": "Heavy machinery, cranes, vehicles. High absolute value but relatively stable year-over-year.",
+          "typical_range_pct": [5, 18]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 4,
+          "materiality": "low",
+          "recommended_method": "activity-based",
+          "notes": "WTT for diesel used on construction sites and offices.",
+          "typical_range_pct": [2, 7]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 8,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Heavy materials transport (concrete, steel, aggregates). Short distances but high weight.",
+          "typical_range_pct": [4, 12]
+        },
+        "5_waste": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "waste-type-specific",
+          "notes": "Construction and demolition waste. High volume. Increasingly regulated for recycling rates.",
+          "typical_range_pct": [3, 10]
+        },
+        "6_business_travel": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Site visits, client meetings.",
+          "typical_range_pct": [1, 3]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "average-data",
+          "notes": "Site workers, office staff. Multiple site locations complicate surveys.",
+          "typical_range_pct": [1, 3]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "Leased equipment, temporary site offices.",
+          "typical_range_pct": [0, 4]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "distance-based",
+          "notes": "Delivery of finished products/components to project sites.",
+          "typical_range_pct": [1, 5]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 2,
+          "materiality": "low",
+          "recommended_method": "average processing energy",
+          "notes": "Relevant for building material manufacturers (e.g., concrete mixed on site).",
+          "typical_range_pct": [0, 5]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 15,
+          "materiality": "high",
+          "recommended_method": "building energy simulation",
+          "notes": "Operational energy of buildings delivered over their design lifetime (30-60 years). Increasingly important as whole-life carbon assessments become standard.",
+          "typical_range_pct": [10, 40]
+        },
+        "12_end_of_life": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "waste-type-specific",
+          "notes": "Demolition of buildings at end of life. Long time horizon makes this uncertain.",
+          "typical_range_pct": [1, 5]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "asset-specific",
+          "notes": "If company leases out built properties.",
+          "typical_range_pct": [0, 5]
+        },
+        "14_franchises": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "franchise-specific",
+          "notes": "Not typically applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "15_investments": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "investment-specific",
+          "notes": "Joint ventures in development projects.",
+          "typical_range_pct": [0, 5]
+        }
+      }
+    },
+    "financial_services": {
+      "label": "Financial Services",
+      "label_it": "Servizi Finanziari",
+      "description": "Banks, insurance, asset management, private equity. Category 15 (Investments / financed emissions) overwhelmingly dominates, often 70-95% of total Scope 3.",
+      "categories": {
+        "1_purchased_goods": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "spend-based",
+          "notes": "IT equipment, office supplies, professional services. Relatively small vs financed emissions.",
+          "typical_range_pct": [2, 10]
+        },
+        "2_capital_goods": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "spend-based",
+          "notes": "Office fit-outs, IT infrastructure, vehicles.",
+          "typical_range_pct": [1, 5]
+        },
+        "3_fuel_energy_related": {
+          "typical_pct": 1,
+          "materiality": "low",
+          "recommended_method": "activity-based",
+          "notes": "WTT for office energy. Small relative to financed emissions.",
+          "typical_range_pct": [0, 2]
+        },
+        "4_upstream_transport": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Service company — minimal physical goods transport.",
+          "typical_range_pct": [0, 1]
+        },
+        "5_waste": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "waste-type-specific",
+          "notes": "Office waste only. Immaterial relative to financed emissions.",
+          "typical_range_pct": [0, 1]
+        },
+        "6_business_travel": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "distance-based",
+          "notes": "Significant for client-facing roles. Often well-tracked via travel management systems.",
+          "typical_range_pct": [2, 8]
+        },
+        "7_employee_commuting": {
+          "typical_pct": 3,
+          "materiality": "low",
+          "recommended_method": "survey + average-data",
+          "notes": "Office workers. Remote work policies reduce this.",
+          "typical_range_pct": [1, 5]
+        },
+        "8_upstream_leased": {
+          "typical_pct": 3,
+          "materiality": "medium",
+          "recommended_method": "asset-specific",
+          "notes": "Leased office space (common in financial services). May be Scope 1/2 depending on consolidation.",
+          "typical_range_pct": [1, 6]
+        },
+        "9_downstream_transport": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Not applicable for service companies.",
+          "typical_range_pct": [0, 0]
+        },
+        "10_processing_sold_products": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Not applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "11_use_of_sold_products": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Not applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "12_end_of_life": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "not applicable",
+          "notes": "Not applicable.",
+          "typical_range_pct": [0, 0]
+        },
+        "13_downstream_leased": {
+          "typical_pct": 5,
+          "materiality": "medium",
+          "recommended_method": "asset-specific",
+          "notes": "Properties leased to tenants. Relevant for banks with real estate portfolios.",
+          "typical_range_pct": [0, 10]
+        },
+        "14_franchises": {
+          "typical_pct": 0,
+          "materiality": "na",
+          "recommended_method": "franchise-specific",
+          "notes": "Relevant for banking franchises (rare).",
+          "typical_range_pct": [0, 5]
+        },
+        "15_investments": {
+          "typical_pct": 75,
+          "materiality": "high",
+          "recommended_method": "PCAF standard",
+          "notes": "Financed emissions — THE dominant category. Follow PCAF methodology by asset class (listed equity, bonds, loans, project finance, commercial real estate, mortgages). Increasingly required by regulators (ECB, PRA) and CSRD.",
+          "typical_range_pct": [60, 95]
+        }
+      }
+    }
+  }
+}
