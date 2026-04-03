@@ -1,0 +1,22 @@
+{
+  "name": "sustainable-manager",
+  "version": "1.0.0",
+  "description": "Sustainability Manager - Analyzes sustainability reports and LCA studies, extracts ESG insights with a science-based approach, creates charts and infographics, and guides users through Socratic consulting for CSRD/ESRS, GRI, SASB, TCFD compliance.",
+  "author": {
+    "name": "fullo"
+  },
+  "repository": "https://github.com/fullo/sustainable-manager",
+  "license": "MIT",
+  "keywords": [
+    "sustainability",
+    "ESG",
+    "CSRD",
+    "ESRS",
+    "GRI",
+    "LCA",
+    "carbon-footprint",
+    "climate",
+    "reporting"
+  ],
+  "skills": "./skills/"
+}
