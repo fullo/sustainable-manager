@@ -105,6 +105,12 @@ At the end, suggest relevant deep-dive skills from the sustainable-manager plugi
 
 Use phrasing like: "Per un approfondimento sulla CSRD, puoi usare /csrd-gap-analysis" (or the English equivalent).
 
+## Gotchas
+
+- **Omnibus created confusion, not clarity**: Many companies don't know if the new or old CSRD thresholds apply to them. FY2024-FY2026 reporters use original thresholds; amended thresholds apply from FY2027.
+- **CSDDD scope was dramatically narrowed**: Original proposal was 500 employees/150M turnover. Final directive is 5000/1.5B. Many sources still cite the old thresholds.
+- **CBAM de minimis is per product type**: The 50-tonne threshold applies per product category per year, not across all imports combined.
+
 ## Important Notes
 
 - The Omnibus Simplification Package (February 2026) significantly raised CSRD thresholds. Always use the post-Omnibus thresholds unless the user specifically asks about the original scope.

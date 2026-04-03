@@ -119,6 +119,12 @@ Generate a heatmap or summary chart using the `chart_generator.py` utility from 
 
 ---
 
+## Gotchas
+
+- **Eligibility is not alignment**: ~36% of company revenue is typically Taxonomy-eligible, but only ~10% is aligned. Never conflate the two — they require completely different levels of evidence.
+- **NACE codes can be misleading**: A company's registered NACE code may not reflect all its Taxonomy-eligible activities. Always ask about specific activities, not just the main code.
+- **Transitional activities have sunset dates**: Gas power and nuclear are transitional activities with specific expiry conditions. Don't present them as permanently Taxonomy-aligned.
+
 ## Key Principles
 
 - **Be precise**: Always reference specific articles, annexes, and thresholds from the Delegated Acts.

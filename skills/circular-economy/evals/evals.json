@@ -1,0 +1,27 @@
+{
+  "skill_name": "circular-economy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We produce plastic packaging. What are our PPWR obligations and are we compliant?",
+      "expected_output": "Lists PPWR plastic targets (recycling rate, recycled content), asks for current data to assess compliance gap.",
+      "assertions": [
+        "Cites specific PPWR recycling targets for plastic (50% by 2025, 55% by 2030)",
+        "Mentions recycled content requirement (30% by 2030 for PET)",
+        "Asks about current recycling rate and recycled content percentage",
+        "References CONAI system for Italian context"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "come si calcola il Material Circularity Indicator? Ho questi dati: 800t materia vergine, 200t riciclata, 150t a discarica, 600t a riciclo",
+      "expected_output": "Calculates MCI using the provided data, shows formula breakdown, interprets the result.",
+      "assertions": [
+        "Uses correct MCI formula (Ellen MacArthur Foundation)",
+        "Asks about product lifetime for utility factor",
+        "Shows calculation breakdown step by step",
+        "Interprets the score (0-1 scale with meaning)"
+      ]
+    }
+  ]
+}

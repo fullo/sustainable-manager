@@ -1,0 +1,27 @@
+{
+  "skill_name": "transition-plan-builder",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our company emits 50,000 tCO2e (Scope 1+2) and we're in the cement sector. We need a credible transition plan for SBTi. Help us build one.",
+      "expected_output": "Starts with baseline analysis, references cement SBTi pathway, identifies levers (clinker ratio, alternative fuels, CCS).",
+      "assertions": [
+        "References the SBTi cement sector pathway",
+        "Identifies sector-specific levers (clinker reduction, alternative fuels)",
+        "Mentions CCS as acceptable for cement (hard-to-abate)",
+        "Structures output around TPT/ESRS E1-1 framework"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Vogliamo raggiungere il net-zero entro il 2050. Siamo un'azienda di servizi IT. Da dove partiamo con il piano di transizione?",
+      "expected_output": "Notes IT services has relatively low direct emissions, focuses on Scope 2 (electricity) and Scope 3 (supply chain, travel).",
+      "assertions": [
+        "Identifies Scope 2 (electricity) as main direct lever",
+        "Flags Scope 3 (purchased services, travel, commuting) as likely dominant",
+        "Mentions renewable energy procurement as primary Scope 2 lever",
+        "Explains near-term (2030) vs long-term (2050) target structure"
+      ]
+    }
+  ]
+}

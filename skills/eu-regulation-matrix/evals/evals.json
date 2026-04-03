@@ -1,0 +1,38 @@
+{
+  "skill_name": "eu-regulation-matrix",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Siamo un'azienda manifatturiera italiana con 350 dipendenti e 60M di fatturato. Quali regolamenti di sostenibilit\u00e0 si applicano a noi?",
+      "expected_output": "Matrix showing CSRD applies (original thresholds), EU Taxonomy Art. 8 applies, CSDDD does not apply, CBAM depends on imports.",
+      "assertions": [
+        "Correctly identifies CSRD applicability under original thresholds (>250 employees, >40M revenue)",
+        "Notes that post-Omnibus threshold (1000 employees) would exclude them from FY2027",
+        "Asks about imports to determine CBAM applicability",
+        "Confirms CSDDD does not apply (<5000 employees)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We're a UK financial services firm with 2000 employees, EUR 800M turnover, operating across the EU. What EU sustainability regulations do we need to worry about?",
+      "expected_output": "Identifies SFDR, CSRD for non-EU companies, EU Taxonomy, and potentially CSDDD.",
+      "assertions": [
+        "Flags SFDR applicability for financial market participants",
+        "Checks non-EU CSRD threshold (150M EU revenue)",
+        "Notes CSDDD does not apply yet (<5000 employees, <1.5B turnover)",
+        "Asks about specific EU operations to refine assessment"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "importo acciaio dalla Turchia, circa 200 tonnellate all'anno. Devo preoccuparmi del CBAM?",
+      "expected_output": "Confirms CBAM applies to steel imports, exceeds de minimis threshold, explains definitive phase requirements.",
+      "assertions": [
+        "Confirms steel (CN 72-73) is in CBAM scope",
+        "Notes 200 tonnes exceeds the 50-tonne de minimis threshold",
+        "Explains need for embedded emissions data from Turkish supplier",
+        "Mentions authorized declarant registration requirement"
+      ]
+    }
+  ]
+}

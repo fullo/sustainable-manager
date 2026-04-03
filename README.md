@@ -1,5 +1,10 @@
 # Sustainable Manager - Claude Code Plugin
 
+[![Skill Version](https://img.shields.io/badge/skill-v2.0-blue)](skills/sustainable-manager/SKILL.md)
+[![Skills](https://img.shields.io/badge/skills-11-green)](skills/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
+
 Plugin per Claude Code che aggiunge 11 skill di consulenza sulla sostenibilita con approccio science-based.
 
 ## Skills

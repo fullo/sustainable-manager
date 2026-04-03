@@ -57,6 +57,13 @@ Produce a phased roadmap:
 
 Include timeline, resource requirements, and expected accuracy improvement at each phase.
 
+## Gotchas
+
+- **Spend-based factors have huge uncertainty**: EEIO emission factors can be off by 2-5x. Always flag the uncertainty when reporting spend-based estimates and recommend moving to activity-based data.
+- **Category 1 dominates for most sectors**: Purchased goods & services is typically 30-70% of Scope 3. If the user hasn't measured it, the total Scope 3 estimate is unreliable.
+- **Capital goods can create year-over-year spikes**: A single large purchase (building, machinery) can dominate annual Scope 3. Always check for one-off items before interpreting trends.
+- **DEFRA factors are UK-specific**: They use UK electricity grid factors. For Italian/EU companies, suggest using ADEME Base Empreinte or ecoinvent with local grid factors instead.
+
 ## Important Rules
 
 - Always respond in the user's language (detect from their messages).

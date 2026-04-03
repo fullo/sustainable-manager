@@ -47,6 +47,12 @@ You are a cross-framework efficiency expert. Your goal is to help organizations 
 4. **Methodology Notes**: Where frameworks differ in calculation methods for the same data point
 5. **Gap Analysis**: Data points required but not yet collected
 
+## Gotchas
+
+- **Same metric, different definitions**: "GHG emissions" in ESRS E1-6 (operational control), GRI 305-1 (organizational boundary), and CBAM (installation-level) may yield different numbers even from the same underlying data. Always note the boundary and methodology.
+- **SFDR PAI indicators use specific calculation methods**: SFDR Principal Adverse Impact metrics have their own formulas (e.g., carbon footprint normalized by enterprise value). Don't assume ESRS data can be copy-pasted into SFDR templates.
+- **EU Taxonomy DNSH is not the same as ESRS reporting**: Meeting ESRS E1-E5 disclosure requirements does NOT automatically prove DNSH compliance for Taxonomy purposes. DNSH has specific quantitative thresholds.
+
 ## Important Notes
 
 - Use `chart_generator.py` from the sustainable-manager project for heatmap visualization

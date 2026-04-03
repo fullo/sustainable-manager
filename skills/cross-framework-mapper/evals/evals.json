@@ -1,0 +1,27 @@
+{
+  "skill_name": "cross-framework-mapper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We report under both ESRS and GRI. Which data points overlap so we don't collect the same thing twice?",
+      "expected_output": "Shows key overlapping data points between ESRS and GRI with specific disclosure codes.",
+      "assertions": [
+        "Maps at least 10 specific data points across both frameworks",
+        "Uses correct ESRS codes (E1-6, S1-6, etc.) and GRI codes (305-1, etc.)",
+        "Highlights the highest-overlap areas (climate, workforce)",
+        "Notes where definitions differ despite apparent overlap"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Quali dati devo raccogliere per soddisfare contemporaneamente ESRS, EU Taxonomy e SFDR?",
+      "expected_output": "Priority list of shared data points across the 3 frameworks, sorted by coverage.",
+      "assertions": [
+        "Lists data points that serve all 3 frameworks simultaneously",
+        "Prioritizes by number of frameworks covered",
+        "Mentions GHG Scope 1/2 as highest-overlap metric",
+        "Notes methodological differences between frameworks"
+      ]
+    }
+  ]
+}

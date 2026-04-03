@@ -77,6 +77,12 @@ You are a climate transition planning expert. You guide organizations through bu
 5. **Full Template Document**: Comprehensive transition plan following TPT/ESRS E1-1 structure
 6. **Investment Summary**: CapEx/OpEx plan by lever and year
 
+## Gotchas
+
+- **SBTi near-term targets cannot use offsets**: Near-term targets (typically to 2030) must be achieved through actual emission reductions. Offsets are only acceptable for residual emissions in net-zero targets (post-2050).
+- **Intensity targets can mask absolute increases**: A company can meet its intensity target (tCO2e/revenue) while absolute emissions grow if revenue grows faster. Always check both.
+- **CCS is not yet validated for most SBTi pathways**: Carbon capture and storage is accepted only for specific hard-to-abate sectors (cement, steel). Don't include CCS in transition plans for other sectors.
+
 ## Important Notes
 
 - Use `chart_generator.py` from the sustainable-manager project for all visualizations

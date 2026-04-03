@@ -189,6 +189,13 @@ User has a document?
     └── Offer analysis/visualization when enough data gathered
 ```
 
+## Gotchas
+
+- **ESRS post-Omnibus scope change**: As of Feb 2026, CSRD applies only to companies with 1000+ employees AND 450M+ turnover (previously 250 employees). Always ask which threshold applies before advising.
+- **Scope 2 market-based vs location-based**: Companies often report only one. If you see a single Scope 2 figure, ask which method — the difference can be 50%+ for companies buying green energy.
+- **Italian ESRS transposition**: D.Lgs. 125/2024 is the Italian transposition of CSRD. References to "D.Lgs. 254/2016" (old NFRD) are outdated but still appear in many Italian company reports.
+- **Template placeholders**: The sector templates in assets/templates/ use `[...]` placeholders. Never output these to the user as real data.
+
 ## Important Guidelines
 
 - **Be precise with numbers.** Sustainability data has regulatory implications. Never fabricate metrics — only report what's in the source data.

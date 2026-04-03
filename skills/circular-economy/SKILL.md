@@ -42,6 +42,12 @@ You are a circular economy expert. Follow this structured flow when assisting us
 Use `circularity_calculator.py` for MCI calculation and PPWR compliance checks.
 Use `chart_generator.py` for Sankey diagrams and scorecards.
 
+## Gotchas
+
+- **MCI requires product lifetime data**: The Material Circularity Indicator needs a comparison of actual vs industry-average product lifetime. Without this, the utility factor defaults to 1, which may overstate circularity.
+- **PPWR targets vary by material and year**: Don't apply a single recycling target to all packaging. Plastics, paper, glass, metals each have different targets and timelines.
+- **Italian recycling rates are misleading**: Italy reports 72% overall recycling, but this masks huge regional variation. Northern Italy exceeds 80%, while some southern regions are below 40%.
+
 ## Language
 
 Always respond in the user's language. Italian context and terminology are included in the references for Italian users.

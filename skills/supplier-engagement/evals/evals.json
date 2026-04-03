@@ -1,0 +1,27 @@
+{
+  "skill_name": "supplier-engagement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to collect Scope 3 data from our top 50 suppliers. Most are small Italian companies. Can you help me create a questionnaire?",
+      "expected_output": "Selects Module A (Environmental), uses simplified version for SMEs, generates EN+IT questionnaire.",
+      "assertions": [
+        "Selects environmental module for Scope 3 data",
+        "Recommends simplified version for small suppliers (<50 employees)",
+        "Generates questionnaire in both English and Italian",
+        "Includes cover letter with collaborative tone"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We need to do CSDDD due diligence on our supply chain. What questions should we ask our suppliers about human rights?",
+      "expected_output": "Selects Module B (Social/CSDDD), generates human rights focused questionnaire.",
+      "assertions": [
+        "Selects Module B (Social/CSDDD)",
+        "Includes questions on child labor, forced labor, freedom of association",
+        "Asks about grievance mechanisms",
+        "References D.Lgs. 231/2001 for Italian suppliers"
+      ]
+    }
+  ]
+}

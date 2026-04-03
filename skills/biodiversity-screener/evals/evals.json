@@ -1,0 +1,27 @@
+{
+  "skill_name": "biodiversity-screener",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a food company sourcing palm oil and cocoa. Should we be worried about biodiversity risks?",
+      "expected_output": "High-risk assessment: identifies deforestation driver, EUDR exposure, supply chain biodiversity impacts.",
+      "assertions": [
+        "Flags palm oil and cocoa as EUDR-regulated commodities",
+        "Identifies land use change as primary biodiversity driver",
+        "Mentions TNFD LEAP approach for structured assessment",
+        "Recommends geolocation traceability for supply chain"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Abbiamo un impianto produttivo vicino a un sito Natura 2000 in Sardegna. Ci sono implicazioni per il reporting ESRS?",
+      "expected_output": "Identifies ESRS E4 materiality, VIncA procedure, Natura 2000 implications.",
+      "assertions": [
+        "Flags ESRS E4 as likely material due to proximity to protected area",
+        "Mentions VIncA (Valutazione di Incidenza Ambientale) requirement",
+        "References specific Natura 2000 context in Italy/Sardinia",
+        "Suggests using IBAT tool for detailed assessment"
+      ]
+    }
+  ]
+}

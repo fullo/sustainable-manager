@@ -1,0 +1,27 @@
+{
+  "skill_name": "cbam-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We import aluminium from China, about 500 tonnes per year. Walk me through what we need to do for CBAM.",
+      "expected_output": "Step-by-step CBAM compliance: confirms in scope, calculation method, certificate estimation, deadlines.",
+      "assertions": [
+        "Confirms aluminium (CN 76) is in CBAM scope",
+        "Explains embedded emissions calculation (direct + indirect for aluminium)",
+        "Estimates certificate cost based on current EU ETS price",
+        "Lists key deadlines (authorized declarant, first surrender)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "il mio fornitore turco di acciaio non vuole fornire i dati sulle emissioni. Che alternative ho?",
+      "expected_output": "Explains fallback to EU default values (with markup penalty), suggests engaging supplier with specific data request template.",
+      "assertions": [
+        "Explains EU default values as fallback option",
+        "Mentions the markup/penalty for using defaults",
+        "Suggests supplier engagement approach with template",
+        "Notes this makes actual data financially advantageous"
+      ]
+    }
+  ]
+}

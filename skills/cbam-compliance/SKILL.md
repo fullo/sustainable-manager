@@ -199,6 +199,12 @@ Provide a ready-to-use supplier data request template covering:
 
 ---
 
+## Gotchas
+
+- **Default values include a markup**: When companies use EU default values instead of actual emissions, the values include a surcharge. This makes reporting actual data financially advantageous.
+- **Carbon price credit requires documentation**: A carbon price paid in the origin country can be deducted, but only with verified payment receipts. Verbal assurances from suppliers are not sufficient.
+- **CBAM and EU ETS free allocation overlap**: Free allocation is being phased out (2026: 97.5%, declining to 0% by 2034). The CBAM certificate cost adjusts for remaining free allocation.
+
 ## Key Principles
 
 - **Be precise**: Always reference specific articles from Regulation (EU) 2023/956, implementing regulation (EU) 2023/1773, and delegated acts.

@@ -1,0 +1,27 @@
+{
+  "skill_name": "scope3-mapper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a fashion company. We know our Scope 1 and 2 but have no idea about Scope 3. Where do we even start?",
+      "expected_output": "Identifies material Scope 3 categories for fashion (Cat 1 raw materials, Cat 4 transport, Cat 12 end-of-life), suggests spend-based as starting method.",
+      "assertions": [
+        "Identifies Category 1 (purchased goods) as the dominant category for fashion",
+        "Mentions textile-specific supply chain emissions (cotton, dyeing)",
+        "Suggests spend-based method as starting point",
+        "Offers to generate supplier data request template"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Ho i dati di spesa per categoria del 2024. Posso stimare le emissioni Scope 3 a partire da questi?",
+      "expected_output": "Confirms spend-based estimation is possible, asks for spend data format, explains methodology and uncertainty.",
+      "assertions": [
+        "Confirms spend-based method is appropriate for initial estimate",
+        "Asks about data format (CSV, Excel, categories)",
+        "Warns about uncertainty (2-5x) of EEIO factors",
+        "Mentions scope3_calculator.py as calculation tool"
+      ]
+    }
+  ]
+}

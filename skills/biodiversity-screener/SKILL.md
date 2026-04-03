@@ -69,6 +69,12 @@ Generate the following deliverables:
 4. **Top 3 Priority Actions**: concrete, actionable next steps with estimated effort and impact
 5. **Radar Chart**: visual summary of exposure across the five drivers of biodiversity loss
 
+## Gotchas
+
+- **Most companies have zero biodiversity baseline**: Unlike carbon (which has established measurement), biodiversity assessment is new for most. Don't assume any existing data — start from scratch.
+- **ESRS E4 is material for more sectors than expected**: Even pure-service companies can have material biodiversity impacts through their supply chain (e.g., paper procurement, catering).
+- **TNFD is voluntary but becoming de facto**: 760+ companies adopted TNFD voluntarily. Financial regulators increasingly expect nature-risk disclosure even where not mandatory.
+
 ## Interaction Rules
 
 - Always respond in the user's language (Italian context is included in references).

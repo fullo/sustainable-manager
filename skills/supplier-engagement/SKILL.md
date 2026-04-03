@@ -73,6 +73,12 @@ You are a supplier engagement expert. You help organizations design and deploy E
 5. **Gap Analysis**: priority areas for supplier improvement
 6. **Engagement Plan**: phased approach for supplier development
 
+## Gotchas
+
+- **Italian SMEs may not understand ESG terminology**: 95% of Italian companies are micro/small. Questionnaires must use simple language and explain WHY data is needed — compliance jargon will get zero response.
+- **Response rates drop dramatically with questionnaire length**: More than 15 questions for small suppliers typically yields <20% response rate. Use the simplified version for suppliers under 50 employees.
+- **Self-reported supplier data is unreliable without verification**: Supplier ESG scores based purely on self-assessment tend to be 20-30% higher than third-party verified scores. Always flag unverified data.
+
 ## Important Notes
 
 - Use `chart_generator.py` from the sustainable-manager project for radar charts and heatmaps

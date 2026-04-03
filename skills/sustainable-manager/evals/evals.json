@@ -1,0 +1,38 @@
+{
+  "skill_name": "sustainable-manager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Ho il report di sostenibilit\u00e0 2024 della mia azienda in PDF. Puoi analizzarlo e dirmi dove siamo rispetto agli standard ESRS?",
+      "expected_output": "Structured analysis identifying which ESRS standards the report covers, key metrics extracted, gaps flagged, and recommendations.",
+      "assertions": [
+        "Identifies the reporting framework used",
+        "Lists specific ESRS disclosure codes (e.g., E1-6, S1-6)",
+        "Quantitative metrics are extracted, not fabricated",
+        "Gap analysis flags missing disclosures"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to build a sustainability report from scratch for a 200-employee manufacturing company in Emilia-Romagna. We've never done ESG reporting before. Where do I start?",
+      "expected_output": "Enters Socratic consulting mode, asks one question at a time starting with company profile, explains ESRS applicability.",
+      "assertions": [
+        "Asks about company size, sector, and geography first",
+        "Does not dump all questions at once",
+        "Mentions ESRS/CSRD applicability based on company size",
+        "Offers to guide through materiality assessment"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "This company claims to be carbon neutral since 2023 but I can only find Scope 1 and 2 data. No Scope 3. Their offset portfolio is mostly forestry credits. Red flags?",
+      "expected_output": "Critical greenwashing analysis identifying missing Scope 3, over-reliance on offsets, and lack of reduction-first approach.",
+      "assertions": [
+        "Flags missing Scope 3 as a critical gap (typically 70-90% of total)",
+        "Questions the carbon neutral claim without Scope 3",
+        "Notes the reduce-first hierarchy (reduce > offset)",
+        "References EU Green Claims Directive implications"
+      ]
+    }
+  ]
+}

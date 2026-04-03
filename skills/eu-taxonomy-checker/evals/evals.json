@@ -1,0 +1,27 @@
+{
+  "skill_name": "eu-taxonomy-checker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We run a data center in Milan. Is our activity eligible under the EU Taxonomy? What do we need to prove for alignment?",
+      "expected_output": "Identifies data centres as eligible under climate mitigation, lists PUE thresholds and DNSH criteria.",
+      "assertions": [
+        "Identifies NACE J61-63 as eligible activity",
+        "Mentions specific PUE threshold for data centres",
+        "Lists all 6 DNSH requirements to check",
+        "Mentions minimum safeguards (OECD, UNGPs)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "La nostra azienda ceramica a Sassuolo produce piastrelle. Siamo eligible per la Taxonomy? I nostri forni vanno a gas naturale.",
+      "expected_output": "Identifies ceramics manufacturing as eligible, discusses emission thresholds, flags gas as potential alignment issue.",
+      "assertions": [
+        "Identifies ceramics under NACE C23 as eligible",
+        "Provides specific emission threshold for ceramics",
+        "Discusses gas combustion impact on TSC compliance",
+        "Mentions Italian ceramics district context"
+      ]
+    }
+  ]
+}

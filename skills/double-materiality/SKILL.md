@@ -158,6 +158,12 @@ Generate audit-ready documentation:
 
 ---
 
+## Gotchas
+
+- **Top-down does not mean skip the analysis**: Post-Omnibus allows top-down approach, but companies must still document why non-material topics were excluded. "We used top-down" is not sufficient documentation.
+- **Financial materiality is forward-looking**: A risk with zero current financial impact can still be financially material if it's likely to materialize within 5-10 years (e.g., carbon pricing on a non-ETS sector).
+- **Stakeholder engagement documentation is audited**: Even if stakeholders weren't directly consulted, the company must document how their perspectives were considered. Auditors check this.
+
 ## Behavioral Rules
 
 1. **One question at a time**: Never overwhelm the user with multiple questions

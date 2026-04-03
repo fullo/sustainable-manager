@@ -1,0 +1,27 @@
+{
+  "skill_name": "double-materiality",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Dobbiamo fare la DMA per la prima volta. Siamo un'azienda alimentare con 500 dipendenti. Da dove partiamo?",
+      "expected_output": "Starts Phase 1 (company context), asks about specific food sub-sector, supply chain, then guides through IRO identification.",
+      "assertions": [
+        "Starts with company context questions, not the full IRO list",
+        "Asks one question at a time",
+        "References food/beverage sector IROs from reference file",
+        "Explains double materiality concept (impact + financial) in simple terms"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our auditor says our DMA documentation is insufficient. What exactly do they need to see?",
+      "expected_output": "Lists specific documentation requirements: methodology, stakeholder list, scoring criteria, threshold justification, results.",
+      "assertions": [
+        "Lists specific auditor requirements from ESRS 1",
+        "Mentions stakeholder engagement documentation",
+        "Explains scoring methodology must be traceable",
+        "Notes threshold justification is required"
+      ]
+    }
+  ]
+}
