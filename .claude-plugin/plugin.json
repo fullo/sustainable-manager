@@ -1,29 +1,7 @@
 {
   "name": "sustainable-manager",
-  "version": "2.0.0",
   "description": "Sustainability Manager — 11 skills for ESG analysis, LCA studies, CSRD/ESRS compliance, EU Taxonomy, Scope 3, CBAM, biodiversity (TNFD), circular economy, double materiality, climate transition planning, supplier engagement, and cross-framework mapping.",
   "author": {
-    "name": "fullo"
-  },
-  "repository": "https://github.com/fullo/sustainable-manager",
-  "license": "MIT",
-  "keywords": [
-    "sustainability",
-    "ESG",
-    "CSRD",
-    "ESRS",
-    "GRI",
-    "LCA",
-    "carbon-footprint",
-    "climate",
-    "reporting",
-    "EU-Taxonomy",
-    "Scope-3",
-    "CBAM",
-    "TNFD",
-    "biodiversity",
-    "circular-economy",
-    "double-materiality"
-  ],
-  "skills": "./skills/"
+    "name": "Francesco Fullone — Daruma Consulting"
+  }
 }
