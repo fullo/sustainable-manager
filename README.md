@@ -47,6 +47,14 @@ git clone https://github.com/fullo/sustainable-manager.git
 claude plugin add /path/to/sustainable-manager
 ```
 
+## Aggiornamento
+
+```bash
+claude plugin update sustainable-manager@fullo-plugins
+```
+
+Il sistema plugin usa gli hash dei commit git come versione. Non c'e notifica automatica di nuove versioni: esegui il comando sopra periodicamente per restare aggiornato.
+
 ## Uso
 
 Le skill si attivano automaticamente in base al contesto. Puoi anche invocarle esplicitamente:
