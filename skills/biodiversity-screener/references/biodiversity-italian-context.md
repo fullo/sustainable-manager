@@ -76,6 +76,54 @@
 
 ---
 
+## UNI/PdR 179:2025 — Prassi di Riferimento sulla Biodiversità
+
+### Inquadramento Normativo
+- **Non è una norma nazionale**: è un documento di prassi di riferimento UNI, pubblicato ai sensi del Regolamento UE n.1025/2012
+- **In vigore dal 23 settembre 2025**, ratificata dal Presidente dell'UNI
+- **Elaborata dal Tavolo UNI/PdR "Monitoraggio e valorizzazione della biodiversità"**:
+  - Università Federico II di Napoli — Dipartimento di Agraria (soggetto firmatario)
+  - 3Bee srl (Project Leader: Simone Mazzola)
+  - Università di Torino
+  - CREA_AA (Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria)
+  - Climate Standard
+  - Revisione: CREA/MASAF (Direzione sviluppo rurale)
+
+### Scopo e Applicabilità
+- Stabilisce criteri e metodologie per la **valutazione e gestione dell'impronta di biodiversità** e per la **generazione di Crediti di Biodiversità**
+- Si applica a **tutte le tipologie di organizzazioni** (singolo sito o intera azienda/catena di fornitura)
+- Due sezioni autonome: Punto 5 (impronta) e Punto 6 (crediti) — implementabili indipendentemente
+- Include valutazione di conformità di terza parte (certificazione)
+
+### Relazione con altri Framework
+- **ESRS E4**: la UNI/PdR 179 fornisce una metodologia operativa italiana per molti dei requisiti E4-1 attraverso E4-6 (transizione, policy, azioni, target, metriche, effetti finanziari)
+- **TNFD LEAP**: il flusso di valutazione della PdR (driver di impatto, aree protette, specie a rischio) è complementare al LEAP approach
+- **Strategia Nazionale Biodiversità 2030**: allineamento con obiettivi 30x30, ripristino ecosistemi
+- **Nature Restoration Law (Reg. UE 2024/1991)**: la PdR cita esplicitamente la NRL come riferimento per la definizione dei target
+- **Direttiva UE 2024/825 (Green Claims)**: coerenza obbligatoria per i claim di biodiversità — le dichiarazioni devono essere accompagnate da informazioni verificabili e accessibili al pubblico
+- **UNI/PdR 162:2024**: linee guida per la definizione di servizi ecosistemici in ambito urbano e periurbano — citata come riferimento per la valutazione dei servizi ecosistemici nella prioritizzazione dei siti critici
+- **ISO 14060 series**: i cambiamenti climatici come driver di impatto sono esclusi dalla PdR e rimandati agli standard ISO 14060
+
+### Elementi Chiave
+- **MSA (Mean Species Abundance)**: indice quantitativo obbligatorio, calcolato tramite modello GLOBIO basato sull'uso del suolo
+- **Crediti di Biodiversità**: formula CB = ΔMSA × ha × anni × 10, primo framework italiano strutturato per i biodiversity credits
+- **Approccio activity-based**: il valore dell'intervento è riconosciuto fin dall'attuazione, non solo a risultato raggiunto
+- **Ciclo quinquennale**: Piano di Biodiversità ogni 5 anni con report annuali e verifiche a cadenza regolare
+- **Gerarchia interventi**: azioni in sito prioritarie, azioni non in sito (entro 150 km nella stessa ecoregione) come integrative
+
+### Accreditamento e Organismi di V&V
+- Gli organismi di validazione e verifica di terza parte devono essere accreditati in conformità alla **UNI CEI EN ISO/IEC 17029:2020** per lo specifico programma
+- **Accredia** (ente unico nazionale di accreditamento) è il riferimento per l'accreditamento in Italia
+- Il gruppo di verifica deve includere almeno un auditor qualificato per progetti ambientali con esperienza in biodiversità, più eventuali esperti tecnici in ecologia, biologia della conservazione
+
+### Implicazioni Pratiche per le Imprese Italiane
+- **Primo framework nazionale strutturato** per impronta di biodiversità e crediti — colma il vuoto tra standard internazionali (TNFD, SBTN) e applicazione operativa in Italia
+- **Obbligo di target attivi**: l'acquisto di crediti non può sostituire azioni in sito — prerequisito di conformità
+- **Coinvolgimento esperto**: per le fasi di valutazione, Piano e monitoraggio è raccomandato il coinvolgimento di laureati in Scienze naturali, biologiche, agrarie, Ingegneria ambientale
+- **Retroattività limitata**: la validazione iniziale e la generazione di crediti possono avvenire retroattivamente per progetti avviati fino a 3 anni prima della data di validazione
+
+---
+
 ## Settori Italiani ad Alta Esposizione alla Biodiversita
 
 ### Agroalimentare

@@ -22,6 +22,32 @@
         "References specific Natura 2000 context in Italy/Sardinia",
         "Suggests using IBAT tool for detailed assessment"
       ]
+    },
+    {
+      "id": 3,
+      "prompt": "Abbiamo un progetto di rigenerazione della biodiversita su un terreno agricolo di 0,93 ha vicino a un'area Natura 2000 in Lombardia. Abbiamo piantato 265 alberi e arbusti autoctoni nel 2022. Il valore MSA pre-intervento era 32,1 e post-intervento 67,8. Abbiamo calcolato 3,32 crediti di biodiversita per il 2024. Puoi verificare la conformita alla UNI/PdR 179?",
+      "expected_output": "Compliance review: verifies MSA calculation, credits formula, identifies gaps vs UNI/PdR 179 audit checklist.",
+      "assertions": [
+        "Recognizes UNI/PdR 179:2025 as the applicable framework",
+        "Verifies the Biodiversity Credits formula: CB = delta_MSA x ha x anni x 10",
+        "Checks the MSA delta calculation (67.8 - 32.1 = 35.7 points, 0.357 on 0-1 scale)",
+        "Verifies credit calculation: 0.357 x 0.93 x 1 x 10 = 3.32 CB",
+        "References the audit checklist from Appendice F or G for gap analysis",
+        "Checks for additionality requirement"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Devo redigere un Piano di Biodiversita per un sito aziendale di 5 ettari in Pianura Padana, vicino a risaie e a un'area Natura 2000. Cosa deve contenere secondo la UNI/PdR 179?",
+      "expected_output": "Structured guidance on Biodiversity Plan contents per UNI/PdR 179 punto 5.2.3.",
+      "assertions": [
+        "References UNI/PdR 179 punto 5.2.3 for Piano di Biodiversita structure",
+        "Specifies MSA as mandatory KPI for target definition",
+        "Describes the mitigation hierarchy: in-situ actions priority, non-in-situ within 150 km as integrative",
+        "Mentions required sections: target definition, intervention plan, monitoring design, training plan, stakeholder engagement",
+        "References the 5-year cycle and reporting timeline (report iniziale, annuale, quinquennale)",
+        "Mentions proximity to Natura 2000 as requiring assessment within 5 km radius"
+      ]
     }
   ]
 }
