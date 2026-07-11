@@ -63,6 +63,9 @@ Include timeline, resource requirements, and expected accuracy improvement at ea
 - **Category 1 dominates for most sectors**: Purchased goods & services is typically 30-70% of Scope 3. If the user hasn't measured it, the total Scope 3 estimate is unreliable.
 - **Capital goods can create year-over-year spikes**: A single large purchase (building, machinery) can dominate annual Scope 3. Always check for one-off items before interpreting trends.
 - **DEFRA factors are UK-specific**: They use UK electricity grid factors. For Italian/EU companies, suggest using ADEME Base Empreinte or ecoinvent with local grid factors instead.
+- **Emission factor vintage matters**: DEFRA/ADEME publish annual updates (DEFRA typically mid-year). Always cite the factor vintage and check whether a newer release is available before finalizing an inventory.
+- **GHG Protocol standards are under revision (status: July 2026)**: the Corporate, Scope 2, Scope 3, and Market Instruments standards are being updated, with drafts in consultation. Current standards remain applicable, but flag to users that category definitions and Scope 2 accounting rules may change — avoid hard-coding methodology choices that would be costly to unwind.
+- **Value chain cap (Directive (EU) 2026/470)**: suppliers with fewer than 1,000 employees can refuse ESRS data requests beyond the VSME standard. For long-tail suppliers, plan on sector/regional averages and estimates ("without undue cost or effort") rather than full supplier-specific data.
 
 ## Important Rules
 

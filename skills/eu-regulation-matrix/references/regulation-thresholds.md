@@ -1,12 +1,12 @@
 # EU Sustainability Regulation Thresholds — Comprehensive Reference
 
-Last updated: April 2026
+Last updated: July 2026
 
 ---
 
 ## 1. CSRD / ESRS (Corporate Sustainability Reporting Directive)
 
-**Legal basis**: Directive 2022/2464/EU amending Directive 2013/34/EU, as modified by the Omnibus Simplification Package (February 2026)
+**Legal basis**: Directive 2022/2464/EU amending Directive 2013/34/EU, as modified by the Omnibus I Directive (EU) 2026/470 (OJ 26 February 2026, in force 18 March 2026) and the "Stop-the-Clock" Directive (EU) 2025/794
 
 ### Original Scope (pre-Omnibus)
 
@@ -18,7 +18,7 @@ Companies meeting **2 of 3 criteria**:
 | Net turnover | EUR 40M+ |
 | Total assets | EUR 20M+ |
 
-### Post-Omnibus Scope (February 2026)
+### Post-Omnibus Scope (Directive (EU) 2026/470)
 
 Significantly narrowed. Companies must meet **both criteria**:
 
@@ -33,31 +33,30 @@ This change removes an estimated 80% of companies from the original scope.
 
 | Detail | Value |
 |--------|-------|
-| Scope | Companies listed on EU regulated markets that do not meet large-company thresholds |
-| Applicable from | FY2026 (reporting in 2027) |
-| Opt-out | Possible until FY2028, with brief justification in management report |
-| Standard | ESRS LSME (Listed SME set) |
+| Scope | **Removed from mandatory CSRD reporting** by Directive (EU) 2026/470 (former Wave 3 abolished) |
+| Voluntary option | VSME (voluntary standard for non-listed and listed SMEs, adopted as delegated act on 3 July 2026) |
+| Practical driver | Data requests from CSRD-scope customers and banks, capped at VSME content (value chain cap) |
 
 ### Non-EU Companies
 
 | Detail | Value |
 |--------|-------|
-| Threshold | EUR 150M+ net turnover generated in the EU |
-| Condition | Must have at least one EU subsidiary or branch exceeding EUR 40M turnover |
+| Threshold | EUR 450M+ net turnover generated in the EU (raised from EUR 150M) |
+| Condition | Must have at least one EU subsidiary or branch with EUR 200M+ turnover |
 | Applicable from | FY2028 (reporting in 2029) |
 | Standard | Separate non-EU ESRS set |
 
-### Phase-in Timeline
+### Phase-in Timeline (post Stop-the-Clock and Omnibus I)
 
 | Phase | Applicable from | Companies |
 |-------|----------------|-----------|
-| Wave 1 | FY2024 (report in 2025) | Large PIEs already under NFRD (500+ employees) |
-| Wave 2 | FY2025 (report in 2026) | Other large companies (original 2-of-3 criteria) |
-| Wave 3 | FY2026 (report in 2027) | Listed SMEs |
-| Wave 4 | FY2028 (report in 2029) | Non-EU companies with EUR 150M+ EU revenue |
-| Omnibus amended ESRS | FY2027 (report in 2028) | Revised standards applying to remaining in-scope companies |
+| Wave 1 | FY2024 (report in 2025) | Large PIEs already under NFRD (500+ employees); those below the new 1,000-empl / EUR 450M thresholds exit the scope from FY2027 |
+| Wave 2 | FY2027 (report in 2028) — postponed 2 years by Directive (EU) 2025/794 | Only companies meeting the new thresholds (1,000+ employees AND EUR 450M+ turnover) |
+| Wave 3 (listed SMEs) | Abolished | Out of mandatory scope; VSME voluntary |
+| Wave 4 | FY2028 (report in 2029) | Non-EU companies with EUR 450M+ EU revenue |
+| Revised ESRS (2026) | FY2027 (report in 2028); voluntary early use FY2026 | Delegated act adopted 3 July 2026: mandatory datapoints reduced 61%, voluntary datapoints removed |
 
-**Note**: The Omnibus package effectively means Wave 2 companies that fall below the new 1000-employee / EUR 450M thresholds are released from CSRD obligations for FY2027 onwards. They may still need to report for FY2025 and FY2026 under the original thresholds.
+**Note**: The combined effect of Stop-the-Clock + Omnibus I is that Wave 2 companies below the new thresholds never enter mandatory reporting, and Wave 1 companies below them exit from FY2027.
 
 ### Value Chain Data Cap
 
@@ -80,7 +79,7 @@ Materiality assessment determines which topical standards (E1-E5, S1-S4, G1) are
 
 ## 2. CSDDD (Corporate Sustainability Due Diligence Directive)
 
-**Legal basis**: Directive 2024/1760/EU, as amended by the Omnibus Simplification Package
+**Legal basis**: Directive 2024/1760/EU, as amended by the Omnibus I Directive (EU) 2026/470
 
 ### Thresholds (Post-Omnibus)
 
@@ -97,15 +96,15 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 |-----------|------|
 | Directive entered into force | July 2024 |
 | Original transposition deadline | July 2026 |
-| Revised transposition deadline (Omnibus) | Mid-2029 |
-| First compliance obligations | 2029 (largest companies) |
+| Revised transposition deadline (Directive (EU) 2026/470) | 26 July 2028 |
+| Application to companies | From 26 July 2029 |
 
 ### Scope Details
 
 | Element | Detail |
 |---------|--------|
 | Due diligence scope | Human rights and environmental impacts across the value chain |
-| Climate transition plan | Requirement REMOVED by Omnibus |
+| Climate transition plan | Adoption/implementation obligation REMOVED by Omnibus (transition plan disclosure remains under CSRD/ESRS E1 for companies in CSRD scope) |
 | Civil liability | Maintained but narrowed — burden of proof adjustments |
 | Sector-specific | No sector-specific thresholds (uniform application) |
 | Non-EU companies | EUR 1.5B+ net turnover generated in the EU |
@@ -140,19 +139,19 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 
 | Detail | Value |
 |--------|-------|
-| Threshold | 50 tonnes per product category per year |
-| Effect | Importers below this threshold are exempt from CBAM obligations |
-| Impact | Removes approximately 90% of transitional period reporters |
+| Threshold | 50 tonnes **cumulative net mass across all CBAM goods** per importer per year (Reg. (EU) 2025/2083) — hydrogen and electricity excluded from the exemption |
+| Effect | Importers at or below this threshold are exempt from CBAM obligations |
+| Impact | Removes approximately 90% of transitional period reporters (~99% of embedded emissions still covered) |
 | Applies from | Definitive phase (January 2026) |
 
-### Timeline
+### Timeline (as amended by Reg. (EU) 2025/2083)
 
 | Phase | Period | Obligations |
 |-------|--------|-------------|
 | Transitional period | 1 Oct 2023 – 31 Dec 2025 | Quarterly reporting of embedded emissions (no financial obligation) |
-| Definitive phase begins | 1 Jan 2026 | Must be authorized CBAM declarant; annual declarations |
-| First CBAM certificates purchase | 2026 | Purchase certificates corresponding to embedded emissions |
-| First certificate surrender | 30 Sept 2027 | Surrender certificates for 2026 imports |
+| Definitive phase begins | 1 Jan 2026 | Financial obligation accrues; authorized declarant status required (imports allowed while application pending if filed by 31 Mar 2026) |
+| CBAM certificate sales start | 1 Feb 2027 | Certificates for 2026 imports purchased retroactively at quarterly average EU ETS price |
+| First declaration + surrender | 30 Sept 2027 | Annual CBAM declaration and certificate surrender for 2026 imports (declaration deadline moved from 31 May) |
 
 ### Emission Calculation
 
@@ -169,10 +168,9 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 
 1. Register as **authorized CBAM declarant** with competent authority
 2. Calculate **embedded emissions** using actual data or default values
-3. Purchase **CBAM certificates** at EU ETS auction price
-4. Submit **annual CBAM declaration** by 31 May each year
-5. Surrender certificates by **30 September** each year
-6. Deduct carbon price already paid in country of origin
+3. Purchase **CBAM certificates** (sales start 1 Feb 2027; price = quarterly average EU ETS price); hold at least 50% coverage at each quarter-end
+4. Submit **annual CBAM declaration** and surrender certificates by **30 September** each year
+5. Deduct carbon price already paid in country of origin
 
 ---
 
@@ -223,12 +221,13 @@ Companies must disclose these as KPIs in their management report, broken down by
 | Environmental DA (2023/2486) | Technical screening criteria for objectives 3-6 |
 | Complementary DA (2022/1214) | Nuclear and gas activities under specific conditions |
 | Art. 8 DA (2021/2178) | Disclosure methodology and templates |
+| Simplification DA (2026/73) | OJ 8 Jan 2026, retroactive from FY2025 (opt-out available): 10% materiality threshold on turnover/CapEx/OpEx, simplified templates (-64% fields), optional 2-year deferral for financial undertakings until 31 Dec 2027 |
 
 ---
 
 ## 5. PPWR (Packaging and Packaging Waste Regulation)
 
-**Legal basis**: Regulation (EU) 2025/... (replacing Directive 94/62/EC)
+**Legal basis**: Regulation (EU) 2025/40 (replacing Directive 94/62/EC)
 
 ### Scope
 
@@ -236,7 +235,7 @@ Companies must disclose these as KPIs in their management report, broken down by
 |---------|--------|
 | Who is covered | All producers, importers, distributors, and fillers of packaging placed on the EU market |
 | What is covered | All packaging regardless of material (plastic, paper, glass, metal, wood, composite) |
-| Entry into force | August 2026 |
+| General application date | 12 August 2026 — but phased: at that date only substance restrictions (incl. PFAS ban in food-contact packaging) apply; labelling from 12 Aug 2028; recyclability and recycled content from 2030 |
 
 ### Key Targets and Deadlines
 
@@ -266,7 +265,7 @@ Companies must disclose these as KPIs in their management report, broken down by
 
 ## 6. EUDR (EU Deforestation Regulation)
 
-**Legal basis**: Regulation (EU) 2023/1115
+**Legal basis**: Regulation (EU) 2023/1115, as amended by the targeted revision adopted in December 2025 (postponement and simplification)
 
 ### Covered Commodities
 
@@ -297,21 +296,29 @@ Companies must disclose these as KPIs in their management report, broken down by
 | Standard risk countries | Standard due diligence | Standard |
 | High risk countries | Enhanced due diligence | Increased inspections (9% of operators) |
 
-### Timeline
+### Timeline (after the December 2025 targeted revision)
 
 | Milestone | Date |
 |-----------|------|
 | Entry into force | 29 June 2023 |
-| Application — large operators | 30 December 2025 (delayed from original June 2025) |
-| Application — SMEs | 30 June 2026 |
-| Country benchmarking list publication | Expected H2 2025 |
+| Application — all operators and traders | 30 December 2026 (second postponement, adopted December 2025) |
+| Application — micro and small operators | 30 June 2027 |
+| Commission impact/burden report | By 30 April 2026 |
+
+### Simplifications (December 2025 revision)
+
+| Element | Detail |
+|---------|--------|
+| Due diligence statement | Only the operator that FIRST places a product on the EU market submits the DDS; downstream operators and traders are relieved |
+| Micro/small primary operators | One-off simplified declaration instead of recurring DDS |
+| Small operators definition | Under 50 employees and product-related turnover below EUR 10M |
 
 ### Operator Size Categories
 
 | Category | Threshold | Simplified DD available? |
 |----------|-----------|------------------------|
 | Large operators | Default | No — full due diligence required |
-| SME operators | Meets EU SME definition | Yes, for low-risk country sourcing only |
+| Micro/small operators | <50 employees, <EUR 10M product turnover | Yes — one-off simplified declaration; apply from 30 June 2027 |
 
 ---
 
@@ -364,13 +371,12 @@ Key mandatory PAI indicators include:
 - Board gender diversity
 - Controversial weapons exposure
 
-### Ongoing Review
+### SFDR 2.0 — Revision in Progress (status: July 2026)
 
-The European Commission has published a comprehensive review of SFDR (September 2023). Potential revisions could include:
-- Replacing Art. 8/9 with a formal product categorization system
-- Simplifying PAI disclosure
-- Aligning better with EU Taxonomy
-- Expected Level 1 revision proposal: 2025-2026
+The Commission published the SFDR 2.0 proposal in November 2025. Current legislative status:
+- Proposed product categories replacing Art. 8/9: **Sustainable** (Art. 9), **Transition** (Art. 7), **ESG Basics** (Art. 8)
+- Council negotiating mandate agreed 24 June 2026; European Parliament position in preparation (ECON vote expected July 2026)
+- Trilogue negotiations expected from Q4 2026 — the final text may differ; current Art. 6/8/9 classification remains applicable until the revision is adopted
 
 ---
 
@@ -380,7 +386,7 @@ The European Commission has published a comprehensive review of SFDR (September 
 
 | Element | Detail |
 |---------|--------|
-| Transposition instrument | D.Lgs. attuativo della Direttiva 2022/2464/UE |
+| Transposition instrument | **D.Lgs. 125/2024** (recepimento Direttiva 2022/2464/UE); da adeguare alla Direttiva (EU) 2026/470 — monitorare il decreto correttivo |
 | Supervisory authority (listed entities) | **Consob** (Commissione Nazionale per le Societa e la Borsa) |
 | Supervisory authority (banks/insurance) | **Banca d'Italia** / **IVASS** |
 | Accounting body | **OIC** (Organismo Italiano di Contabilita) |
@@ -435,11 +441,11 @@ The European Commission has published a comprehensive review of SFDR (September 
 | Year | Key Events for Italian Companies |
 |------|--------------------------------|
 | 2024 | FY2024 reporting: Wave 1 entities (large EIPs) begin CSRD/ESRS reporting |
-| 2025 | CBAM transitional period ends (Dec); EUDR applicable to large operators (Dec); FY2025 reporting for Wave 2 entities under original thresholds |
-| 2026 | CBAM definitive phase begins (Jan); Listed SMEs begin CSRD reporting (FY2026); PPWR enters into force (Aug); EUDR applicable to SMEs (Jun); Omnibus amendments take effect |
-| 2027 | First CBAM certificate surrender (Sept); FY2027 reporting under amended ESRS |
-| 2028 | Non-EU companies with EUR 150M+ EU revenue begin CSRD reporting (FY2028) |
-| 2029 | CSDDD transposition deadline (mid-2029); DRS mandatory implementation |
+| 2025 | CBAM transitional period ends (Dec); Stop-the-Clock Directive postpones Wave 2/3; CBAM Omnibus Reg. 2025/2083 adopted (Oct); EUDR second postponement adopted (Dec) |
+| 2026 | CBAM definitive phase begins (Jan — financial obligation accrues, certificates from Feb 2027); Omnibus I Directive (EU) 2026/470 in force (18 Mar); Taxonomy Simplification DA 2026/73 applicable (FY2025 reports); revised ESRS adopted (3 Jul); PPWR general application (12 Aug); EUDR applies to all operators (30 Dec) |
+| 2027 | CBAM certificate sales start (1 Feb); EUDR applies to micro/small operators (30 Jun); first CBAM declaration and certificate surrender (30 Sept); FY2027 = first year under revised ESRS and new CSRD thresholds |
+| 2028 | FY2027 CSRD reports published; CSDDD transposition deadline (26 Jul); non-EU companies with EUR 450M+ EU revenue in scope from FY2028 |
+| 2029 | CSDDD applies to companies (26 Jul); DRS mandatory implementation (PPWR) |
 
 ### Key Italian Institutional References
 
@@ -477,10 +483,10 @@ Use this table for rapid initial assessment:
 
 | Regulation | Size Gate | Sector Gate | Geography Gate |
 |-----------|----------|-------------|---------------|
-| CSRD | 1000+ empl. AND EUR 450M+ rev (or listed SME, or non-EU EUR 150M+) | All sectors | EU entities (or non-EU with EU presence) |
+| CSRD | 1000+ empl. AND EUR 450M+ rev (or non-EU with EUR 450M+ EU rev); listed SMEs out of mandatory scope | All sectors | EU entities (or non-EU with EU presence) |
 | CSDDD | 5000+ empl. AND EUR 1.5B+ rev | All sectors | EU entities (or non-EU with EUR 1.5B+ EU rev) |
-| CBAM | No size gate (de minimis: 50t/year per product) | Importers of specific products | Imports from non-EU countries |
+| CBAM | No size gate (de minimis: 50t/year cumulative across CBAM goods, excl. H2/electricity) | Importers of specific products | Imports from non-EU countries |
 | EU Taxonomy | Follows CSRD scope | All sectors (activity-specific screening) | EU entities under CSRD |
 | PPWR | No size gate | Packaging producers/importers/fillers | EU market |
-| EUDR | No size gate (SME simplified DD) | 7 commodity supply chains | EU market placement or export |
+| EUDR | No size gate (micro/small: one-off simplified declaration, from 30 Jun 2027) | 7 commodity supply chains | EU market placement or export |
 | SFDR | No size gate | Financial sector only | EU financial market participants and advisers |

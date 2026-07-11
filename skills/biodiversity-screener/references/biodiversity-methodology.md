@@ -309,8 +309,8 @@ Science Based Targets for Nature translates global sustainability goals into act
 ## Connection to EUDR (EU Deforestation Regulation)
 
 ### Regulation Overview
-- EU Deforestation Regulation (2023/1115), entered into force June 2023
-- Application date: December 30, 2024 (large companies), June 30, 2025 (SMEs)
+- EU Deforestation Regulation (2023/1115), entered into force June 2023, twice postponed and simplified (targeted revision adopted December 2025)
+- Application date: December 30, 2026 (all operators and traders), June 30, 2027 (micro and small operators)
 - Replaces EU Timber Regulation (EUTR)
 
 ### 7 Regulated Commodities
@@ -327,7 +327,7 @@ Science Based Targets for Nature translates global sustainability goals into act
 - **Deforestation-free proof**: Products must be free of deforestation after December 31, 2020 cutoff date
 - **Legality**: Products must comply with applicable laws of the country of production
 - **Traceability**: Full supply chain traceability from production to EU market
-- **Due diligence statement**: Mandatory declaration for each shipment
+- **Due diligence statement**: Due only from the operator that FIRST places the product on the EU market (December 2025 simplification); micro/small primary operators file a one-off simplified declaration
 
 ### Country Risk Benchmarking
 - **High risk**: Countries/regions with high deforestation rates and weak governance

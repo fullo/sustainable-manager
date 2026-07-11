@@ -19,15 +19,16 @@ A sustainability matter is material if it is material from either or both perspe
 - **ESRS 2 IRO-2**: Requires disclosure of material matters and related ESRS standards
 - **ESRS 2 SBM-3**: Requires description of material impacts, risks, and opportunities and their interaction with strategy and business model
 
-### Post-Omnibus Simplification Package (2024-2025)
+### Post-Omnibus Simplification — Now in Force
 
-The European Commission's Omnibus proposal introduced significant simplifications:
+The Omnibus simplification is no longer a proposal: the Omnibus I Directive (EU) 2026/470 entered into force on 18 March 2026, and the **revised ESRS (2026) were adopted as a delegated act on 3 July 2026** (applicable FY2027, voluntary early use FY2026). Key changes for the DMA:
 
 - **Top-down approach permitted**: Companies no longer need to start from an exhaustive analysis of all sub-sub-topics
-- **Information Materiality Filter**: New concept allowing companies to omit data points within material topics if not decision-relevant
-- **Simplified process for SMEs**: Reduced disclosure requirements
-- **Voluntary adoption of simplified approach**: Companies can choose the simplified pathway even before formal transposition
-- **Value chain cap**: Limitations on the depth of value chain analysis required, particularly for upstream Scope 3 data
+- **Information Materiality Filter**: Companies may omit data points within material topics if not decision-relevant (omissions documented)
+- **Fair presentation principle**: Replaces the checklist mentality — the report must fairly present material IROs
+- **Wider use of estimates** without "undue cost or effort", especially for value chain data
+- **Value chain cap**: Data requests to value chain partners below 1,000 employees are capped at VSME content
+- **61% fewer mandatory datapoints** overall in the revised ESRS; all voluntary datapoints removed
 
 ---
 

@@ -1,6 +1,8 @@
 # Transition Plan Guide
 
-Reference material for building credible climate transition plans, aligned with the Transition Plan Taskforce (TPT) Framework, ESRS E1-1, and SBTi Net-Zero Standard.
+Reference material for building credible climate transition plans, aligned with the Transition Plan Taskforce (TPT) Framework, ESRS E1-1 (revised ESRS 2026), and the SBTi Corporate Net-Zero Standard. Last verified: July 2026.
+
+**Version note**: the SBTi released Corporate Net-Zero Standard **v2.0 in June 2026** (company categorization, separate Scope 1/2 targets, revised Scope 3 approach, mandatory transition planning and assurance, expanded removals provisions). Validation timeline: v1.3.1 through 2026 → dual track from Q1 2027 → v2.0 mandatory for new submissions from 1 February 2028. The sector figures below reflect v1-era pathways; check current SBTi resources when targeting a v2.0 validation.
 
 ---
 

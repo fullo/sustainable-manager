@@ -38,10 +38,10 @@ Per operare come dichiarante CBAM autorizzato in Italia, l'importatore deve:
 
 | Fase | Tempistica | Azione |
 |------|-----------|--------|
-| 1. Registrazione | Entro 31/12/2025 | Presentare domanda di autorizzazione all'ADM tramite portale AIDA |
+| 1. Registrazione | Domanda all'ADM tramite portale AIDA (chi ha presentato domanda entro il 31/03/2026 puo continuare a importare in attesa dell'esito — Reg. UE 2025/2083) | Presentare domanda di autorizzazione |
 | 2. Verifica documentale | 30-60 giorni | ADM verifica requisiti soggettivi e documentazione |
-| 3. Rilascio autorizzazione | Prima dell'inizio fase definitiva | ADM rilascia numero identificativo CBAM |
-| 4. Operativita | Dal 01/01/2026 | Acquisto certificati, presentazione dichiarazioni annuali |
+| 3. Rilascio autorizzazione | Prima possibile nella fase definitiva | ADM rilascia numero identificativo CBAM |
+| 4. Operativita | Obbligo finanziario dal 01/01/2026; acquisto certificati dal 01/02/2027 | Acquisto certificati retroattivo per il 2026, presentazione dichiarazioni annuali |
 
 ### Documentazione richiesta
 - Visura camerale aggiornata
@@ -186,11 +186,12 @@ permette di valutare il reale livello di protezione offerto dal CBAM e l'equita 
 - [ ] Stipulare accordi con i fornitori per la fornitura di dati verificati
 - [ ] Valutare la necessita di un verificatore accreditato
 
-**Fase Definitiva (dal 01/01/2026):**
-- [ ] Acquistare certificati CBAM con cadenza almeno trimestrale (copertura minima 80%)
+**Fase Definitiva (dal 01/01/2026, come modificata dal Reg. UE 2025/2083):**
+- [ ] Verificare la soglia de minimis: 50 tonnellate cumulative di merci CBAM/anno (esclusi idrogeno ed elettricita) — se sotto soglia, nessun obbligo
+- [ ] Dal 01/02/2027: acquistare i certificati CBAM (per il 2026 acquisto retroattivo al prezzo medio trimestrale EU ETS del periodo di importazione)
+- [ ] Mantenere a fine trimestre certificati per almeno il 50% delle emissioni incorporate importate da inizio anno
 - [ ] Raccogliere e verificare i dati di emissione per ogni partita importata
-- [ ] Presentare la dichiarazione CBAM annuale entro il 31 maggio
-- [ ] Restituire i certificati entro il 30 settembre
+- [ ] Presentare la dichiarazione CBAM annuale e restituire i certificati entro il 30 settembre (prima scadenza: 30/09/2027 per le importazioni 2026)
 - [ ] Conservare la documentazione per almeno 4 anni
 - [ ] Monitorare aggiornamenti normativi e nuove guidance della Commissione
 

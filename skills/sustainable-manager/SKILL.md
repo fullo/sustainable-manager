@@ -145,7 +145,7 @@ When the user has enough data (from documents or Socratic interview), help them 
 
 For detailed framework guidance, read `references/frameworks.md` (relative to this skill's directory). For LCA and science-based methodology, read `references/lca-science-based.md`. For sustainable procurement, read `references/procurement.md`. For greenwashing analysis, read `references/greenwashing-detection.md`. For ESRS evolution and EFRAG latest updates, read `references/efrag-updates.md`. Key points:
 
-- **ESRS/CSRD** (primary for EU): Double materiality, mandatory for large EU companies and listed SMEs. 12 standards across E, S, G pillars. **Note: Amended/simplified ESRS submitted Dec 2025 — 61% fewer mandatory datapoints, sector standards cancelled, applicable from FY2027.** Read `references/efrag-updates.md` for the full picture.
+- **ESRS/CSRD** (primary for EU): Double materiality, mandatory for large EU companies (1,000+ employees AND EUR 450M+ turnover post-Omnibus; listed SMEs removed from mandatory scope, VSME voluntary). 12 standards across E, S, G pillars. **Note: revised ESRS adopted as delegated act on 3 July 2026 — 61% fewer mandatory datapoints, voluntary datapoints removed, sector standards cancelled, applicable from FY2027 (early use FY2026).** Read `references/efrag-updates.md` for the full picture.
 - **GRI**: Most widely used globally. Modular structure with universal, sector, and topic standards.
 - **SASB**: Industry-specific, financially material topics. Now part of ISSB/IFRS.
 - **TCFD**: Climate-focused. Four pillars: Governance, Strategy, Risk Management, Metrics & Targets.
@@ -191,7 +191,7 @@ User has a document?
 
 ## Gotchas
 
-- **ESRS post-Omnibus scope change**: As of Feb 2026, CSRD applies only to companies with 1000+ employees AND 450M+ turnover (previously 250 employees). Always ask which threshold applies before advising.
+- **ESRS post-Omnibus scope change**: With Directive (EU) 2026/470 (in force 18 March 2026), CSRD applies only to companies with 1000+ employees AND 450M+ turnover (previously 250 employees, 2-of-3 test). Wave 1 companies report through FY2026 under the old regime; new thresholds and revised ESRS apply from FY2027. Always ask which threshold and reporting year applies before advising.
 - **Scope 2 market-based vs location-based**: Companies often report only one. If you see a single Scope 2 figure, ask which method — the difference can be 50%+ for companies buying green energy.
 - **Italian ESRS transposition**: D.Lgs. 125/2024 is the Italian transposition of CSRD. References to "D.Lgs. 254/2016" (old NFRD) are outdated but still appear in many Italian company reports.
 - **Template placeholders**: The sector templates in assets/templates/ use `[...]` placeholders. Never output these to the user as real data.

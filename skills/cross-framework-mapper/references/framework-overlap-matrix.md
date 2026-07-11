@@ -2,6 +2,8 @@
 
 This reference maps ~80 key sustainability data points across six major frameworks: ESRS, GRI, ISSB/SASB, EU Taxonomy, CBAM, and SFDR. Use this to identify reporting efficiencies and reduce duplication.
 
+> **Version caveat (July 2026)**: the ESRS column references the original 2023 datapoint IDs, valid for reporting through FY2026. The revised ESRS (2026), adopted 3 July 2026 and applicable from FY2027, cut mandatory datapoints by 61% — verify each ESRS reference against the revised set when planning FY2027+ collection. The SFDR column reflects the current Art. 6/8/9 + PAI regime; SFDR 2.0 (in trilogue) would replace it with Sustainable/Transition/ESG Basics categories.
+
 **Legend**:
 - Cell contains the specific disclosure reference within each framework
 - `—` means not required by that framework

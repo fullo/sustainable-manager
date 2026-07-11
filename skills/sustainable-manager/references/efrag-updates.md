@@ -9,13 +9,13 @@
 6. [EFRAG Active Projects](#efrag-projects)
 7. [Implementation Resources](#implementation-resources)
 
-**Last updated**: Based on EFRAG submissions through December 2025 and European Commission timeline through early 2026.
+**Last updated**: July 2026. Reflects the adopted Omnibus I Directive (EU) 2026/470 (in force 18 March 2026) and the revised ESRS delegated act adopted by the European Commission on **3 July 2026** (together with the VSME voluntary standard).
 
 ---
 
 ## ESRS Simplification
 
-In response to the EU Omnibus I Proposal, EFRAG submitted its technical advice on simplified ESRS to the European Commission on December 3, 2025.
+In response to the EU Omnibus I Proposal, EFRAG submitted its technical advice on simplified ESRS to the European Commission on December 3, 2025. The Commission published the draft delegated act ("ESRS 2.0") for consultation in spring 2026 and **adopted the final delegated act on 3 July 2026**, closely following EFRAG's advice. The Omnibus I Directive itself was adopted as **Directive (EU) 2026/470** (OJ 26 February 2026, in force 18 March 2026).
 
 ### Headline Changes
 - **61% reduction in mandatory datapoints** across all 12 standards
@@ -107,19 +107,21 @@ The Omnibus I Proposal (February 2025) mandated simplification while maintaining
 | Event | Date |
 |-------|------|
 | Omnibus I Proposal published | February 2025 |
+| "Stop-the-Clock" Directive (EU) 2025/794 (postpones Wave 2/3 by 2 years) | April 2025 |
 | EFRAG technical advice submitted | December 3, 2025 |
 | ESRS Knowledge Hub launched | December 4, 2025 |
-| European Commission delegated act adoption | Expected mid-2026 |
-| **Amended ESRS applicable from** | **FY 2027 (optional early use FY 2026)** |
+| Omnibus I Directive (EU) 2026/470 in force | March 18, 2026 |
+| European Commission delegated act adopted (revised ESRS + VSME) | **July 3, 2026** |
+| **Revised ESRS applicable from** | **FY 2027 (optional early use FY 2026)** |
 
-### Reporting Waves Under Amended Timeline
+### Reporting Waves Under Final (Post-Omnibus) Timeline
 
 | Wave | Companies | First Reporting Year | Report Due |
 |------|-----------|---------------------|------------|
-| Wave 1 | Already under NFRD (large PIEs >500 emp.) | FY 2024 under original ESRS; switch to amended from FY 2027 | 2025 (original), 2028 (amended) |
-| Wave 2 | Large EU companies (2 of 3 thresholds) | FY 2027 under amended ESRS | 2028 |
-| Wave 3 | Listed SMEs | FY 2028 under amended ESRS | 2029 |
-| Wave 4 | Non-EU companies (>150M EU revenue) | FY 2029 | 2030 |
+| Wave 1 | Already under NFRD (large PIEs >500 emp.) meeting the new thresholds | FY 2024 under original ESRS; switch to revised ESRS from FY 2027; those below 1,000 empl. / EUR 450M exit the scope from FY 2027 | 2025 (original), 2028 (revised) |
+| Wave 2 | EU companies with 1,000+ employees AND EUR 450M+ turnover | FY 2027 under revised ESRS | 2028 |
+| Wave 3 (listed SMEs) | **Abolished** — out of mandatory scope; VSME voluntary | — | — |
+| Wave 4 | Non-EU companies (>EUR 450M EU revenue, with EU subsidiary/branch >EUR 200M) | FY 2028 | 2029 |
 
 ---
 
@@ -144,15 +146,14 @@ Instead:
 ## SME Standards
 
 ### VSME (Voluntary SME Standard)
-- European Commission issued a **recommendation** (not mandatory)
-- Designed for non-listed SMEs that want to report voluntarily
-- Simplified structure with fewer datapoints
-- Digital template and XBRL taxonomy under development (EFRAG research phase)
+- **Adopted as a delegated act on 3 July 2026** together with the revised ESRS (upgraded from the earlier Commission recommendation)
+- Designed for SMEs (listed and non-listed) that report voluntarily — typically to answer data requests from banks and CSRD-scope customers
+- **Value chain cap**: CSRD reporters cannot demand more than VSME content from value chain partners below 1,000 employees
+- Simplified structure with fewer datapoints; digital template and XBRL taxonomy in development
 
 ### LSME (Listed SME Standard)
-- Listed SMEs fall under CSRD Wave 3 (FY 2028)
-- Will use the amended ESRS with proportionality provisions
-- Additional transitional relief may apply
+- **Superseded**: listed SMEs were removed from mandatory CSRD scope by Directive (EU) 2026/470 (former Wave 3 abolished)
+- VSME is now the reference voluntary standard for listed SMEs as well
 
 ---
 

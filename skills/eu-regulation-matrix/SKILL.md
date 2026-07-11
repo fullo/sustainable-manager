@@ -41,7 +41,7 @@ Ask about:
 
 1. **In which EU member state(s) does the company operate?**
 2. **Does the company have significant operations outside the EU?**
-3. **For non-EU companies**: does the company generate EUR 150M+ net turnover in the EU?
+3. **For non-EU companies**: does the company generate EUR 450M+ net turnover in the EU (with an EU subsidiary or branch above EUR 200M)?
 
 ## Regulation Matching
 
@@ -51,7 +51,7 @@ After gathering information, evaluate the company against ALL of the following r
 
 | # | Regulation | Key Question |
 |---|-----------|-------------|
-| 1 | **CSRD/ESRS** | Does the company meet size thresholds (post-Omnibus: 1000+ employees AND EUR 450M+ turnover)? Is it a listed SME? Is it a non-EU company with EUR 150M+ EU revenue? |
+| 1 | **CSRD/ESRS** | Does the company meet size thresholds (post-Omnibus, Directive (EU) 2026/470: 1000+ employees AND EUR 450M+ turnover)? Is it a non-EU company with EUR 450M+ EU revenue? (Listed SMEs are out of mandatory scope; VSME is the voluntary route) |
 | 2 | **CSDDD** | Does the company have 5000+ employees AND EUR 1.5B+ turnover? |
 | 3 | **CBAM** | Does the company import CBAM-covered products (cement, steel, aluminium, fertilizers, hydrogen, electricity) from non-EU countries above de minimis thresholds? |
 | 4 | **EU Taxonomy Art. 8** | Is the company already subject to CSRD? If yes, Taxonomy disclosure applies automatically. |
@@ -107,15 +107,16 @@ Use phrasing like: "Per un approfondimento sulla CSRD, puoi usare /csrd-gap-anal
 
 ## Gotchas
 
-- **Omnibus created confusion, not clarity**: Many companies don't know if the new or old CSRD thresholds apply to them. FY2024-FY2026 reporters use original thresholds; amended thresholds apply from FY2027.
+- **Omnibus created confusion, not clarity**: Many companies don't know if the new or old CSRD thresholds apply to them. Wave 1 companies report through FY2026 under the old regime; new thresholds and revised ESRS apply from FY2027. Wave 2/3 were first postponed by Stop-the-Clock (Directive (EU) 2025/794) and then largely removed from scope by Directive (EU) 2026/470.
 - **CSDDD scope was dramatically narrowed**: Original proposal was 500 employees/150M turnover. Final directive is 5000/1.5B. Many sources still cite the old thresholds.
-- **CBAM de minimis is per product type**: The 50-tonne threshold applies per product category per year, not across all imports combined.
+- **CBAM de minimis is cumulative, not per product**: Under Reg. (EU) 2025/2083 the 50-tonne threshold applies to the total net mass of ALL CBAM goods imported in the year (hydrogen and electricity excluded from the exemption). Many sources still describe it as per product category.
 
 ## Important Notes
 
-- The Omnibus Simplification Package (February 2026) significantly raised CSRD thresholds. Always use the post-Omnibus thresholds unless the user specifically asks about the original scope.
-- CSDDD transposition deadline was pushed to mid-2029 and the climate transition plan requirement was removed.
-- CBAM de minimis was raised to 50 tonnes, eliminating ~90% of transitional reporters.
+- The Omnibus I Directive (EU) 2026/470 (OJ 26 February 2026, in force 18 March 2026) significantly raised CSRD thresholds. Always use the post-Omnibus thresholds unless the user specifically asks about the original scope.
+- CSDDD: transposition by 26 July 2028, application to companies from 26 July 2029; the climate transition plan implementation obligation was removed.
+- CBAM de minimis was set at 50 tonnes cumulative (Reg. (EU) 2025/2083), eliminating ~90% of transitional reporters; certificate sales start 1 February 2027 and the annual declaration deadline is 30 September.
+- EUDR applies from 30 December 2026 (all operators) and 30 June 2027 (micro/small operators) after the December 2025 revision.
 - Value chain data cap: entities with fewer than 1000 employees can refuse upstream/downstream ESRS data requests.
 - When in doubt, flag a regulation as "Possibly" rather than "No" and explain what additional information is needed.
 - Always note that this is an indicative assessment and recommend verification with legal counsel for definitive conclusions.

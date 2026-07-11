@@ -1,6 +1,6 @@
 # EU Taxonomy Technical Reference
 
-Comprehensive reference for the EU Taxonomy Regulation (EU) 2020/852, the Climate Delegated Act (EU) 2021/2139, the Environmental Delegated Act (EU) 2023/2486, and the Disclosures Delegated Act (EU) 2021/2178.
+Comprehensive reference for the EU Taxonomy Regulation (EU) 2020/852, the Climate Delegated Act (EU) 2021/2139, the Environmental Delegated Act (EU) 2023/2486, and the Disclosures Delegated Act (EU) 2021/2178, as amended by the Simplification Delegated Regulation (EU) 2026/73 (10% materiality threshold, simplified templates, optional deferral for financial undertakings). Last verified: July 2026.
 
 ---
 

@@ -1,6 +1,6 @@
 # Sustainable Manager - Claude Code Plugin
 
-[![Skill Version](https://img.shields.io/badge/skill-v2.0-blue)](skills/sustainable-manager/SKILL.md)
+[![Skill Version](https://img.shields.io/badge/skill-v2.2-blue)](skills/sustainable-manager/SKILL.md)
 [![Skills](https://img.shields.io/badge/skills-11-green)](skills/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
@@ -105,6 +105,30 @@ sustainable-manager/
 - Claude Code CLI
 - Python 3.8+ (per visualizzazioni e calcolatori)
 - matplotlib, numpy (per i grafici)
+
+## Changelog
+
+### v2.2.0 (luglio 2026) — Allineamento normativo
+
+Aggiornamento legislativo completo di tutte le skill al quadro in vigore a luglio 2026:
+
+- **Omnibus I è legge**: Direttiva (EU) 2026/470 (GU 26/02/2026, in vigore 18/03/2026) — soglie CSRD 1.000 dipendenti + 450M€, listed SME fuori dallo scope obbligatorio, non-UE a 450M€ di fatturato UE, CSDDD recepimento 26/07/2028 / applicazione 26/07/2029
+- **ESRS rivisti adottati** (atto delegato 3/07/2026, insieme al VSME): −61% datapoint obbligatori, applicazione FY2027 con early adoption FY2026 — aggiornati `efrag-updates.md`, double-materiality, cross-framework-mapper
+- **CBAM**: integrato il Reg. (EU) 2025/2083 — de minimis 50t cumulative (esclusi H2/elettricità), vendita certificati dal 1/02/2027, dichiarazione annuale al 30 settembre, holding trimestrale al 50%; corretta la de minimis erroneamente descritta come "per tipo di prodotto"
+- **EU Taxonomy**: integrato il Reg. Delegato (EU) 2026/73 — soglia di materialità 10% (nuovo Step 0), template semplificati, deferral opzionale per le imprese finanziarie
+- **EUDR**: nuove date post-revisione dicembre 2025 (30/12/2026 tutti gli operatori, 30/06/2027 micro/piccole)
+- **PPWR**: applicazione fasata chiarita (12/08/2026 solo restrizioni sostanze e PFAS; etichettatura 2028; riciclabilità e recycled content 2030)
+- **SBTi Corporate Net-Zero Standard v2.0** (giugno 2026): doppio binario di validazione v1.3.1/v2.0 nel transition-plan-builder, obbligo v2.0 dal 1/02/2028
+- **Fix**: la EU 2024/825 era etichettata "Green Claims Directive" — è la Empowering Consumers Directive (EmpCo, dal 27/09/2026); la Green Claims Directive resta una proposta congelata
+- **Note aggiunte**: SFDR 2.0 in trilogo, revisione GHG Protocol in corso, value chain cap VSME per fornitori <1.000 dipendenti
+
+### v2.1.0 (aprile 2026)
+
+- Integrazione UNI/PdR 179:2025 nella biodiversity-screener (MSA, crediti di biodiversità, contesto italiano)
+
+### v2.0.0 (aprile 2026)
+
+- 10 nuove skill oltre alla core; gotchas, evals e LICENSE secondo le best practice agentskills.io
 
 ## Licenza
 

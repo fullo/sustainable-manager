@@ -160,6 +160,7 @@ Generate audit-ready documentation:
 
 ## Gotchas
 
+- **The simplified regime is adopted law, not a proposal**: the revised ESRS (2026) were adopted as a delegated act on 3 July 2026 and apply from FY2027 (voluntary early use FY2026). A DMA run today should be designed against the revised ESRS 1, unless the company is finishing an FY2025/FY2026 report under the original standards.
 - **Top-down does not mean skip the analysis**: Post-Omnibus allows top-down approach, but companies must still document why non-material topics were excluded. "We used top-down" is not sufficient documentation.
 - **Financial materiality is forward-looking**: A risk with zero current financial impact can still be financially material if it's likely to materialize within 5-10 years (e.g., carbon pricing on a non-ETS sector).
 - **Stakeholder engagement documentation is audited**: Even if stakeholders weren't directly consulted, the company must document how their perspectives were considered. Auditors check this.

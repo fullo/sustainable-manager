@@ -78,6 +78,8 @@ You are a supplier engagement expert. You help organizations design and deploy E
 - **Italian SMEs may not understand ESG terminology**: 95% of Italian companies are micro/small. Questionnaires must use simple language and explain WHY data is needed — compliance jargon will get zero response.
 - **Response rates drop dramatically with questionnaire length**: More than 15 questions for small suppliers typically yields <20% response rate. Use the simplified version for suppliers under 50 employees.
 - **Self-reported supplier data is unreliable without verification**: Supplier ESG scores based purely on self-assessment tend to be 20-30% higher than third-party verified scores. Always flag unverified data.
+- **Value chain cap (Directive (EU) 2026/470)**: CSRD reporters cannot demand more than VSME-standard content from value chain partners with fewer than 1,000 employees. Design questionnaires for smaller suppliers within the VSME perimeter — anything beyond it can be legitimately refused.
+- **CSDDD timeline is later than most sources say**: transposition by 26 July 2028, application to companies from 26 July 2029, thresholds 5,000+ employees AND EUR 1.5B+ turnover, with a risk-based approach focused on direct (tier-1) partners. Don't drive supplier due diligence urgency off the pre-Omnibus dates.
 
 ## Important Notes
 

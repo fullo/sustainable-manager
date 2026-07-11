@@ -1,6 +1,6 @@
 # CBAM Product Scope Reference
 
-Comprehensive reference for products covered by the Carbon Border Adjustment Mechanism (Regulation (EU) 2023/956), including CN codes, emission types, calculation methods, exemptions, and key deadlines.
+Comprehensive reference for products covered by the Carbon Border Adjustment Mechanism (Regulation (EU) 2023/956, as amended by the CBAM Omnibus Regulation (EU) 2025/2083), including CN codes, emission types, calculation methods, exemptions, and key deadlines. Last verified: July 2026.
 
 ---
 
@@ -299,12 +299,14 @@ When no other method is available:
 
 ## 3. De Minimis Threshold and Exemptions
 
-### 3.1 De Minimis (50 Tonnes)
+### 3.1 De Minimis (50 Tonnes) — as amended by Reg. (EU) 2025/2083
 
-- Applies per product type per calendar year per importer
-- If total imports of a specific CBAM product type are below 50 tonnes in a calendar year, CBAM obligations do not apply for that product type
+- Single mass-based threshold: applies to the **cumulative net mass of all CBAM goods** (cement, iron & steel, aluminium, fertilizers) imported by the importer in the calendar year — NOT per product type
+- **Hydrogen and electricity are excluded** from the de minimis exemption
+- If cumulative imports stay at or below 50 tonnes in a calendar year, CBAM obligations do not apply
 - The threshold is based on net mass of goods, not embedded emissions
-- Must be assessed aggregating all imports across the year (not per shipment)
+- Must be assessed aggregating all imports across the year (not per shipment); importers approaching the threshold should monitor volumes to avoid inadvertent non-compliance
+- Commission estimate: exempts ~90% of importers while ~99% of embedded emissions remain covered
 
 ### 3.2 Country Exemptions
 
@@ -340,20 +342,20 @@ Transitional phase characteristics:
 - No need for authorized declarant status (reporting by importer or customs representative)
 - Use of the CBAM Transitional Registry (European Commission IT platform)
 
-### 4.2 Definitive Phase (January 1, 2026 onwards)
+### 4.2 Definitive Phase (January 1, 2026 onwards) — as amended by Reg. (EU) 2025/2083
 
 | Deadline | Requirement |
 |----------|-------------|
-| Before January 1, 2026 | Apply for authorized CBAM declarant status |
-| Throughout the year | Purchase CBAM certificates (minimum: quarterly coverage of 80% of embedded emissions) |
-| By May 31 each year | Submit annual CBAM declaration for previous calendar year |
-| By September 30 each year | Surrender CBAM certificates for previous calendar year |
+| March 31, 2026 | Importers who applied for authorized CBAM declarant status by this date may continue importing while the application is pending |
+| February 1, 2027 | CBAM certificate sales start on the EU central platform; certificates for 2026 imports purchased retroactively at the quarterly average EU ETS price of the import period |
+| End of each quarter | Hold certificates covering at least **50%** of embedded emissions of goods imported since the start of the year (reduced from 80%) |
+| By September 30 each year | Submit annual CBAM declaration AND surrender certificates for previous calendar year (declaration deadline moved from May 31) |
 | After September 30 | Request repurchase of excess certificates (up to 1/3 of total purchased in preceding year) |
 
 First definitive-phase cycle:
-- 2026: First year of CBAM certificate obligations
-- May 31, 2027: First annual CBAM declaration (for 2026 imports)
-- September 30, 2027: First certificate surrender deadline
+- 2026: First year of CBAM financial obligations (obligation accrues; no certificate purchase yet)
+- February 1, 2027: Certificate sales open
+- September 30, 2027: First annual CBAM declaration and certificate surrender (for 2026 imports)
 
 ### 4.3 EU ETS Free Allocation Phase-Out Schedule
 
