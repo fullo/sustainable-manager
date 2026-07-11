@@ -97,6 +97,11 @@ The **Global Reporting Initiative** standards are the most widely used sustainab
 - GRI 305: Emissions (305-1 Scope 1, 305-2 Scope 2, 305-3 Scope 3)
 - GRI 306: Waste
 
+**New climate/energy topic standards (effective 1 January 2027):**
+- **GRI 102: Climate Change 2025** — supersedes climate content of GRI 305 for climate impacts (transition plans, adaptation, just transition); designed to be complementary to IFRS S2
+- **GRI 103: Energy 2025** — supersedes GRI 302
+- Reports covering FY2026 published in 2027 must apply them; early adoption possible
+
 **Social (400 series):**
 - GRI 401: Employment
 - GRI 403: Occupational Health and Safety
@@ -118,6 +123,8 @@ EFRAG and GRI have published an interoperability mapping. Many ESRS disclosures 
 - Focus on **financial materiality** (investor-oriented)
 - Metrics are quantitative and comparable within industries
 - IFRS S1 (General sustainability disclosures) and IFRS S2 (Climate) build on SASB + TCFD
+- **Adoption status (April 2026)**: 28 jurisdictions have adopted or introduced ISSB standards (voluntary or mandatory), with a further ~12 planning to; IFRS S2 received targeted amendments in December 2025
+- **Nature next**: an ISSB exposure draft on nature-related disclosures is targeted for CBD COP17 (October 2026), building on TNFD
 
 ### SASB's Five Dimensions
 1. Environment
