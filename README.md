@@ -111,6 +111,11 @@ sustainable-manager/
 
 ## Changelog
 
+### v2.3.1 (luglio 2026) — Note TNFD/ISSB/GRI
+
+- biodiversity-screener: adozione TNFD (733 organizzazioni, nov 2025), exposure draft ISSB sulla natura atteso alla COP17 (ott 2026), consultazione TNFD "State of Nature"
+- core (frameworks.md) e cross-framework-mapper: GRI 102 Climate Change / GRI 103 Energy in vigore dal 1/01/2027, adozione ISSB a 28 giurisdizioni (apr 2026), targeted amendments IFRS S2 (dic 2025)
+
 ### v2.3.0 (luglio 2026) — Sustainable IT compliance
 
 - **Nuova skill `sustainable-it-compliance`** (12ª): mappa gli obblighi EU sulla sostenibilità digitale — reporting data centre EED art. 12 (soglia 500 kW, scadenza 15 maggio, KPI PUE/WUE/ERF/REF), aspetti energetici AI Act post-Digital Omnibus (documentazione energia GPAI in vigore, high-risk rinviati a 2027/2028), standard di misura (SCI ISO/IEC 21031, SCI for AI ratificata dic 2025, Real Time Cloud, Tech Carbon Standard), Right to Repair (server inclusi), battery passport, ESPR/DPP, green claims IT sotto EmpCo. Include reference normativa e contesto italiano (CAM ICT, RAEE, CER). Nata dall'allineamento con il libro "Sustainable IT the Right Way"
