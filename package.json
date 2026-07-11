@@ -1,7 +1,7 @@
 {
   "name": "claude-plugin-sustainable-manager",
-  "version": "2.2.0",
-  "description": "Claude Code plugin — 11 sustainability skills: ESG analysis, EU Taxonomy, Scope 3, CBAM, biodiversity, circular economy, double materiality, transition planning, supplier engagement, cross-framework mapping",
+  "version": "2.3.0",
+  "description": "Claude Code plugin — 12 sustainability skills: ESG analysis, EU Taxonomy, Scope 3, CBAM, biodiversity, circular economy, double materiality, transition planning, supplier engagement, cross-framework mapping, sustainable IT compliance",
   "author": "fullo",
   "license": "MIT",
   "repository": {

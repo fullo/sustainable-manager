@@ -1,11 +1,11 @@
 # Sustainable Manager - Claude Code Plugin
 
-[![Skill Version](https://img.shields.io/badge/skill-v2.2-blue)](skills/sustainable-manager/SKILL.md)
-[![Skills](https://img.shields.io/badge/skills-11-green)](skills/)
+[![Skill Version](https://img.shields.io/badge/skill-v2.3-blue)](skills/sustainable-manager/SKILL.md)
+[![Skills](https://img.shields.io/badge/skills-12-green)](skills/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
 
-Plugin per Claude Code che aggiunge 11 skill di consulenza sulla sostenibilita con approccio science-based.
+Plugin per Claude Code che aggiunge 12 skill di consulenza sulla sostenibilita con approccio science-based.
 
 ## Skills
 
@@ -27,10 +27,11 @@ Plugin per Claude Code che aggiunge 11 skill di consulenza sulla sostenibilita c
 - **cross-framework-mapper** - Sovrapposizione data point tra framework (ESRS, GRI, ISSB, Taxonomy, CBAM, SFDR)
 - **transition-plan-builder** - Piano di transizione climatica (SBTi, ESRS E1, pathway settoriali)
 - **supplier-engagement** - Questionari ESG fornitori modulari (Scope 3, CSDDD, CBAM, Taxonomy)
+- **sustainable-it-compliance** - Compliance IT sostenibile (EED art. 12 data centre, AI Act/Digital Omnibus, SCI/ISO 21031, Right to Repair, DPP, green claims IT)
 
 ## Framework supportati
 
-ESRS/CSRD, GRI, SASB/ISSB, TCFD, TNFD, SDGs, SBTi, SBTN, EU Taxonomy, CBAM, CSDDD, PPWR, EUDR, SFDR, ISO 14040/14044, ISO 20400
+ESRS/CSRD, GRI, SASB/ISSB, TCFD, TNFD, SDGs, SBTi, SBTN, EU Taxonomy, CBAM, CSDDD, PPWR, EUDR, SFDR, ISO 14040/14044, ISO 20400, EED art. 12, AI Act, SCI (ISO/IEC 21031), Tech Carbon Standard
 
 ## Installazione
 
@@ -71,6 +72,7 @@ Le skill si attivano automaticamente in base al contesto. Puoi anche invocarle e
 /sustainable-manager:cross-framework-mapper    # Sovrapposizione dati tra framework
 /sustainable-manager:transition-plan-builder   # Piano transizione climatica
 /sustainable-manager:supplier-engagement       # Questionari ESG fornitori
+/sustainable-manager:sustainable-it-compliance # Compliance IT sostenibile (EED, AI Act, SCI)
 ```
 
 ## Struttura
@@ -94,7 +96,8 @@ sustainable-manager/
 │   ├── circular-economy/           # + 2 references + circularity_calculator.py
 │   ├── cross-framework-mapper/     # + 2 references
 │   ├── transition-plan-builder/    # + 2 references
-│   └── supplier-engagement/        # + 2 references + supplier_scorer.py
+│   ├── supplier-engagement/        # + 2 references + supplier_scorer.py
+│   └── sustainable-it-compliance/  # + 2 references
 ├── docs/superpowers/specs/         # Design documentation
 ├── package.json
 └── README.md
@@ -107,6 +110,10 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.3.0 (luglio 2026) — Sustainable IT compliance
+
+- **Nuova skill `sustainable-it-compliance`** (12ª): mappa gli obblighi EU sulla sostenibilità digitale — reporting data centre EED art. 12 (soglia 500 kW, scadenza 15 maggio, KPI PUE/WUE/ERF/REF), aspetti energetici AI Act post-Digital Omnibus (documentazione energia GPAI in vigore, high-risk rinviati a 2027/2028), standard di misura (SCI ISO/IEC 21031, SCI for AI ratificata dic 2025, Real Time Cloud, Tech Carbon Standard), Right to Repair (server inclusi), battery passport, ESPR/DPP, green claims IT sotto EmpCo. Include reference normativa e contesto italiano (CAM ICT, RAEE, CER). Nata dall'allineamento con il libro "Sustainable IT the Right Way"
 
 ### v2.2.0 (luglio 2026) — Allineamento normativo
 
