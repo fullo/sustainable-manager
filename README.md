@@ -56,6 +56,11 @@ claude plugin update sustainable-manager@fullo-plugins
 
 Il sistema plugin usa gli hash dei commit git come versione. Non c'e notifica automatica di nuove versioni: esegui il comando sopra periodicamente per restare aggiornato.
 
+## Documentazione
+
+- **[Guida all'uso](docs/guide/README.md)** — come funzionano le skill, quale usare per quale domanda, scenari realistici, errori comuni
+- **[Guida sustainable-it-compliance](docs/guide/sustainable-it-compliance.md)** — walkthrough completo con caso di studio end-to-end (data centre EED, SCI, cloud, device policy, KPI board)
+
 ## Uso
 
 Le skill si attivano automaticamente in base al contesto. Puoi anche invocarle esplicitamente:
@@ -98,7 +103,9 @@ sustainable-manager/
 │   ├── transition-plan-builder/    # + 2 references
 │   ├── supplier-engagement/        # + 2 references + supplier_scorer.py
 │   └── sustainable-it-compliance/  # + 5 references + sci_calculator.py + benchmarks
-├── docs/superpowers/specs/         # Design documentation
+├── docs/
+│   ├── guide/                      # Guide utente con casi di studio
+│   └── superpowers/specs/          # Design documentation
 ├── package.json
 └── README.md
 ```
@@ -110,6 +117,10 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.5.1 (luglio 2026) — Guide utente
+
+- **docs/guide/**: guida all'uso per principianti (quale skill per quale domanda, scenari realistici, errori comuni) e walkthrough completo di sustainable-it-compliance con caso di studio end-to-end (Bottega Digitale S.p.A.: report EED, calcolo SCI con output reali, questionario cloud, device policy, KPI board)
 
 ### v2.5.0 (luglio 2026) — Sustainable IT: cloud, device, governance
 
