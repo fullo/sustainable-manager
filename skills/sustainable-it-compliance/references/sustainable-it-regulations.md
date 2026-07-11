@@ -86,7 +86,22 @@ A Commission delegated act establishing a **data centre sustainability rating sc
 
 ---
 
-## 5. Green Claims on IT Products and Services
+## 5. European Accessibility Act (EAA)
+
+**Legal basis**: Directive (EU) 2019/882, applicable since **28 June 2025** (products placed on the market / services provided from that date; transitional window for pre-existing service contracts up to 2030).
+
+| Element | Detail |
+|---------|--------|
+| Products in scope | Consumer computing hardware and OS, self-service terminals (ATM, ticketing), smartphones, e-readers |
+| Services in scope | E-commerce, consumer banking, electronic communications, e-books, transport information services |
+| Technical reference | EN 301 549 (which incorporates WCAG 2.1 AA for web/apps) |
+| Exemptions | Microenterprises providing services (<10 employees and <EUR 2M turnover); disproportionate burden clause with documentation |
+| ESRS linkage | S4 (consumers and end-users) — accessibility is the social pillar of sustainable IT |
+| Italy | Recepimento D.Lgs. 82/2022; AgID supervisory role; integrates the pre-existing Legge Stanca (L. 4/2004) regime |
+
+---
+
+## 6. Green Claims on IT Products and Services
 
 | Instrument | Status | Effect |
 |-----------|--------|--------|
@@ -97,7 +112,7 @@ Typical IT claims to audit: "100% green energy" (check market-based evidence qua
 
 ---
 
-## 6. CSRD/ESRS Linkage for IT Data
+## 7. CSRD/ESRS Linkage for IT Data
 
 | IT data | ESRS datapoint |
 |---------|----------------|

@@ -1,6 +1,6 @@
 # Sustainable Manager - Claude Code Plugin
 
-[![Skill Version](https://img.shields.io/badge/skill-v2.3-blue)](skills/sustainable-manager/SKILL.md)
+[![Skill Version](https://img.shields.io/badge/skill-v2.4-blue)](skills/sustainable-manager/SKILL.md)
 [![Skills](https://img.shields.io/badge/skills-12-green)](skills/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
@@ -97,7 +97,7 @@ sustainable-manager/
 │   ├── cross-framework-mapper/     # + 2 references
 │   ├── transition-plan-builder/    # + 2 references
 │   ├── supplier-engagement/        # + 2 references + supplier_scorer.py
-│   └── sustainable-it-compliance/  # + 2 references
+│   └── sustainable-it-compliance/  # + 3 references + sci_calculator.py
 ├── docs/superpowers/specs/         # Design documentation
 ├── package.json
 └── README.md
@@ -110,6 +110,13 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.4.0 (luglio 2026) — Sustainable IT: maturity, SCI calculator, EED checklist, EAA
+
+- **Step 0 Maturity Snapshot** nella sustainable-it-compliance: posizionamento sui 4 pilastri SOFT (GSF) con scala a 5 livelli, che calibra profondità e tono della consulenza
+- **`sci_calculator.py`**: calcolo SCI (ISO/IEC 21031) da CLI o JSON, con formula embodied M = TE × TiR/EL × RS/TR e tabella intensità di rete illustrative
+- **`eed-reporting-checklist.md`**: checklist compilabile dei datapoint DR (EU) 2024/1364 per il report annuale data centre (scadenza 15 maggio), con gap comuni e workaround
+- **European Accessibility Act** (Dir. 2019/882, applicabile da giu 2025) aggiunto alla mappatura obblighi: il pilastro sociale dell'IT sostenibile (EN 301 549/WCAG, ESRS S4, D.Lgs. 82/2022)
 
 ### v2.3.1 (luglio 2026) — Note TNFD/ISSB/GRI
 
