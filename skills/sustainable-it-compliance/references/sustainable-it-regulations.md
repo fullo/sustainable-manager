@@ -37,6 +37,22 @@ A Commission delegated act establishing a **data centre sustainability rating sc
 - ISO/IEC 30134 series (KPIs: PUE, WUE, ERF, REF)
 - EU Code of Conduct for Data Centre Energy Efficiency (voluntary)
 
+### F-gas Regulation (EU) 2024/573 — cooling side
+
+Directly relevant to any data centre or server room with mechanical cooling:
+- Progressive **HFC quota phase-down** to full phase-out by 2050; refrigerant prices rising as quotas shrink
+- **GWP limits on new equipment** phased in from 2027 onward for AC/chiller categories — check before any cooling CapEx
+- **Mandatory leak checks and record keeping** for equipment above CO2e thresholds; certified technicians required
+- Practical advice: new cooling investments should target low-GWP refrigerants (R-32 transitional, natural refrigerants preferred) or the equipment risks early obsolescence and costly service
+
+### EU Taxonomy — activity 8.1 (Data processing, hosting and related activities)
+
+For companies assessing Taxonomy alignment (see eu-taxonomy-checker skill):
+- Listed in the Climate Delegated Act as contributing to **climate change mitigation**
+- Substantial contribution criteria reference the implementation of the **EU Code of Conduct for Data Centre Energy Efficiency** expected practices (verified by third party)
+- DNSH includes refrigerant GWP conditions and waste/WEEE handling
+- The same data collected for EED Art. 12 reporting largely serves the Taxonomy assessment
+
 ---
 
 ## 2. AI Act — Energy and Sustainability Aspects (as amended by the Digital Omnibus)
@@ -83,6 +99,15 @@ A Commission delegated act establishing a **data centre sustainability rating sc
 | **Battery Regulation (EU) 2023/1542** | **Battery passport from 18 February 2027** for batteries > 2 kWh | QR code, carbon footprint, recycled content — relevant for UPS and e-mobility fleets |
 | **ESPR (EU) 2024/1781 + Digital Product Passport** | DPP registry operational since **19 July 2026**; ICT product groups expected toward **2029** (working plan 2025-2030) | Plan procurement data flows now; no immediate ICT obligation |
 | **WEEE Directive 2012/19/EU** | In force | E-waste collection/recovery; national registers for producers |
+
+### WEEE / e-waste — operational flow
+
+For the IT estate (not just producers placing equipment on the market):
+1. **Inventory before disposal**: model, age, condition, data-bearing components
+2. **Reuse cascade first**: internal redeployment → employee purchase/donation programs → certified refurbisher (with data sanitization certificate, e.g. per IEEE 2883 / NIST 800-88)
+3. **Certified WEEE channel** for what remains: collection through the producer take-back scheme or authorized treatment facility; keep the disposal documentation (formulari) — it evidences ESRS E5 resource outflows
+4. **KPIs**: % devices reused vs recycled, e-waste diverted from landfill, average device lifetime
+5. **Producers/importers of equipment**: registration in the national WEEE register, financing of collection/treatment, marking obligations (crossed-out bin symbol)
 
 ---
 

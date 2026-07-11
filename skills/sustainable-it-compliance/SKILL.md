@@ -56,7 +56,10 @@ Evaluate the profile against each regulatory area and produce an applicability t
 | 5 | **ESPR / Digital Product Passport** | DPP registry operational since July 2026; ICT product obligations expected toward 2029 — flag for procurement planning, not immediate action |
 | 6 | **Green claims on IT (EmpCo, Dir. (EU) 2024/825)** | From 27 Sept 2026 generic environmental claims ("green cloud", "carbon-neutral app" based on offsets) are banned. Audit existing IT marketing claims |
 | 7 | **European Accessibility Act (Dir. (EU) 2019/882)** | Applicable since 28 June 2025: do they sell products/services in scope (e-commerce, banking services, e-books, consumer devices, self-service terminals)? Digital accessibility (EN 301 549 / WCAG) is the social pillar of sustainable IT and feeds ESRS S4 |
-| 8 | **CSRD/ESRS linkage** | If in CSRD scope: data centre energy, cloud emissions (Scope 3 cat. 1/8), device lifecycle (E5) feed the sustainability statement |
+| 8 | **F-gas Regulation (EU) 2024/573** | Do they own/operate mechanical cooling (DC, server rooms)? HFC phase-down, GWP limits on new equipment from 2027, mandatory leak checks — factor into cooling CapEx decisions |
+| 9 | **WEEE / e-waste** | Device disposal must go through reuse cascade + certified WEEE channels with documentation; producers/importers of equipment have register and take-back obligations |
+| 10 | **EU Taxonomy activity 8.1** | If in Taxonomy scope with data centre operations: "Data processing, hosting" is a listed mitigation activity — alignment criteria reference the EU Code of Conduct; reuse the EED dataset (see eu-taxonomy-checker skill) |
+| 11 | **CSRD/ESRS linkage** | If in CSRD scope: data centre energy, cloud emissions (Scope 3 cat. 1/8), device lifecycle (E5) feed the sustainability statement |
 
 For each area, determine: **Applies / Does not apply / Applies from [date]**, with the trigger condition.
 
@@ -67,7 +70,8 @@ Recommend the appropriate measurement standard for each digital asset class (vol
 - **Software / digital services**: SCI — Software Carbon Intensity (ISO/IEC 21031:2024), formula `SCI = ((E × I) + M) / R` — use `scripts/sci_calculator.py` for the calculation
 - **AI systems**: **SCI for AI** (Green Software Foundation, ratified December 2025) — Provider and Consumer scopes; pair with the AI Act energy documentation duty
 - **Web properties**: SWD model / CO2.js today; SCI for Web is still draft (first version expected Q4 2026) — don't present it as released
-- **Cloud workloads**: provider dashboards plus GSF **Real Time Cloud** (ratified 2025) for PUE/WUE/carbon-free-energy metadata per region
+- **Cloud workloads**: provider dashboards plus GSF **Real Time Cloud** (ratified 2025) for PUE/WUE/carbon-free-energy metadata per region — to collect data from providers use `references/cloud-provider-questionnaire.md`
+- **Devices (embodied)**: manufacturer PCF sheets first; when unavailable use the illustrative benchmarks in `assets/benchmarks/device-embodied-carbon.json` (flag as estimates)
 - **Hardware / embodied**: Tech Carbon Standard categories (Upstream/Direct/Indirect/Downstream; "Content" subcategory added Sept 2025), device LCA data from manufacturer PCF sheets
 - **Data centres**: PUE/WUE/ERF/REF as defined by EED reporting (EN 50600 / ISO/IEC 30134 series)
 
@@ -79,7 +83,30 @@ Produce:
 2. **Urgency flags**: [URGENT] for deadlines within 6 months, [ATTENTION] within 12 months
 3. **Data gap list**: which KPIs are not yet measured (e.g., no WUE metering, no cloud region-level data, no training energy logs)
 4. **Roadmap**: quick wins (existing telemetry, provider dashboards) → instrumentation (SCI pipeline, DC metering) → structural (procurement policy, DPP readiness)
-5. **Cross-skill handoffs**: scope3-mapper for cloud/device Scope 3 categories, eu-regulation-matrix for the company-wide picture, transition-plan-builder to fold IT levers into the climate plan
+5. **Device lifecycle policy** where the fleet is material: generate it from `references/device-lifecycle-policy.md` (procurement criteria, repair-first, refresh extension, reuse cascade, WEEE)
+6. **Cross-skill handoffs**: scope3-mapper for cloud/device Scope 3 categories, supplier-engagement for the cloud provider questionnaire (Module F), eu-regulation-matrix for the company-wide picture, transition-plan-builder to fold IT levers into the climate plan
+
+## Step 5 — Governance & Board KPIs
+
+For organizations at Defined maturity or above (Step 0), close with a governance layer:
+
+**Suggested board-level KPI set** (pick 5-7, all feed ESRS datapoints):
+
+| KPI | Feeds |
+|-----|-------|
+| Data centre energy (kWh) and PUE trend | E1, EED report |
+| IT share of corporate energy consumption | E1 |
+| Cloud emissions (tCO2e, market- and location-based) | E1 Scope 3 |
+| SCI of the top digital products/services | product improvement tracking |
+| Average device lifetime and % refurbished purchases | E5, device policy |
+| % e-waste through certified channels / reuse rate | E5 |
+| % workloads in low-carbon cloud regions | transition plan lever |
+
+**Governance rules:**
+- One accountable owner (CIO with CSO co-sign, or vice versa) — shared ownership means no ownership
+- **GreenOps rides FinOps**: put carbon next to cost in the same cloud review meeting — the FinOps practice usually exists already, the carbon column doesn't. Cost anomalies and carbon anomalies are usually the same anomaly.
+- Quarterly KPI review; annual policy and target refresh aligned with the CSRD cycle
+- IT levers (DC efficiency, cloud placement, device lifetime) belong in the corporate transition plan — hand off to transition-plan-builder
 
 ## Gotchas
 

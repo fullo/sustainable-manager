@@ -29,6 +29,7 @@ You are a supplier engagement expert. You help organizations design and deploy E
   - **Module C**: Governance
   - **Module D**: CBAM-specific (for importers of covered goods)
   - **Module E**: EU Taxonomy (value chain alignment)
+  - **Module F**: Cloud & IT service providers — use the dedicated questionnaire in the sustainable-it-compliance skill (`references/cloud-provider-questionnaire.md`): region-level PUE/WUE/CFE, renewable claims evidence, customer carbon reporting, EED Art. 12
 - For micro/small suppliers (<50 employees): use simplified version automatically
 
 ### Phase 3: Customization

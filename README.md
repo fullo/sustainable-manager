@@ -1,6 +1,6 @@
 # Sustainable Manager - Claude Code Plugin
 
-[![Skill Version](https://img.shields.io/badge/skill-v2.4-blue)](skills/sustainable-manager/SKILL.md)
+[![Skill Version](https://img.shields.io/badge/skill-v2.5-blue)](skills/sustainable-manager/SKILL.md)
 [![Skills](https://img.shields.io/badge/skills-12-green)](skills/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
@@ -97,7 +97,7 @@ sustainable-manager/
 │   ├── cross-framework-mapper/     # + 2 references
 │   ├── transition-plan-builder/    # + 2 references
 │   ├── supplier-engagement/        # + 2 references + supplier_scorer.py
-│   └── sustainable-it-compliance/  # + 3 references + sci_calculator.py
+│   └── sustainable-it-compliance/  # + 5 references + sci_calculator.py + benchmarks
 ├── docs/superpowers/specs/         # Design documentation
 ├── package.json
 └── README.md
@@ -110,6 +110,14 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.5.0 (luglio 2026) — Sustainable IT: cloud, device, governance
+
+- **Questionario cloud provider** (`cloud-provider-questionnaire.md`, EN+IT): PUE/WUE/CFE per regione, evidenze claim rinnovabili, carbon reporting cliente, EED art. 12, red flags — agganciato a supplier-engagement come Modulo F
+- **Device lifecycle policy generator** (`device-lifecycle-policy.md`): criteri d'acquisto (EPEAT/TCO/CAM), repair-first, estensione cicli di refresh, cascata di riuso, integrazione data security, KPI
+- **Benchmark embodied carbon device** (`assets/benchmarks/device-embodied-carbon.json`): valori illustrativi da PCF dei produttori per 9 categorie, con vita utile tipica
+- **Step 5 Governance & Board KPIs**: set di KPI per il board mappati su ESRS, ownership, GreenOps×FinOps
+- **F-gas 2024/573** (raffrescamento DC), **EU Taxonomy attività 8.1** (riuso del dataset EED) e **flusso operativo WEEE/RAEE** aggiunti a mappatura obblighi e reference
 
 ### v2.4.0 (luglio 2026) — Sustainable IT: maturity, SCI calculator, EED checklist, EAA
 

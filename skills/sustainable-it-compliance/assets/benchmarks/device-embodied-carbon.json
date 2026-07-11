@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "description": "Illustrative embodied carbon benchmarks for common IT devices (manufacturing + transport, excluding use phase). Midpoints and ranges compiled from publicly available manufacturer PCF sheets (Apple, Dell, HP, Lenovo). ALWAYS prefer the actual PCF of the specific model when available; flag these values as estimates.",
+    "unit": "kgCO2e embodied per device",
+    "last_verified": "2026-07",
+    "usage_note": "annualized_kgco2e = embodied_midpoint / typical_lifetime_years; extending lifetime is the main lever on this figure"
+  },
+  "devices": {
+    "laptop_business": {
+      "embodied_midpoint": 250,
+      "embodied_range": [180, 350],
+      "typical_lifetime_years": 4,
+      "notes": "13-15 inch business class; embodied is typically 70-85% of lifecycle footprint in EU grid conditions"
+    },
+    "laptop_workstation": {
+      "embodied_midpoint": 400,
+      "embodied_range": [300, 550],
+      "typical_lifetime_years": 4,
+      "notes": "high-performance/GPU laptops"
+    },
+    "desktop_no_monitor": {
+      "embodied_midpoint": 300,
+      "embodied_range": [200, 450],
+      "typical_lifetime_years": 5,
+      "notes": ""
+    },
+    "monitor_24_27": {
+      "embodied_midpoint": 350,
+      "embodied_range": [250, 500],
+      "typical_lifetime_years": 6,
+      "notes": "panel manufacturing dominates; larger/higher-res panels at the top of the range"
+    },
+    "smartphone": {
+      "embodied_midpoint": 60,
+      "embodied_range": [40, 90],
+      "typical_lifetime_years": 3,
+      "notes": "embodied is typically 80%+ of lifecycle footprint"
+    },
+    "tablet": {
+      "embodied_midpoint": 100,
+      "embodied_range": [70, 140],
+      "typical_lifetime_years": 4,
+      "notes": ""
+    },
+    "server_1u_2u": {
+      "embodied_midpoint": 3000,
+      "embodied_range": [1500, 5500],
+      "typical_lifetime_years": 5,
+      "notes": "strongly configuration-dependent (RAM/SSD count dominates); use vendor PCF whenever possible"
+    },
+    "network_switch": {
+      "embodied_midpoint": 300,
+      "embodied_range": [150, 500],
+      "typical_lifetime_years": 6,
+      "notes": ""
+    },
+    "docking_station": {
+      "embodied_midpoint": 50,
+      "embodied_range": [30, 80],
+      "typical_lifetime_years": 6,
+      "notes": ""
+    }
+  }
+}
