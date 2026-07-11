@@ -58,8 +58,10 @@ Il sistema plugin usa gli hash dei commit git come versione. Non c'e notifica au
 
 ## Documentazione
 
-- **[Guida all'uso](docs/guide/README.md)** — come funzionano le skill, quale usare per quale domanda, scenari realistici, errori comuni
-- **[Guida sustainable-it-compliance](docs/guide/sustainable-it-compliance.md)** — walkthrough completo con caso di studio end-to-end (data centre EED, SCI, cloud, device policy, KPI board)
+Sito e manuale (in inglese) su **[fullo.github.io/sustainable-manager](https://fullo.github.io/sustainable-manager/)**:
+
+- **[Landing](https://fullo.github.io/sustainable-manager/)** — le 12 skill, copertura normativa (stato luglio 2026), installazione e uso
+- **[Manual](https://fullo.github.io/sustainable-manager/manual.html)** — quale skill per quale domanda, scenari realistici, caso di studio end-to-end (data centre EED, SCI, cloud, device policy, KPI board), reference degli strumenti
 
 ## Uso
 
@@ -103,8 +105,10 @@ sustainable-manager/
 │   ├── transition-plan-builder/    # + 2 references
 │   ├── supplier-engagement/        # + 2 references + supplier_scorer.py
 │   └── sustainable-it-compliance/  # + 5 references + sci_calculator.py + benchmarks
-├── docs/
-│   ├── guide/                      # Guide utente con casi di studio
+├── docs/                           # Sito GitHub Pages (landing + manuale, EN)
+│   ├── index.html
+│   ├── manual.html
+│   ├── style.css
 │   └── superpowers/specs/          # Design documentation
 ├── package.json
 └── README.md
@@ -117,6 +121,10 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.5.2 (luglio 2026) — Sito GitHub Pages
+
+- **docs/** ora è un sito GitHub Pages in inglese ([fullo.github.io/sustainable-manager](https://fullo.github.io/sustainable-manager/)): landing con le 12 skill e la copertura normativa a luglio 2026, più il **manuale** (quale skill per quale domanda, scenari, caso di studio end-to-end, reference strumenti). Le guide markdown in italiano della v2.5.1 sono confluite (tradotte) nel manuale
 
 ### v2.5.1 (luglio 2026) — Guide utente
 

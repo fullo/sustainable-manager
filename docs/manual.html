@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual — Sustainable Manager for Claude Code</title>
+  <meta name="description" content="User manual for the Sustainable Manager Claude Code plugin: which skill answers which question, realistic scenarios, and a full end-to-end sustainable IT compliance case study.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f331;</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav -->
+  <a href="#getting-started" class="skip-link">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <div class="nav-links">
+        <a href="#getting-started">Getting Started</a>
+        <a href="#which-skill">Which Skill?</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#tools">Tools</a>
+        <a href="#mistakes">Common Mistakes</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="manual">
+    <h1>User Manual</h1>
+    <p class="lead">A practical guide for first-time users. You don't need to master Claude Code &mdash; you only need to know <strong>what to ask</strong> and <strong>which skill answers</strong>.</p>
+
+    <h2 id="getting-started">Getting started</h2>
+    <p>Skills activate in two ways:</p>
+    <ol>
+      <li><strong>Automatically</strong> &mdash; write your question in plain language (English or Italian) and Claude activates the right skill from context. Example: <em>"we import steel from Turkey, what do we need to do about CBAM?"</em> activates <code>cbam-compliance</code>.</li>
+      <li><strong>Explicitly</strong> &mdash; invoke the skill with its slash command, e.g. <code>/sustainable-manager:eu-regulation-matrix</code>.</li>
+    </ol>
+    <p>Every skill:</p>
+    <ul>
+      <li>answers in your language &mdash; write in Italian and you get the Italian regulatory layer (Consob, ADM, MASE, CONAI, CAM, RAEE);</li>
+      <li>asks <strong>one question at a time</strong> &mdash; no need to prepare all your data upfront, the skill guides you. "I don't know" is a valid answer;</li>
+      <li>produces outputs that are <strong>drafts to review</strong>, not certifications: the final judgment belongs to you, your legal counsel, and your auditor.</li>
+    </ul>
+
+    <h2 id="which-skill">Which skill answers which question</h2>
+    <table>
+      <thead>
+        <tr><th>Your question</th><th>Skill</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>"Which regulations apply to our company?"</td><td><code>eu-regulation-matrix</code></td></tr>
+        <tr><td>"We need a double materiality assessment"</td><td><code>double-materiality</code></td></tr>
+        <tr><td>"Are our activities aligned with the EU Taxonomy?"</td><td><code>eu-taxonomy-checker</code></td></tr>
+        <tr><td>"Where do we start with Scope 3?"</td><td><code>scope3-mapper</code></td></tr>
+        <tr><td>"We import cement/steel/aluminium from outside the EU"</td><td><code>cbam-compliance</code></td></tr>
+        <tr><td>"What does biodiversity have to do with us?"</td><td><code>biodiversity-screener</code></td></tr>
+        <tr><td>"How circular is our packaging/product?"</td><td><code>circular-economy</code></td></tr>
+        <tr><td>"Which data serves several frameworks at once?"</td><td><code>cross-framework-mapper</code></td></tr>
+        <tr><td>"We need a climate transition plan"</td><td><code>transition-plan-builder</code></td></tr>
+        <tr><td>"How do we collect ESG data from suppliers?"</td><td><code>supplier-engagement</code></td></tr>
+        <tr><td>"Data centres, cloud, devices, AI: what are our obligations?"</td><td><code>sustainable-it-compliance</code></td></tr>
+        <tr><td>"Analyze this sustainability report / let's build one"</td><td><code>sustainable-manager</code> (core)</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="scenarios">Realistic starting scenarios</h2>
+
+    <h3>"We're an SME and our bank asked for ESG data"</h3>
+    <p class="muted">You're not in CSRD scope (post-Omnibus it takes 1,000+ employees AND &euro;450M turnover), but bank and customer requests are real. Start with <code>eu-regulation-matrix</code> to confirm what does NOT apply to you, then use the core skill citing the VSME standard: data requests from CSRD-scope customers cannot exceed that perimeter.</p>
+
+    <h3>"Our German customer sent an 80-question questionnaire"</h3>
+    <p class="muted"><code>supplier-engagement</code> can read and prioritize questionnaires (and tells you what you can legitimately decline if you have fewer than 1,000 employees). If it touches emissions, <code>scope3-mapper</code> produces first numbers with the spend-based method.</p>
+
+    <h3>"We import 120 tonnes of steel profiles per year from Turkey"</h3>
+    <p class="muted"><code>cbam-compliance</code>: you're above the de minimis threshold (50t cumulative), so you need authorized declarant status; the skill calculates embedded emissions and estimates certificates (purchases open February 2027, declaration due 30 September).</p>
+
+    <h3>"The CFO wants to know what net-zero costs"</h3>
+    <p class="muted"><code>transition-plan-builder</code>, six phases from baseline to CapEx plan. Mind the SBTi version: validations from 1 February 2028 must use the Corporate Net-Zero Standard v2.0.</p>
+
+    <h3>"We have a data centre and 1,500 laptops; IT asks what to do"</h3>
+    <p class="muted"><code>sustainable-it-compliance</code> &mdash; see the <a href="#case-study">full case study below</a>.</p>
+
+    <h3>"Marketing wants to put 'carbon neutral platform' on the website"</h3>
+    <p class="muted">Stop them, then use <code>sustainable-it-compliance</code> (IT claims) or the core skill (greenwashing detection): from 27 September 2026 the Empowering Consumers Directive bans offset-based neutrality claims.</p>
+
+    <h2 id="case-study">Case study: sustainable IT compliance, end to end</h2>
+    <p>A full walkthrough of the richest skill in the plugin, following a realistic company through every step &mdash; what to write to Claude, what the skill answers, and how to use the tools.</p>
+
+    <h3>The company: Bottega Digitale S.p.A.</h3>
+    <table>
+      <thead><tr><th>Attribute</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Employees / revenue</td><td>1,200 / &euro;520M &rarr; <strong>in CSRD scope</strong> (post-Omnibus) from FY2027</td></tr>
+        <tr><td>Own data centre (Milan)</td><td>Installed IT power demand <strong>750 kW</strong> &rarr; in EED Art. 12 scope</td></tr>
+        <tr><td>Cloud</td><td>AWS (eu-south-1 Milan, eu-west-1 Ireland)</td></tr>
+        <tr><td>Devices</td><td>1,500 laptops (3-year refresh), 1,300 smartphones</td></tr>
+        <tr><td>Product</td><td>SaaS e-commerce platform + AI feature (third-party GPAI via API)</td></tr>
+        <tr><td>Marketing</td><td>Website says "carbon neutral platform"</td></tr>
+      </tbody>
+    </table>
+
+    <p>How to start &mdash; just write:</p>
+    <blockquote>We're an e-commerce company with 1,200 employees, a data centre in Milan and workloads on AWS. What sustainability obligations does our IT have?</blockquote>
+
+    <h3>Step 0 &mdash; Maturity snapshot</h3>
+    <p>The skill does NOT start from obligations: it positions you first, with 4-8 questions on the SOFT pillars (Strategy, Implementation, Operations, Compliance), such as:</p>
+    <blockquote>"Is sustainable IT in the IT strategy or ESG plan, with an owner and a budget?"</blockquote>
+    <p class="muted">For Bottega Digitale the honest answer is: we measure little, no owner &rarr; <strong>Developing</strong> level. Practical effect: the skill doesn't bury you under 11 obligations &mdash; it starts from the 2-3 that bite now and from one measurement to switch on first (usually the cloud provider's carbon dashboard).</p>
+
+    <h3>Steps 1-2 &mdash; Profile and obligation mapping</h3>
+    <p>The skill collects the profile (one question at a time) and produces the applicability matrix:</p>
+    <table>
+      <thead><tr><th>Area</th><th>Applies?</th><th>Why</th><th>Urgency</th></tr></thead>
+      <tbody>
+        <tr><td>EED Art. 12</td><td><strong>YES</strong></td><td>750 kW DC &ge; 500 kW threshold</td><td><span class="tag tag-warn">URGENT</span> annual report, due 15 May</td></tr>
+        <tr><td>EAA accessibility</td><td><strong>YES</strong></td><td>e-commerce = in-scope service, applicable since June 2025</td><td><span class="tag tag-warn">URGENT</span> already in force</td></tr>
+        <tr><td>Green claims (EmpCo)</td><td><strong>YES</strong></td><td>"carbon neutral" on the website</td><td><span class="tag">ATTENTION</span> banned from 27 Sep 2026</td></tr>
+        <tr><td>CSRD/ESRS</td><td>YES</td><td>1,200 employees + &euro;520M</td><td>FY2027, first report 2028</td></tr>
+        <tr><td>F-gas (DC cooling)</td><td>YES</td><td>owned chillers</td><td>at the next cooling CapEx</td></tr>
+        <tr><td>WEEE / devices</td><td>YES</td><td>2,800-device fleet</td><td>policy to write</td></tr>
+        <tr><td>AI Act (energy)</td><td>Partial</td><td>uses third-party GPAI &rarr; no provider duties, but consumption enters Scope 3</td><td>monitor</td></tr>
+        <tr><td>Right to Repair</td><td>Indirect</td><td>relevant in device and server procurement criteria</td><td>procurement</td></tr>
+        <tr><td>DPP/ESPR</td><td>Not yet</td><td>ICT obligations expected toward 2029</td><td>planning</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>The pattern to notice:</strong> the skill always distinguishes in-force / adopted-but-not-yet-applicable / upcoming &mdash; its core job, because sustainable IT is full of wrong dates in circulation.</div>
+
+    <h3>Step 3 &mdash; Measurement standards + tools</h3>
+
+    <h3>sci_calculator.py &mdash; measuring software</h3>
+    <p>Bottega Digitale's checkout service consumes 120 kWh/month, runs on hardware with an embodied share of 45,000 gCO2e/month, and processes 1M requests. Command:</p>
+    <pre><code>python3 skills/sustainable-it-compliance/scripts/sci_calculator.py \
+  --energy-kwh 120 --region italy --embodied 45000 \
+  --functional-units 1000000 --unit-name "API request"</code></pre>
+    <p>Real output:</p>
+    <pre><code>Boundary: cli boundary
+  E (energy):            120.00 kWh
+  I (grid intensity):    260 gCO2e/kWh
+  E x I (operational):   31,200 gCO2e
+  M (embodied):          45,000 gCO2e (provided)
+  R (functional units):  1,000,000 (API request)
+  SCI = ((E x I) + M)/R: 0.0762 gCO2e per API request
+  Operational share:     40.9%</code></pre>
+    <p>Three things to understand:</p>
+    <ol>
+      <li><strong>0.0762 gCO2e/request is a rate, not a total</strong>: it tells you whether next quarter's refactoring improves things. It must NOT be summed into the corporate inventory (that's what the GHG Protocol is for).</li>
+      <li>The <strong>40.9% operational share</strong> says embodied carbon outweighs energy here: optimizing code helps, extending hardware life helps more.</li>
+      <li>If you don't know the embodied share, pass the four ISO formula parameters (<code>embodied_detail</code>: TE, TiR, EL, RS) and the script computes it &mdash; see <code>--help</code>.</li>
+    </ol>
+
+    <h3>EED checklist &mdash; the data centre report</h3>
+    <p>Open <code>references/eed-reporting-checklist.md</code> and have facility + IT ops fill it in three passes: <em>already measured / derivable / gap</em>. For Bottega Digitale the typical picture emerges:</p>
+    <ul class="muted">
+      <li>Total energy: 5.2 GWh &#10003; (meter) &mdash; IT energy: 3.7 GWh &#10003; (UPS output) &rarr; <strong>PUE 1.41</strong></li>
+      <li>Water: <strong>not metered</strong> &rarr; gap; temporary workaround: allocated utility invoices, flagged as estimate</li>
+      <li>Reused heat: none &rarr; <strong>ERF = 0 &mdash; declare it, don't omit it</strong></li>
+      <li>Renewables: 35% with Guarantees of Origin &rarr; REF 0.35</li>
+    </ul>
+    <p class="muted">The report is due <strong>15 May</strong>: the checklist exists precisely to surface instrumentation gaps months in advance, not the week before.</p>
+
+    <h3>Cloud questionnaire &mdash; what AWS owes you</h3>
+    <p>For the cloud side, <code>references/cloud-provider-questionnaire.md</code> (15 questions, EN+IT). The three that matter most here:</p>
+    <ul>
+      <li>PUE/WUE <strong>per region</strong> (not a global average) &rarr; needed to choose between eu-south-1 and eu-west-1</li>
+      <li>Does the carbon dashboard cover <strong>embodied hardware</strong> or only allocated Scope 2?</li>
+      <li>Are renewable claims market-based with location-based disclosure too?</li>
+    </ul>
+    <p class="muted">If the provider answers with global averages and brochure claims: that's a red flag to put in writing in the supplier assessment (the supplier-engagement skill uses this as Module F).</p>
+
+    <h3>Step 4 &mdash; Gap analysis and device policy</h3>
+    <p>For the device fleet the key number comes from the benchmark (<code>assets/benchmarks/device-embodied-carbon.json</code>): a business laptop &asymp; 250 kgCO2e embodied. With 1,500 laptops:</p>
+    <ul>
+      <li>3-year refresh &rarr; 250/3 = <strong>83 kgCO2e/year per laptop</strong></li>
+      <li>5-year refresh &rarr; 250/5 = <strong>50 kgCO2e/year per laptop</strong></li>
+      <li>difference &times; 1,500 laptops &asymp; <strong>50 tCO2e/year saved</strong> just by extending the cycle</li>
+    </ul>
+    <p class="muted">That's the argument that convinces the CFO (the 5-year refresh also costs less). The full policy is generated from <code>references/device-lifecycle-policy.md</code>: ask Claude <em>"generate the device lifecycle policy for our fleet"</em> and answer the block questions (procurement, repair-first, reuse cascade, WEEE).</p>
+
+    <h3>Step 5 &mdash; Governance and board KPIs</h3>
+    <table>
+      <thead><tr><th>KPI</th><th>Baseline</th><th>Year-1 target</th></tr></thead>
+      <tbody>
+        <tr><td>Data centre PUE</td><td>1.41</td><td>&le; 1.35</td></tr>
+        <tr><td>Cloud emissions (market-based)</td><td>from dashboard</td><td>&minus;10%</td></tr>
+        <tr><td>Checkout SCI</td><td>0.0762 g/req</td><td>&minus;20%</td></tr>
+        <tr><td>Average laptop lifetime</td><td>3 years</td><td>4 years</td></tr>
+        <tr><td>Refurbished share of purchases</td><td>0%</td><td>20%</td></tr>
+        <tr><td>E-waste through certified channels</td><td>not tracked</td><td>100% documented</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>The skill's golden rule &mdash; GreenOps rides FinOps:</strong> the carbon column joins the FinOps review meeting that already exists; a cost anomaly and a carbon anomaly are usually the same anomaly.</div>
+
+    <h3>And the "carbon neutral" claim?</h3>
+    <p class="muted">It must be removed or reworded by 27 September 2026 (EmpCo). The skill suggests a substantiable rewording, e.g.: <em>"PUE 1.41 and improving, 35% certified renewable energy, checkout SCI published and decreasing"</em> &mdash; measured data, declared methodology, zero banned words.</p>
+
+    <h3>Recap: what to ask, in order</h3>
+    <ol>
+      <li><em>"What sustainability obligations does our IT have?"</em> &rarr; maturity + obligation matrix</li>
+      <li><em>"Let's prepare the data centre EED report"</em> &rarr; checklist and gaps</li>
+      <li><em>"Calculate the SCI of our service X"</em> &rarr; script with your numbers</li>
+      <li><em>"What should I ask our cloud provider?"</em> &rarr; Module F questionnaire</li>
+      <li><em>"Generate our device lifecycle policy"</em> &rarr; policy ready for review</li>
+      <li><em>"Which KPIs do I bring to the board?"</em> &rarr; governance set</li>
+    </ol>
+
+    <h2 id="tools">Tools reference</h2>
+    <table>
+      <thead><tr><th>Tool</th><th>Skill</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td><code>sci_calculator.py</code></td><td>sustainable-it-compliance</td><td>SCI per ISO/IEC 21031 from CLI or JSON, with the embodied formula M = TE &times; TiR/EL &times; RS/TR</td></tr>
+        <tr><td><code>scope3_calculator.py</code></td><td>scope3-mapper</td><td>Spend-based and activity-based Scope 3 estimates with per-category breakdown</td></tr>
+        <tr><td><code>circularity_calculator.py</code></td><td>circular-economy</td><td>Material Circularity Indicator (Ellen MacArthur methodology)</td></tr>
+        <tr><td><code>supplier_scorer.py</code></td><td>supplier-engagement</td><td>Weighted scoring of questionnaire responses with supplier tiering</td></tr>
+        <tr><td><code>chart_generator.py</code></td><td>core</td><td>Charts and infographics (materiality matrices, waterfalls, heatmaps)</td></tr>
+        <tr><td><code>eed-reporting-checklist.md</code></td><td>sustainable-it-compliance</td><td>Compilable checklist of DR (EU) 2024/1364 datapoints for the annual report</td></tr>
+        <tr><td><code>cloud-provider-questionnaire.md</code></td><td>sustainable-it-compliance</td><td>15 questions (EN+IT) with red flags &mdash; Module F of supplier-engagement</td></tr>
+        <tr><td><code>device-lifecycle-policy.md</code></td><td>sustainable-it-compliance</td><td>Policy generator: procurement, repair-first, reuse cascade, WEEE, KPIs</td></tr>
+        <tr><td><code>device-embodied-carbon.json</code></td><td>sustainable-it-compliance</td><td>Illustrative embodied carbon benchmarks for 9 device categories</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Claude runs the scripts for you &mdash; you never have to launch them manually, but you can: every script has <code>--help</code> and worked examples in its header.</p>
+
+    <h2 id="mistakes">The three most common beginner mistakes</h2>
+    <ol>
+      <li><strong>Asking for "everything at once"</strong> &mdash; skills work in steps. Answer one question at a time; you can always say "I don't know" and the skill will tell you how to estimate or where to find the data.</li>
+      <li><strong>Treating outputs as final</strong> &mdash; tables, matrices, and estimates are working drafts with explicit sources and assumptions. Verify them before they go into an official document.</li>
+      <li><strong>Using the wrong level of skill</strong> &mdash; this plugin works at the <em>management/compliance</em> level. For technical code audits (green coding patterns, runtime measurements, mobile) use the companion <code>sustainable-code</code> plugin (the <code>gc-*</code> skills): this plugin stops where the IDE begins.</li>
+    </ol>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <strong>Sustainable Manager</strong> &mdash; by <a href="https://darumahq.it" target="_blank" rel="noopener">Francesco Fullone &mdash; Daruma Consulting</a>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="https://github.com/fullo/sustainable-manager" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://darumahq.it" target="_blank" rel="noopener">darumahq.it</a>
+        </div>
+      </div>
+      <div class="footer-license">
+        Released under the MIT License. Outputs are working drafts, not certified assessments &mdash; always review with your legal counsel and auditor.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
