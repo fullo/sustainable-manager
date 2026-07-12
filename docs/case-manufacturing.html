@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case study: a manufacturer's report — Sustainable Manager</title>
+  <meta name="description" content="End-to-end case study: using the Sustainable Manager core skill to analyze a physical-goods manufacturer's sustainability report — framework check, source-anchored KPI extraction, completeness, greenwashing ratings, and adversarial verification.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f331;</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav -->
+  <a href="#top" class="skip-link">Skip to content</a>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <div class="nav-links">
+        <a href="manual.html">Manual</a>
+        <a href="manual.html#analyze-report">Analyze a Report</a>
+        <a href="manual.html#case-studies">Case Studies</a>
+        <a href="case-it.html">IT Case</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="manual" id="top">
+    <p class="muted"><a href="manual.html#case-studies">&larr; Manual</a> / Case studies / Manufacturing</p>
+    <h1>Analyzing a manufacturer's report</h1>
+    <p class="lead">A physical-goods producer lives in a different reality from a digital company &mdash; energy-intensive process emissions, raw materials that dominate Scope 3, an EPD on the product, packaging under the PPWR. Here we run the <a href="manual.html#analyze-report">six-step report analysis</a> on one.</p>
+
+    <h2>The company: Ceramica Valdenza S.p.A.</h2>
+    <table>
+      <thead><tr><th>Attribute</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Sector / product</td><td>Porcelain stoneware <strong>floor tiles</strong> (Sassuolo ceramic district)</td></tr>
+        <tr><td>Employees / revenue</td><td>620 / &euro;180M &rarr; <strong>below the post-Omnibus CSRD threshold</strong> (needs 1,000+ AND &euro;450M) &mdash; the report is <strong>voluntary</strong></td></tr>
+        <tr><td>Process</td><td>Gas-fired kilns (~1,200&deg;C) &rarr; natural gas dominates Scope 1; large ceramic plants also sit under <strong>EU ETS</strong></td></tr>
+        <tr><td>Product footprint</td><td>Publishes an <strong>EPD</strong> (EN 15804) &mdash; functional unit <strong>1 m&sup2;</strong> of tile</td></tr>
+        <tr><td>The report</td><td>3rd voluntary "Bilancio di sostenibilit&agrave;", declared <em>"ispirato agli ESRS"</em>, GRI-referenced content index</td></tr>
+        <tr><td>Marketing</td><td>A brochure line: <em>"the first carbon-neutral tile collection"</em></td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Illustrative company; the numbers below show the shape of a real analysis, not a specific firm.</p>
+
+    <h2>Step 1 &mdash; Framework reality check</h2>
+    <p>The skill reads the methodological note and the GRI content index and reports the honest status:</p>
+    <blockquote>Declared "inspired by ESRS" but reports <em>with reference to</em> GRI 2021, not <em>in accordance</em>. No double materiality assessment (ESRS 1). This is a voluntary report; VSME would be the proportionate standard for a company this size.</blockquote>
+    <div class="callout"><strong>Teaching point &mdash; what does NOT apply.</strong> Ceramics is energy-intensive but is <strong>not</strong> a CBAM good (CBAM covers cement, steel, aluminium, fertilizers, hydrogen, electricity). The skill states this so you don't waste a quarter preparing for the wrong regulation &mdash; the mirror image of the <a href="manual.html#scenarios">steel-import scenario</a> in the manual.</div>
+
+    <h2>Step 2 &mdash; KPI extraction, with page and quote</h2>
+    <p>Every figure carries its source, so you (and your auditor) can jump straight to the page:</p>
+    <table>
+      <thead><tr><th>KPI</th><th>Value</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Scope 1 (kilns + fleet)</td><td>28,400 tCO2e</td><td>p.42, "emissioni dirette Scope 1"</td></tr>
+        <tr><td>Scope 2 &mdash; <strong>location-based</strong></td><td>9,100 tCO2e</td><td>p.42 table</td></tr>
+        <tr><td>Scope 2 &mdash; <strong>market-based</strong></td><td>1,300 tCO2e</td><td>p.43 footnote (Guarantees of Origin)</td></tr>
+        <tr><td>Scope 3</td><td><em>partial</em> &mdash; logistics only</td><td>p.44; cat. 1 raw materials absent</td></tr>
+        <tr><td>Energy intensity</td><td>4.1 kWh / m&sup2;</td><td>p.39</td></tr>
+        <tr><td>Water recycled in process</td><td>? (claimed "100%")</td><td>p.55 &mdash; no withdrawal figure</td></tr>
+        <tr><td>Recycled content in body</td><td>18%</td><td>p.58, pre-consumer scrap</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>The Scope 2 gotcha, live:</strong> the report headlines "1,300 tCO2e" &mdash; the market-based figure. The location-based figure is <strong>7&times; higher</strong>. The skill surfaces both and flags any headline that quotes only the flattering one.</div>
+
+    <h2>Step 3 &mdash; Completeness against the framework</h2>
+    <table>
+      <thead><tr><th>Present</th><th>Missing (material for a tile maker)</th></tr></thead>
+      <tbody>
+        <tr><td>Scope 1 &amp; 2 (both methods), energy intensity, EPD, GRI index, waste diversion</td><td><strong>Scope 3 cat. 1</strong> (clays, glazes, frits &mdash; usually the largest slice); <strong>water withdrawal</strong> (only "% recycled" shown); SBTi <strong>baseline &amp; target</strong>; <strong>external assurance</strong>; <strong>double materiality</strong></td></tr>
+      </tbody>
+    </table>
+
+    <h2>Step 4 &mdash; Greenwashing ratings</h2>
+    <table>
+      <thead><tr><th>Claim</th><th>Rating</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>"The first carbon-neutral tile collection"</td><td><span class="tag tag-warn">Misleading</span></td><td>Neutrality rests on offsets, not on absolute reductions; no boundary or methodology for the collection. From 27 Sep 2026 the Empowering Consumers Directive bans offset-based neutrality claims outright.</td></tr>
+        <tr><td>"&minus;40% CO2 since 2018"</td><td><span class="tag">Partially substantiated</span></td><td>True for Scope 2 <em>market-based</em>; Scope 1 (the real mass) is roughly flat. Relative-vs-absolute.</td></tr>
+        <tr><td>"100% of process water recycled"</td><td><span class="tag tag-warn">Unsubstantiated</span></td><td>No withdrawal or discharge figure to anchor the percentage.</td></tr>
+        <tr><td>EPD-based "&minus;X kgCO2e per m&sup2; vs 2018"</td><td><span class="tag">Substantiated</span></td><td>Third-party-verified EPD, clear functional unit (1 m&sup2;), stated methodology.</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">The EPD line shows the flip side: when a claim rests on a verified LCA with a declared functional unit, the skill says so. Greenwashing detection is not blanket cynicism &mdash; it rewards substantiation.</p>
+
+    <h2>Step 5 &mdash; Adversarial verification</h2>
+    <p>Ask <em>"verify your own analysis against the PDF"</em> (or run <code>/adversarial-verify</code>). An independent pass re-opens each cited page and confirms value, unit, and location. In practice this catches <strong>page drift</strong> (right number, wrong page) and market/location mix-ups before they reach a board pack &mdash; exactly the slips that a single reading misses.</p>
+
+    <h2>Step 6 &mdash; What to do next</h2>
+    <ol>
+      <li><em>"Map our Scope 3 categories"</em> &rarr; <code>scope3-mapper</code> puts first numbers on the missing cat. 1 raw materials (spend-based to start).</li>
+      <li><em>"How circular is our packaging and product?"</em> &rarr; <code>circular-economy</code> computes the MCI and checks PPWR for the pallet/shrink-wrap.</li>
+      <li><em>"Rewrite the carbon-neutral claim so it survives the EmpCo Directive"</em> &rarr; core skill proposes substantiable wording built on the EPD, not offsets.</li>
+      <li><em>"Draft a transition plan for the kilns"</em> &rarr; <code>transition-plan-builder</code> (electrification / hydrogen / heat recovery as levers).</li>
+    </ol>
+    <div class="callout"><strong>The pattern, physical-goods edition:</strong> for a manufacturer the carbon truth lives in <em>process energy</em> (Scope 1) and <em>raw materials</em> (Scope 3 cat. 1) &mdash; not in the market-based Scope 2 number the brochure prefers. The skill keeps pulling the analysis back to where the mass actually is.</div>
+
+    <p style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap">
+      <a class="btn btn-secondary" href="manual.html#analyze-report">&larr; The six-step method</a>
+      <a class="btn btn-secondary" href="case-it.html">Next: IT compliance case &rarr;</a>
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <strong>Sustainable Manager</strong> &mdash; by <a href="https://darumahq.it" target="_blank" rel="noopener">Francesco Fullone &mdash; Daruma Consulting</a>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="manual.html">Manual</a>
+          <a href="https://github.com/fullo/sustainable-manager" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://darumahq.it" target="_blank" rel="noopener">darumahq.it</a>
+        </div>
+      </div>
+      <div class="footer-license">
+        Released under the MIT License. Outputs are working drafts, not certified assessments &mdash; always review with your legal counsel and auditor.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
