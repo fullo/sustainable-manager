@@ -1,6 +1,6 @@
 # Sustainable Manager - Claude Code Plugin
 
-[![Skill Version](https://img.shields.io/badge/skill-v2.5-blue)](skills/sustainable-manager/SKILL.md)
+[![Skill Version](https://img.shields.io/badge/skill-v2.6-blue)](skills/sustainable-manager/SKILL.md)
 [![Skills](https://img.shields.io/badge/skills-12-green)](skills/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/format-agentskills.io-purple)](https://agentskills.io/)
@@ -92,8 +92,8 @@ sustainable-manager/
 │   ├── sustainable-manager/        # Core skill + shared assets
 │   │   ├── SKILL.md
 │   │   ├── references/             # 6 reference files
-│   │   ├── scripts/                # chart_generator.py, esrs_assessment.py
-│   │   └── assets/                 # benchmarks + sector templates
+│   │   ├── scripts/                # chart_generator.py, esrs_assessment.py, analysis_dashboard.py
+│   │   └── assets/                 # benchmarks, sector templates, report-analysis template + schema
 │   ├── eu-regulation-matrix/       # + 1 reference
 │   ├── eu-taxonomy-checker/        # + 2 references
 │   ├── scope3-mapper/              # + 2 references + scope3_calculator.py
@@ -121,6 +121,12 @@ sustainable-manager/
 - matplotlib, numpy (per i grafici)
 
 ## Changelog
+
+### v2.6.0 (luglio 2026) — Analisi report: template, schema e dashboard comparativa
+
+- **Output standardizzato dell'analisi**: nuovo [`report-analysis-template.md`](skills/sustainable-manager/assets/templates/report-analysis-template.md) (formato di output per analizzare un report *esistente* — distinto dai `template-<settore>.md` che servono a *costruirlo* — con regola anti-fabbricazione: ogni KPI riporta pagina + citazione) e [`report-analysis-schema.json`](skills/sustainable-manager/assets/schemas/report-analysis-schema.json) (contratto machine-readable)
+- **Dashboard comparativa**: [`analysis_dashboard.py`](skills/sustainable-manager/scripts/analysis_dashboard.py) genera una dashboard HTML self-contained da uno o piu report (quadrante completezza x severita greenwashing, matrice criticita, card per report), theme-aware e accessibile (WCAG AA: fallback `<details>` agli hover, contrasti verificati, colore = severita coerente con l'asse, evidenze etichettate come "mancante/debolezza")
+- **Verifica adversariale consigliata**: `SKILL.md` e il template suggeriscono, per i report ad alto impatto, di confermare l'analisi con `/adversarial-verify` (plugin `adversarial-verify@fullo-plugins`), con nota esplicita sul consumo di token
 
 ### v2.5.4 (luglio 2026) — Comandi nei case study
 

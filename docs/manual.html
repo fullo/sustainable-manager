@@ -101,7 +101,7 @@
         <tr><td><strong>3. Check completeness</strong></td><td>Present vs missing disclosures against the applicable framework.</td><td>What's absent is often more telling than what's shown: Scope 3, baseline year, assurance, double materiality.</td></tr>
         <tr><td><strong>4. Detect greenwashing</strong></td><td>Separates claims from data and rates each claim on a four-level scale.</td><td>The <strong>reduce-before-offset</strong> hierarchy: absolute cuts first, compensation only for the residual.</td></tr>
         <tr><td><strong>5. Verify (adversarial)</strong></td><td>Optionally re-reads the PDF as ground truth to confirm every figure and page. Run <a href="https://fullo.github.io/claude-adversarial-skill/" target="_blank" rel="noopener"><code>/adversarial-verify</code></a> (a separate skill with its own site) or ask "verify your own analysis against the source".</td><td>Catches page drift and transcription slips &mdash; the cheapest quality gate before a number leaves the building.</td></tr>
-        <tr><td><strong>6. Summarize &amp; visualize</strong></td><td>Executive summary, strengths/weaknesses, and charts (materiality matrix, emissions breakdown, completeness meter).</td><td>Outputs are working drafts, not certifications.</td></tr>
+        <tr><td><strong>6. Summarize &amp; visualize</strong></td><td>Executive summary, strengths/weaknesses, and charts &mdash; delivered in a standardized <strong>report-analysis template</strong> (with a matching JSON schema for machine-readable output).</td><td>Outputs are working drafts, not certifications.</td></tr>
       </tbody>
     </table>
     <div class="callout"><strong>The two gotchas that catch everyone:</strong> (1) <strong>Scope 2 market-based vs location-based</strong> &mdash; if the report shows a single Scope 2 figure, the skill asks which method, because the gap can exceed 50% for a company buying green energy. (2) <strong>Relative vs absolute</strong> &mdash; a headline "&minus;37% emissions" is almost always an intensity or market-based figure while absolute location-based emissions grow; the skill checks both.</div>
@@ -115,6 +115,8 @@
         <tr><td><span class="tag tag-warn">Misleading</span></td><td>Data exists but is presented so as to create a false impression.</td></tr>
       </tbody>
     </table>
+    <div class="callout"><strong>Standardized output &amp; benchmarking.</strong> The analysis is delivered in a reusable <strong>report-analysis template</strong> and a matching <strong>JSON schema</strong>, so results are consistent and machine-readable. To compare several reports at once, the skill renders a self-contained comparative dashboard &mdash; completeness &times; greenwashing quadrant, red-flag matrix, per-report cards &mdash; with <code>analysis_dashboard.py</code>.</div>
+    <div class="callout"><strong>High-stakes report? Verify it adversarially.</strong> Before an analysis goes to a bank, an auditor, or a public disclosure, confirm it with independent agents that re-read the source as ground truth and try to refute each figure and claim (Chain-of-Verification): install the <code>adversarial-verify</code> plugin (<code>claude plugin install adversarial-verify@fullo-plugins</code>) and run <code>/adversarial-verify</code>. It is <strong>token-intensive</strong> &mdash; each report is re-read in full by several agents, so a multi-report benchmark can run into hundreds of thousands of tokens &mdash; so it is best on a plan with adequate capacity (e.g. Claude Max, or a raised usage limit).</div>
     <p>See the method applied end to end in the <a href="case-manufacturing.html">manufacturing case study</a>.</p>
 
     <h2 id="case-studies">Case studies</h2>
@@ -143,6 +145,8 @@
         <tr><td><code>circularity_calculator.py</code></td><td>circular-economy</td><td>Material Circularity Indicator (Ellen MacArthur methodology)</td></tr>
         <tr><td><code>supplier_scorer.py</code></td><td>supplier-engagement</td><td>Weighted scoring of questionnaire responses with supplier tiering</td></tr>
         <tr><td><code>chart_generator.py</code></td><td>core</td><td>Charts and infographics (materiality matrices, waterfalls, heatmaps)</td></tr>
+        <tr><td><code>analysis_dashboard.py</code></td><td>core</td><td>Comparative HTML dashboard from one or more report analyses (completeness &times; greenwashing quadrant, red-flag matrix, per-report cards)</td></tr>
+        <tr><td><code>report-analysis-template.md</code> &middot; <code>report-analysis-schema.json</code></td><td>core</td><td>Standard output format (and JSON schema) for analyzing an existing report &mdash; source-anchored KPIs, completeness, greenwashing ratings</td></tr>
         <tr><td><code>eed-reporting-checklist.md</code></td><td>sustainable-it-compliance</td><td>Compilable checklist of DR (EU) 2024/1364 datapoints for the annual report</td></tr>
         <tr><td><code>cloud-provider-questionnaire.md</code></td><td>sustainable-it-compliance</td><td>15 questions (EN+IT) with red flags &mdash; Module F of supplier-engagement</td></tr>
         <tr><td><code>device-lifecycle-policy.md</code></td><td>sustainable-it-compliance</td><td>Policy generator: procurement, repair-first, reuse cascade, WEEE, KPIs</td></tr>
