@@ -122,6 +122,10 @@ sustainable-manager/
 
 ## Changelog
 
+### v2.6.1 (luglio 2026) — Il libro sul sito
+
+- La landing promuove il libro **[Sustainable IT — Il metodo pratico per la sostenibilità digitale](https://sustainableit.it)** (sezione dedicata "The Book" con link in nav), il caso di studio IT dichiara di seguirne il metodo, e sustainableit.it è nel footer di tutte le pagine
+
 ### v2.6.0 (luglio 2026) — Analisi report: template, schema e dashboard comparativa
 
 - **Output standardizzato dell'analisi**: nuovo [`report-analysis-template.md`](skills/sustainable-manager/assets/templates/report-analysis-template.md) (formato di output per analizzare un report *esistente* — distinto dai `template-<settore>.md` che servono a *costruirlo* — con regola anti-fabbricazione: ogni KPI riporta pagina + citazione) e [`report-analysis-schema.json`](skills/sustainable-manager/assets/schemas/report-analysis-schema.json) (contratto machine-readable)
