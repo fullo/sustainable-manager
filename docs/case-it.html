@@ -46,15 +46,18 @@
       </tbody>
     </table>
 
-    <p>How to start &mdash; just write:</p>
-    <blockquote>We're an e-commerce company with 1,200 employees, a data centre in Milan and workloads on AWS. What sustainability obligations does our IT have?</blockquote>
+    <p>How to start &mdash; just write (or invoke the skill explicitly with <code>/sustainable-manager:sustainable-it-compliance</code>):</p>
+    <pre><code>we're an e-commerce company with 1,200 employees, a data centre in Milan
+and workloads on AWS. What sustainability obligations does our IT have?</code></pre>
 
     <h2>Step 0 &mdash; Maturity snapshot</h2>
+    <pre><code>run a sustainable IT maturity snapshot on the SOFT pillars first</code></pre>
     <p>The skill does NOT start from obligations: it positions you first, with 4-8 questions on the SOFT pillars (Strategy, Implementation, Operations, Compliance), such as:</p>
     <blockquote>"Is sustainable IT in the IT strategy or ESG plan, with an owner and a budget?"</blockquote>
     <p class="muted">For Bottega Digitale the honest answer is: we measure little, no owner &rarr; <strong>Developing</strong> level. Practical effect: the skill doesn't bury you under 11 obligations &mdash; it starts from the 2-3 that bite now and from one measurement to switch on first (usually the cloud provider's carbon dashboard).</p>
 
     <h2>Steps 1-2 &mdash; Profile and obligation mapping</h2>
+    <pre><code>map our sustainable IT obligations with urgency flags</code></pre>
     <p>The skill collects the profile (one question at a time) and produces the applicability matrix:</p>
     <table>
       <thead><tr><th scope="col">Area</th><th scope="col">Applies?</th><th scope="col">Why</th><th scope="col">Urgency</th></tr></thead>
@@ -75,7 +78,9 @@
     <h2>Step 3 &mdash; Measurement standards + tools</h2>
 
     <h3>sci_calculator.py &mdash; measuring software</h3>
-    <p>Bottega Digitale's checkout service consumes 120 kWh/month, runs on hardware with an embodied share of 45,000 gCO2e/month, and processes 1M requests. Command:</p>
+    <pre><code>calculate the SCI of our checkout service: 120 kWh/month, embodied share
+45,000 gCO2e/month, 1M requests/month</code></pre>
+    <p>Bottega Digitale's checkout service consumes 120 kWh/month, runs on hardware with an embodied share of 45,000 gCO2e/month, and processes 1M requests. Claude runs the bundled calculator for you; the equivalent CLI command is:</p>
     <pre><code>python3 skills/sustainable-it-compliance/scripts/sci_calculator.py \
   --energy-kwh 120 --region italy --embodied 45000 \
   --functional-units 1000000 --unit-name "API request"</code></pre>
@@ -96,6 +101,7 @@
     </ol>
 
     <h3>EED checklist &mdash; the data centre report</h3>
+    <pre><code>prepare the EED Art. 12 report for our data centre &mdash; run the data-gap assessment</code></pre>
     <p>Open <code>references/eed-reporting-checklist.md</code> and have facility + IT ops fill it in three passes: <em>already measured / derivable / gap</em>. For Bottega Digitale the typical picture emerges:</p>
     <ul class="muted">
       <li>Total energy: 5.2 GWh &#10003; (meter) &mdash; IT energy: 3.7 GWh &#10003; (UPS output) &rarr; <strong>PUE 1.41</strong></li>
@@ -106,6 +112,7 @@
     <p class="muted">The report is due <strong>15 May</strong>: the checklist exists precisely to surface instrumentation gaps months in advance, not the week before.</p>
 
     <h3>Cloud questionnaire &mdash; what AWS owes you</h3>
+    <pre><code>what should we ask our cloud provider? generate the questionnaire</code></pre>
     <p>For the cloud side, <code>references/cloud-provider-questionnaire.md</code> (15 questions, EN+IT). The three that matter most here:</p>
     <ul>
       <li>PUE/WUE <strong>per region</strong> (not a global average) &rarr; needed to choose between eu-south-1 and eu-west-1</li>
@@ -115,6 +122,8 @@
     <p class="muted">If the provider answers with global averages and brochure claims: that's a red flag to put in writing in the supplier assessment (the supplier-engagement skill uses this as Module F).</p>
 
     <h2>Step 4 &mdash; Gap analysis and device policy</h2>
+    <pre><code>generate the device lifecycle policy for our fleet of 1,500 laptops
+and 1,300 smartphones</code></pre>
     <p>For the device fleet the key number comes from the benchmark (<code>assets/benchmarks/device-embodied-carbon.json</code>): a business laptop &asymp; 250 kgCO2e embodied. With 1,500 laptops:</p>
     <ul>
       <li>3-year refresh &rarr; 250/3 = <strong>83 kgCO2e/year per laptop</strong></li>
@@ -124,6 +133,7 @@
     <p class="muted">That's the argument that convinces the CFO (the 5-year refresh also costs less). The full policy is generated from <code>references/device-lifecycle-policy.md</code>: ask Claude <em>"generate the device lifecycle policy for our fleet"</em> and answer the block questions (procurement, repair-first, reuse cascade, WEEE).</p>
 
     <h2>Step 5 &mdash; Governance and board KPIs</h2>
+    <pre><code>which IT sustainability KPIs should we bring to the board?</code></pre>
     <table>
       <thead><tr><th scope="col">KPI</th><th scope="col">Baseline</th><th scope="col">Year-1 target</th></tr></thead>
       <tbody>

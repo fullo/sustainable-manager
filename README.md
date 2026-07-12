@@ -122,6 +122,10 @@ sustainable-manager/
 
 ## Changelog
 
+### v2.5.4 (luglio 2026) — Comandi nei case study
+
+- I case study mostrano ora il **comando da digitare a ogni step** (blocchi `pre` con prompt naturali e slash command) e i riferimenti a skill esterne linkano il loro sito (es. [/adversarial-verify](https://fullo.github.io/claude-adversarial-skill/))
+
 ### v2.5.3 (luglio 2026) — Architettura dell'informazione e accessibilità
 
 - **Nuova IA del sito** (da PR): guida step-by-step "Analyzing a sustainability report" nel manuale (6 step con gotchas e rating greenwashing) e casi di studio scorporati in pagine dedicate — manufacturing ([case-manufacturing.html](docs/case-manufacturing.html), Ceramica Valdenza: EPD, Scope 2 market vs location, claim "carbon neutral") e IT ([case-it.html](docs/case-it.html), Bottega Digitale)

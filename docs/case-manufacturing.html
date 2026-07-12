@@ -47,12 +47,18 @@
     </table>
     <p class="muted">Illustrative company; the numbers below show the shape of a real analysis, not a specific firm.</p>
 
+    <p>How to start &mdash; attach the report PDF and write (or invoke the core skill explicitly with <code>/sustainable-manager:sustainable-manager</code>):</p>
+    <pre><code>analyze this sustainability report: framework, KPIs with sources,
+completeness, and greenwashing check</code></pre>
+
     <h2>Step 1 &mdash; Framework reality check</h2>
+    <pre><code>which framework does this report actually follow &mdash; in accordance, with reference, or just inspired?</code></pre>
     <p>The skill reads the methodological note and the GRI content index and reports the honest status:</p>
     <blockquote>Declared "inspired by ESRS" but reports <em>with reference to</em> GRI 2021, not <em>in accordance</em>. No double materiality assessment (ESRS 1). This is a voluntary report; VSME would be the proportionate standard for a company this size.</blockquote>
     <div class="callout"><strong>Teaching point &mdash; what does NOT apply.</strong> Ceramics is energy-intensive but is <strong>not</strong> a CBAM good (CBAM covers cement, steel, aluminium, fertilizers, hydrogen, electricity). The skill states this so you don't waste a quarter preparing for the wrong regulation &mdash; the mirror image of the <a href="manual.html#scenarios">steel-import scenario</a> in the manual.</div>
 
     <h2>Step 2 &mdash; KPI extraction, with page and quote</h2>
+    <pre><code>extract all quantitative KPIs with page number and verbatim quote</code></pre>
     <p>Every figure carries its source, so you (and your auditor) can jump straight to the page:</p>
     <table>
       <thead><tr><th scope="col">KPI</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
@@ -69,6 +75,7 @@
     <div class="callout"><strong>The Scope 2 gotcha, live:</strong> the report headlines "1,300 tCO2e" &mdash; the market-based figure. The location-based figure is <strong>7&times; higher</strong>. The skill surfaces both and flags any headline that quotes only the flattering one.</div>
 
     <h2>Step 3 &mdash; Completeness against the framework</h2>
+    <pre><code>what is missing from this report for a tile manufacturer reporting against GRI?</code></pre>
     <table>
       <thead><tr><th scope="col">Present</th><th scope="col">Missing (material for a tile maker)</th></tr></thead>
       <tbody>
@@ -77,6 +84,7 @@
     </table>
 
     <h2>Step 4 &mdash; Greenwashing ratings</h2>
+    <pre><code>separate the claims from the data and rate each claim</code></pre>
     <table>
       <thead><tr><th scope="col">Claim</th><th scope="col">Rating</th><th scope="col">Why</th></tr></thead>
       <tbody>
@@ -89,9 +97,11 @@
     <p class="muted">The EPD line shows the flip side: when a claim rests on a verified LCA with a declared functional unit, the skill says so. Greenwashing detection is not blanket cynicism &mdash; it rewards substantiation.</p>
 
     <h2>Step 5 &mdash; Adversarial verification</h2>
-    <p>Ask <em>"verify your own analysis against the PDF"</em> (or run <code>/adversarial-verify</code>). An independent pass re-opens each cited page and confirms value, unit, and location. In practice this catches <strong>page drift</strong> (right number, wrong page) and market/location mix-ups before they reach a board pack &mdash; exactly the slips that a single reading misses.</p>
+    <pre><code>verify your own analysis against the PDF: confirm every value, unit and page</code></pre>
+    <p>Ask <em>"verify your own analysis against the PDF"</em> (or run <a href="https://fullo.github.io/claude-adversarial-skill/" target="_blank" rel="noopener"><code>/adversarial-verify</code></a>, a separate skill &mdash; docs on its site). An independent pass re-opens each cited page and confirms value, unit, and location. In practice this catches <strong>page drift</strong> (right number, wrong page) and market/location mix-ups before they reach a board pack &mdash; exactly the slips that a single reading misses.</p>
 
     <h2>Step 6 &mdash; What to do next</h2>
+    <p>Each follow-up hands off to a dedicated skill &mdash; type the prompt, the right skill activates:</p>
     <ol>
       <li><em>"Map our Scope 3 categories"</em> &rarr; <code>scope3-mapper</code> puts first numbers on the missing cat. 1 raw materials (spend-based to start).</li>
       <li><em>"How circular is our packaging and product?"</em> &rarr; <code>circular-economy</code> computes the MCI and checks PPWR for the pallet/shrink-wrap.</li>
