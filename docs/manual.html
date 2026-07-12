@@ -14,10 +14,10 @@
 <body>
 
   <!-- Nav -->
-  <a href="#getting-started" class="skip-link">Skip to content</a>
-  <nav class="nav">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <a href="index.html" class="nav-brand"><span aria-hidden="true">&#x1f331;</span> Sustainable Manager</a>
       <div class="nav-links">
         <a href="#getting-started">Getting Started</a>
         <a href="#which-skill">Which Skill?</a>
@@ -31,7 +31,7 @@
     </div>
   </nav>
 
-  <main class="manual">
+  <main class="manual" id="main" tabindex="-1">
     <h1>User Manual</h1>
     <p class="lead">A practical guide for first-time users. You don't need to master Claude Code &mdash; you only need to know <strong>what to ask</strong> and <strong>which skill answers</strong>.</p>
 
@@ -51,7 +51,7 @@
     <h2 id="which-skill">Which skill answers which question</h2>
     <table>
       <thead>
-        <tr><th>Your question</th><th>Skill</th></tr>
+        <tr><th scope="col">Your question</th><th scope="col">Skill</th></tr>
       </thead>
       <tbody>
         <tr><td>"Which regulations apply to our company?"</td><td><code>eu-regulation-matrix</code></td></tr>
@@ -94,7 +94,7 @@
     <blockquote>Analyze this sustainability report: extract the KPIs, check completeness against the framework, and flag any greenwashing.</blockquote>
     <p>The skill works through six steps. You can ask for all of them or stop at any one.</p>
     <table>
-      <thead><tr><th>Step</th><th>What the skill does</th><th>What to watch</th></tr></thead>
+      <thead><tr><th scope="col">Step</th><th scope="col">What the skill does</th><th scope="col">What to watch</th></tr></thead>
       <tbody>
         <tr><td><strong>1. Identify the framework</strong></td><td>Determines whether the report is <em>in accordance</em> with a standard, <em>with reference to</em> it, merely <em>inspired by</em> it, or declares nothing. GRI, ESRS, VSME, TNFD, SASB.</td><td>"Inspired by ESRS" is <strong>not</strong> ESRS compliance &mdash; the skill says so explicitly.</td></tr>
         <tr><td><strong>2. Extract KPIs</strong></td><td>Pulls quantitative metrics &mdash; Scope 1/2/3, energy, water, waste, workforce &mdash; each with <strong>page number and a verbatim quote</strong>.</td><td>Anti-fabrication rule: if a number isn't in the document, the skill lists it as <em>missing</em>, it never estimates it into the table.</td></tr>
@@ -107,7 +107,7 @@
     <div class="callout"><strong>The two gotchas that catch everyone:</strong> (1) <strong>Scope 2 market-based vs location-based</strong> &mdash; if the report shows a single Scope 2 figure, the skill asks which method, because the gap can exceed 50% for a company buying green energy. (2) <strong>Relative vs absolute</strong> &mdash; a headline "&minus;37% emissions" is almost always an intensity or market-based figure while absolute location-based emissions grow; the skill checks both.</div>
     <p>The four greenwashing ratings the skill assigns:</p>
     <table>
-      <thead><tr><th>Rating</th><th>Meaning</th></tr></thead>
+      <thead><tr><th scope="col">Rating</th><th scope="col">Meaning</th></tr></thead>
       <tbody>
         <tr><td><span class="tag">Substantiated</span></td><td>Backed by a specific metric, stated methodology, ideally third-party assurance.</td></tr>
         <tr><td><span class="tag">Partially substantiated</span></td><td>Data exists but is incomplete, unverified, or lacks context.</td></tr>
@@ -136,7 +136,7 @@
 
     <h2 id="tools">Tools reference</h2>
     <table>
-      <thead><tr><th>Tool</th><th>Skill</th><th>What it does</th></tr></thead>
+      <thead><tr><th scope="col">Tool</th><th scope="col">Skill</th><th scope="col">What it does</th></tr></thead>
       <tbody>
         <tr><td><code>sci_calculator.py</code></td><td>sustainable-it-compliance</td><td>SCI per ISO/IEC 21031 from CLI or JSON, with the embodied formula M = TE &times; TiR/EL &times; RS/TR</td></tr>
         <tr><td><code>scope3_calculator.py</code></td><td>scope3-mapper</td><td>Spend-based and activity-based Scope 3 estimates with per-category breakdown</td></tr>

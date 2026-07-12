@@ -14,10 +14,10 @@
 <body>
 
   <!-- Nav -->
-  <a href="#top" class="skip-link">Skip to content</a>
-  <nav class="nav">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <a href="index.html" class="nav-brand"><span aria-hidden="true">&#x1f331;</span> Sustainable Manager</a>
       <div class="nav-links">
         <a href="manual.html">Manual</a>
         <a href="manual.html#analyze-report">Analyze a Report</a>
@@ -28,20 +28,20 @@
     </div>
   </nav>
 
-  <main class="manual" id="top">
-    <p class="muted"><a href="manual.html#case-studies">&larr; Manual</a> / Case studies / Manufacturing</p>
+  <main class="manual" id="main" tabindex="-1">
+    <nav aria-label="Breadcrumb"><p class="muted"><a href="manual.html#case-studies">&larr; Manual</a> / Case studies / Manufacturing</p></nav>
     <h1>Analyzing a manufacturer's report</h1>
     <p class="lead">A physical-goods producer lives in a different reality from a digital company &mdash; energy-intensive process emissions, raw materials that dominate Scope 3, an EPD on the product, packaging under the PPWR. Here we run the <a href="manual.html#analyze-report">six-step report analysis</a> on one.</p>
 
     <h2>The company: Ceramica Valdenza S.p.A.</h2>
     <table>
-      <thead><tr><th>Attribute</th><th>Value</th></tr></thead>
+      <thead><tr><th scope="col">Attribute</th><th scope="col">Value</th></tr></thead>
       <tbody>
         <tr><td>Sector / product</td><td>Porcelain stoneware <strong>floor tiles</strong> (Sassuolo ceramic district)</td></tr>
         <tr><td>Employees / revenue</td><td>620 / &euro;180M &rarr; <strong>below the post-Omnibus CSRD threshold</strong> (needs 1,000+ AND &euro;450M) &mdash; the report is <strong>voluntary</strong></td></tr>
         <tr><td>Process</td><td>Gas-fired kilns (~1,200&deg;C) &rarr; natural gas dominates Scope 1; large ceramic plants also sit under <strong>EU ETS</strong></td></tr>
         <tr><td>Product footprint</td><td>Publishes an <strong>EPD</strong> (EN 15804) &mdash; functional unit <strong>1 m&sup2;</strong> of tile</td></tr>
-        <tr><td>The report</td><td>3rd voluntary "Bilancio di sostenibilit&agrave;", declared <em>"ispirato agli ESRS"</em>, GRI-referenced content index</td></tr>
+        <tr><td>The report</td><td>3rd voluntary <span lang="it">"Bilancio di sostenibilit&agrave;"</span>, declared <em lang="it">"ispirato agli ESRS"</em>, GRI-referenced content index</td></tr>
         <tr><td>Marketing</td><td>A brochure line: <em>"the first carbon-neutral tile collection"</em></td></tr>
       </tbody>
     </table>
@@ -55,9 +55,9 @@
     <h2>Step 2 &mdash; KPI extraction, with page and quote</h2>
     <p>Every figure carries its source, so you (and your auditor) can jump straight to the page:</p>
     <table>
-      <thead><tr><th>KPI</th><th>Value</th><th>Source</th></tr></thead>
+      <thead><tr><th scope="col">KPI</th><th scope="col">Value</th><th scope="col">Source</th></tr></thead>
       <tbody>
-        <tr><td>Scope 1 (kilns + fleet)</td><td>28,400 tCO2e</td><td>p.42, "emissioni dirette Scope 1"</td></tr>
+        <tr><td>Scope 1 (kilns + fleet)</td><td>28,400 tCO2e</td><td>p.42, <span lang="it">"emissioni dirette Scope 1"</span></td></tr>
         <tr><td>Scope 2 &mdash; <strong>location-based</strong></td><td>9,100 tCO2e</td><td>p.42 table</td></tr>
         <tr><td>Scope 2 &mdash; <strong>market-based</strong></td><td>1,300 tCO2e</td><td>p.43 footnote (Guarantees of Origin)</td></tr>
         <tr><td>Scope 3</td><td><em>partial</em> &mdash; logistics only</td><td>p.44; cat. 1 raw materials absent</td></tr>
@@ -70,7 +70,7 @@
 
     <h2>Step 3 &mdash; Completeness against the framework</h2>
     <table>
-      <thead><tr><th>Present</th><th>Missing (material for a tile maker)</th></tr></thead>
+      <thead><tr><th scope="col">Present</th><th scope="col">Missing (material for a tile maker)</th></tr></thead>
       <tbody>
         <tr><td>Scope 1 &amp; 2 (both methods), energy intensity, EPD, GRI index, waste diversion</td><td><strong>Scope 3 cat. 1</strong> (clays, glazes, frits &mdash; usually the largest slice); <strong>water withdrawal</strong> (only "% recycled" shown); SBTi <strong>baseline &amp; target</strong>; <strong>external assurance</strong>; <strong>double materiality</strong></td></tr>
       </tbody>
@@ -78,7 +78,7 @@
 
     <h2>Step 4 &mdash; Greenwashing ratings</h2>
     <table>
-      <thead><tr><th>Claim</th><th>Rating</th><th>Why</th></tr></thead>
+      <thead><tr><th scope="col">Claim</th><th scope="col">Rating</th><th scope="col">Why</th></tr></thead>
       <tbody>
         <tr><td>"The first carbon-neutral tile collection"</td><td><span class="tag tag-warn">Misleading</span></td><td>Neutrality rests on offsets, not on absolute reductions; no boundary or methodology for the collection. From 27 Sep 2026 the Empowering Consumers Directive bans offset-based neutrality claims outright.</td></tr>
         <tr><td>"&minus;40% CO2 since 2018"</td><td><span class="tag">Partially substantiated</span></td><td>True for Scope 2 <em>market-based</em>; Scope 1 (the real mass) is roughly flat. Relative-vs-absolute.</td></tr>

@@ -14,10 +14,10 @@
 <body>
 
   <!-- Nav -->
-  <a href="#top" class="skip-link">Skip to content</a>
-  <nav class="nav">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <a href="index.html" class="nav-brand"><span aria-hidden="true">&#x1f331;</span> Sustainable Manager</a>
       <div class="nav-links">
         <a href="manual.html">Manual</a>
         <a href="manual.html#analyze-report">Analyze a Report</a>
@@ -28,14 +28,14 @@
     </div>
   </nav>
 
-  <main class="manual" id="top">
-    <p class="muted"><a href="manual.html#case-studies">&larr; Manual</a> / Case studies / Sustainable IT</p>
+  <main class="manual" id="main" tabindex="-1">
+    <nav aria-label="Breadcrumb"><p class="muted"><a href="manual.html#case-studies">&larr; Manual</a> / Case studies / Sustainable IT</p></nav>
     <h1>Sustainable IT compliance, end to end</h1>
     <p class="lead">A full walkthrough of the richest skill in the plugin, following a realistic digital company through every step &mdash; what to write to Claude, what the skill answers, and how to use the tools.</p>
 
     <h2>The company: Bottega Digitale S.p.A.</h2>
     <table>
-      <thead><tr><th>Attribute</th><th>Value</th></tr></thead>
+      <thead><tr><th scope="col">Attribute</th><th scope="col">Value</th></tr></thead>
       <tbody>
         <tr><td>Employees / revenue</td><td>1,200 / &euro;520M &rarr; <strong>in CSRD scope</strong> (post-Omnibus) from FY2027</td></tr>
         <tr><td>Own data centre (Milan)</td><td>Installed IT power demand <strong>750 kW</strong> &rarr; in EED Art. 12 scope</td></tr>
@@ -57,7 +57,7 @@
     <h2>Steps 1-2 &mdash; Profile and obligation mapping</h2>
     <p>The skill collects the profile (one question at a time) and produces the applicability matrix:</p>
     <table>
-      <thead><tr><th>Area</th><th>Applies?</th><th>Why</th><th>Urgency</th></tr></thead>
+      <thead><tr><th scope="col">Area</th><th scope="col">Applies?</th><th scope="col">Why</th><th scope="col">Urgency</th></tr></thead>
       <tbody>
         <tr><td>EED Art. 12</td><td><strong>YES</strong></td><td>750 kW DC &ge; 500 kW threshold</td><td><span class="tag tag-warn">URGENT</span> annual report, due 15 May</td></tr>
         <tr><td>EAA accessibility</td><td><strong>YES</strong></td><td>e-commerce = in-scope service, applicable since June 2025</td><td><span class="tag tag-warn">URGENT</span> already in force</td></tr>
@@ -125,7 +125,7 @@
 
     <h2>Step 5 &mdash; Governance and board KPIs</h2>
     <table>
-      <thead><tr><th>KPI</th><th>Baseline</th><th>Year-1 target</th></tr></thead>
+      <thead><tr><th scope="col">KPI</th><th scope="col">Baseline</th><th scope="col">Year-1 target</th></tr></thead>
       <tbody>
         <tr><td>Data centre PUE</td><td>1.41</td><td>&le; 1.35</td></tr>
         <tr><td>Cloud emissions (market-based)</td><td>from dashboard</td><td>&minus;10%</td></tr>

@@ -22,8 +22,30 @@
   --mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Visible focus for keyboard navigation (WCAG 2.4.7 / 2.4.11) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Screen-reader-only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 body {
@@ -256,7 +278,10 @@ a:hover {
   font-family: var(--mono);
 }
 
-.domain-card h3 {
+.domain-card h3,
+.domain-card h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -304,7 +329,6 @@ a:hover {
   color: var(--text-muted);
   font-style: normal;
   font-family: var(--mono);
-  opacity: 0.7;
 }
 
 /* === Pipeline (How It Works) === */
@@ -625,7 +649,6 @@ code {
 .footer-license {
   font-size: 0.82rem;
   color: var(--text-muted);
-  opacity: 0.7;
 }
 
 /* === Responsive === */

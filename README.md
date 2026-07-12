@@ -122,6 +122,11 @@ sustainable-manager/
 
 ## Changelog
 
+### v2.5.3 (luglio 2026) — Architettura dell'informazione e accessibilità
+
+- **Nuova IA del sito** (da PR): guida step-by-step "Analyzing a sustainability report" nel manuale (6 step con gotchas e rating greenwashing) e casi di studio scorporati in pagine dedicate — manufacturing ([case-manufacturing.html](docs/case-manufacturing.html), Ceramica Valdenza: EPD, Scope 2 market vs location, claim "carbon neutral") e IT ([case-it.html](docs/case-it.html), Bottega Digitale)
+- **Accessibilità WCAG 2.2 AA**: landmark `main` con skip-link funzionante su tutte le pagine, `nav` etichettate e breadcrumb, gerarchia heading corretta (card h4 sotto i tier), focus visibile da tastiera, `prefers-reduced-motion`, `scope="col"` sulle tabelle, `lang="it"` sulle parti in italiano, contrasti verificati programmaticamente (rimossi i due casi sotto 4.5:1)
+
 ### v2.5.2 (luglio 2026) — Sito GitHub Pages
 
 - **docs/** ora è un sito GitHub Pages in inglese ([fullo.github.io/sustainable-manager](https://fullo.github.io/sustainable-manager/)): landing con le 12 skill e la copertura normativa a luglio 2026, più il **manuale** (quale skill per quale domanda, scenari, caso di studio end-to-end, reference strumenti). Le guide markdown in italiano della v2.5.1 sono confluite (tradotte) nel manuale

@@ -14,10 +14,10 @@
 <body>
 
   <!-- Nav -->
-  <a href="#skills" class="skip-link">Skip to content</a>
-  <nav class="nav">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="#" class="nav-brand">&#x1f331; Sustainable Manager</a>
+      <a href="#" class="nav-brand"><span aria-hidden="true">&#x1f331;</span> Sustainable Manager</a>
       <div class="nav-links">
         <a href="#skills">Skills</a>
         <a href="#coverage">Coverage</a>
@@ -29,6 +29,8 @@
       </div>
     </div>
   </nav>
+
+  <main id="main" tabindex="-1">
 
   <!-- Hero -->
   <header class="hero">
@@ -54,7 +56,7 @@
       <div class="domains-grid">
         <div class="domain-card">
           <div class="domain-icon">&#9673;</div>
-          <h3>sustainable-manager</h3>
+          <h4>sustainable-manager</h4>
           <p>Analyze sustainability reports and LCA studies, detect greenwashing, build reports from scratch through a Socratic interview, generate charts.</p>
           <span class="domain-truth">ESRS &middot; GRI &middot; SASB/ISSB &middot; LCA &middot; SBTi</span>
         </div>
@@ -64,25 +66,25 @@
       <div class="domains-grid">
         <div class="domain-card">
           <div class="domain-icon">&#9638;</div>
-          <h3>eu-regulation-matrix</h3>
+          <h4>eu-regulation-matrix</h4>
           <p>Which EU sustainability regulations apply to your company, with thresholds, deadlines, and urgency flags.</p>
           <span class="domain-truth">CSRD &middot; CSDDD &middot; CBAM &middot; Taxonomy &middot; PPWR &middot; EUDR &middot; SFDR</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#10003;</div>
-          <h3>eu-taxonomy-checker</h3>
+          <h4>eu-taxonomy-checker</h4>
           <p>Eligibility and alignment in three steps: NACE mapping, technical screening criteria, DNSH + minimum safeguards. Includes the 10% materiality pre-screen.</p>
           <span class="domain-truth">Reg. 2020/852 &middot; DR 2026/73</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#8634;</div>
-          <h3>scope3-mapper</h3>
+          <h4>scope3-mapper</h4>
           <p>The 15 GHG Protocol categories, sector materiality, spend-based estimation with a Python calculator, supplier data templates.</p>
           <span class="domain-truth">GHG Protocol &middot; ESRS E1</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#8646;</div>
-          <h3>double-materiality</h3>
+          <h4>double-materiality</h4>
           <p>Guided DMA per revised ESRS: stakeholder mapping, IRO scoring, materiality matrix, audit-ready documentation.</p>
           <span class="domain-truth">ESRS 1 (2026) &middot; top-down approach</span>
         </div>
@@ -92,19 +94,19 @@
       <div class="domains-grid">
         <div class="domain-card">
           <div class="domain-icon">&#9635;</div>
-          <h3>cbam-compliance</h3>
+          <h4>cbam-compliance</h4>
           <p>Definitive-phase CBAM: product scope by CN code, embedded emissions, certificate cost estimates, deadline tracking.</p>
           <span class="domain-truth">Reg. 2023/956 &middot; Reg. 2025/2083</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#10047;</div>
-          <h3>biodiversity-screener</h3>
+          <h4>biodiversity-screener</h4>
           <p>Nature risk screening with the TNFD LEAP approach, MSA calculation and biodiversity credits per UNI/PdR 179:2025.</p>
           <span class="domain-truth">TNFD &middot; SBTN &middot; ESRS E4 &middot; UNI/PdR 179</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#8635;</div>
-          <h3>circular-economy</h3>
+          <h4>circular-economy</h4>
           <p>Material Circularity Indicator with a Python calculator, phased PPWR compliance, ESRS E5 gap analysis.</p>
           <span class="domain-truth">PPWR 2025/40 &middot; ESRS E5 &middot; Ellen MacArthur MCI</span>
         </div>
@@ -114,25 +116,25 @@
       <div class="domains-grid">
         <div class="domain-card">
           <div class="domain-icon">&#8801;</div>
-          <h3>cross-framework-mapper</h3>
+          <h4>cross-framework-mapper</h4>
           <p>Which data points satisfy several frameworks at once &mdash; collect once, report everywhere.</p>
           <span class="domain-truth">ESRS &middot; GRI &middot; ISSB &middot; Taxonomy &middot; CBAM &middot; SFDR</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#8599;</div>
-          <h3>transition-plan-builder</h3>
+          <h4>transition-plan-builder</h4>
           <p>Six phases from emissions baseline to CapEx plan, with dual-track SBTi guidance (v1.3.1 / v2.0).</p>
           <span class="domain-truth">SBTi CNZS v2.0 &middot; ESRS E1 &middot; TPT</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#9741;</div>
-          <h3>supplier-engagement</h3>
+          <h4>supplier-engagement</h4>
           <p>Modular ESG questionnaires (environment, social, governance, CBAM, Taxonomy, cloud), response scoring, supplier tiering.</p>
           <span class="domain-truth">CSDDD &middot; VSME value-chain cap</span>
         </div>
         <div class="domain-card">
           <div class="domain-icon">&#9881;</div>
-          <h3>sustainable-it-compliance</h3>
+          <h4>sustainable-it-compliance</h4>
           <p>The digital sustainability skill: EED data centre reporting, AI Act energy duties, SCI measurement, device lifecycle, green claims. Includes an SCI calculator, an EED checklist, and a cloud provider questionnaire.</p>
           <span class="domain-truth">EED art. 12 &middot; AI Act &middot; ISO/IEC 21031 &middot; EAA</span>
         </div>
@@ -299,6 +301,8 @@ claude plugin add /path/to/sustainable-manager</code></pre>
       <p class="compat-note" style="margin-top: 24px;">New to the plugin? Start with the <a href="manual.html">manual</a>: which skill answers which question, six realistic scenarios, a step-by-step guide to <a href="manual.html#analyze-report">analyzing a sustainability report</a>, and two end-to-end case studies &mdash; a <a href="case-manufacturing.html">physical-goods manufacturer</a> and a <a href="case-it.html">digital company</a>.</p>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
