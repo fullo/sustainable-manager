@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "report-analysis-schema",
+  "title": "Sustainability Report Analysis",
+  "description": "Structured, source-anchored output of the sustainable-manager Document Analysis / Greenwashing Detection workflow. One object per analyzed report. Feeds report-analysis-template.md (human-readable) and analysis_dashboard.py (comparative dashboard). Anti-fabrication rule: every value in key_metrics MUST carry a page and a verbatim quote; if a figure is not in the document it goes in completeness.missing, never in key_metrics.",
+  "type": "object",
+  "required": ["company", "reporting_period", "framework", "key_metrics", "completeness", "greenwashing", "strengths", "weaknesses"],
+  "additionalProperties": false,
+  "properties": {
+    "company": { "type": "string", "description": "Reporting entity legal name (and group/perimeter if relevant)." },
+    "sector": { "type": "string", "description": "Business sector / main activity." },
+    "reporting_period": { "type": "string", "description": "Period the report covers, e.g. 'FY2025 (1 Jan – 31 Dec 2025)'." },
+    "source_file": { "type": "string", "description": "Filename or reference of the analyzed document." },
+    "pages_read": { "type": "string", "description": "Which pages of the document were actually read, e.g. '1-72 all' or '1-40, 100-120'." },
+    "framework": {
+      "type": "object",
+      "required": ["status", "standards"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["in_accordance", "with_reference", "inspired_by", "none"],
+          "description": "Reporting status. 'inspired_by' (e.g. 'ispirato agli ESRS') is NOT compliance — keep the distinction explicit."
+        },
+        "standards": { "type": "array", "items": { "type": "string" }, "description": "Declared or recognizable standards: GRI, ESRS, VSME, TNFD, SASB, ISSB, UNI/PdR, etc." }
+      }
+    },
+    "assurance": {
+      "type": "object",
+      "required": ["present"],
+      "additionalProperties": false,
+      "properties": {
+        "present": { "type": "boolean" },
+        "type": { "type": "string", "description": "e.g. 'limited assurance, ISAE 3000, SGS Italia', or 'absent'." }
+      }
+    },
+    "executive_summary": { "type": "array", "items": { "type": "string" }, "maxItems": 6, "description": "3-6 bullet takeaways." },
+    "key_metrics": {
+      "type": "array",
+      "description": "Quantitative KPIs actually present in the document. For Scope 2 report BOTH market-based and location-based when available (as separate entries).",
+      "items": {
+        "type": "object",
+        "required": ["name", "value", "unit", "page", "quote"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "value": { "type": "string" },
+          "unit": { "type": "string" },
+          "page": { "type": "integer", "description": "Physical page in the file (not the printed page number)." },
+          "quote": { "type": "string", "description": "Short verbatim quote from the document supporting the value." }
+        }
+      }
+    },
+    "completeness": {
+      "type": "object",
+      "required": ["present", "missing"],
+      "additionalProperties": false,
+      "properties": {
+        "present": { "type": "array", "items": { "type": "string" }, "description": "Key disclosures present (e.g. 'Scope 1 & 2', 'GRI 305-1', 'double materiality')." },
+        "missing": { "type": "array", "items": { "type": "string" }, "description": "Expected but absent disclosures (e.g. 'Scope 3', 'external assurance', 'SBTi baseline')." }
+      }
+    },
+    "greenwashing": {
+      "type": "object",
+      "required": ["overall_risk", "flagged_claims"],
+      "additionalProperties": false,
+      "properties": {
+        "overall_risk": { "type": "string", "enum": ["low", "medium", "high"], "description": "Overall greenwashing risk." },
+        "flagged_claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "rating", "page", "reason"],
+            "additionalProperties": false,
+            "properties": {
+              "claim": { "type": "string" },
+              "rating": {
+                "type": "string",
+                "enum": ["substantiated", "partially_substantiated", "unsubstantiated", "misleading"],
+                "description": "Per references/greenwashing-detection.md claim rating methodology."
+              },
+              "page": { "type": "integer" },
+              "reason": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "strengths": { "type": "array", "items": { "type": "string" }, "maxItems": 6 },
+    "weaknesses": { "type": "array", "items": { "type": "string" }, "maxItems": 6 },
+    "recommendations": { "type": "array", "items": { "type": "string" }, "description": "Concrete, prioritized next steps." },
+    "verification": {
+      "type": "object",
+      "description": "OPTIONAL. Populated only when an independent verification pass was run (e.g. /adversarial-verify or a self-check re-reading the source). The core skill does not orchestrate multi-agent verification on its own.",
+      "required": ["performed"],
+      "additionalProperties": false,
+      "properties": {
+        "performed": { "type": "boolean" },
+        "confidence": { "type": "integer", "minimum": 0, "maximum": 100, "description": "Overall confidence in the verified analysis." },
+        "hallucinations": { "type": "integer", "description": "Count of cited values/pages that do not exist in the document." },
+        "summary": { "type": "string" },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "verdict", "evidence"],
+            "additionalProperties": false,
+            "properties": {
+              "claim": { "type": "string" },
+              "verdict": { "type": "string", "enum": ["confirmed", "imprecise", "refuted", "unverifiable"] },
+              "evidence": { "type": "string" },
+              "severity": { "type": "string", "enum": ["low", "medium", "critical"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

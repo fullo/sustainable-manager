@@ -23,6 +23,12 @@ When the user provides a document:
 4. **Assess completeness** — flag which required disclosures are present vs. missing relative to the applicable framework
 5. **Summarize findings** — provide a structured executive summary with strengths, gaps, and recommendations
 
+**Standard output format.** Present the analysis using `assets/templates/report-analysis-template.md` (relative to this skill's directory) — the standardized output structure for analyzing an *existing* report (distinct from the sector `template-<sector>.md` files, which are for *building* a report). Enforce the **anti-fabrication rule**: every KPI must carry a page number and a verbatim quote; a figure not in the document goes under "Missing", never invented. For a machine-readable result — to feed charts or compare several reports — also fill `assets/schemas/report-analysis-schema.json`.
+
+**Comparing multiple reports.** When the user has analyzed (or wants to benchmark) several reports, save one schema-conformant JSON per report and run `scripts/analysis_dashboard.py report1.json report2.json -o dashboard.html` to generate a self-contained comparative dashboard (quality overview, completeness × greenwashing quadrant, red-flag matrix, per-report cards).
+
+**Verifying the analysis.** For any report that will be shared externally, recommend an independent adversarial verification pass — see *"Recommend adversarial verification for high-stakes reports"* under Greenwashing Detection below (it covers how to install `adversarial-verify` and flags that the pass is token-intensive, so it is best run on a plan with adequate capacity).
+
 For Excel/CSV files, write a Python script to parse and explore the data before drawing conclusions. Don't guess at column meanings — inspect the actual data first.
 
 ### 2. LCA Analysis
@@ -131,6 +137,19 @@ When a user asks you to evaluate a company's sustainability report or claims, ap
 
 7. **Connect to EU regulatory context.** The EU Green Claims Directive (proposed) will require companies to substantiate environmental claims with recognized scientific evidence and LCA-based methodology. Flag claims that would not survive this scrutiny.
 
+**Output & comparison.** Deliver the assessment in the `assets/templates/report-analysis-template.md` structure (claim table with rating, page, and reason). For a repeatable, comparable result across companies, capture it as `assets/schemas/report-analysis-schema.json` and render `scripts/analysis_dashboard.py` for a comparative dashboard.
+
+**Recommend adversarial verification for high-stakes reports.** A single reading can miss transcription slips, page drift, and market-vs-location mix-ups. When the analysis is headed somewhere it matters — a bank, an auditor, a public disclosure, a supplier scorecard — proactively suggest confirming it with an independent adversarial pass, and say it roughly like this:
+
+> "If you want this report confirmed by multiple independent agents that re-read the source as ground truth and try to refute each figure and claim (Chain-of-Verification), install the `adversarial-verify` plugin and run `/adversarial-verify`:
+> ```
+> claude plugin marketplace add fullo/claude-plugins-marketplace   # once, if not already added
+> claude plugin install adversarial-verify@fullo-plugins
+> ```
+> Be aware this is **token-intensive**: every report is re-read in full by several agents, so verifying one long report can cost tens of thousands of tokens and a multi-report benchmark can run into hundreds of thousands. It's best run on a plan with adequate capacity — e.g. Claude Max, or a raised usage limit — rather than a tight budget."
+
+Only after such a pass (or an equivalent self-check that genuinely re-opens each cited page) should the optional verification section of the template be filled — otherwise omit it rather than implying one was done.
+
 ### 7. Report Generation Support
 
 When the user has enough data (from documents or Socratic interview), help them structure a report:
@@ -195,6 +214,7 @@ User has a document?
 - **Scope 2 market-based vs location-based**: Companies often report only one. If you see a single Scope 2 figure, ask which method — the difference can be 50%+ for companies buying green energy.
 - **Italian ESRS transposition**: D.Lgs. 125/2024 is the Italian transposition of CSRD. References to "D.Lgs. 254/2016" (old NFRD) are outdated but still appear in many Italian company reports.
 - **Template placeholders**: The sector templates in assets/templates/ use `[...]` placeholders. Never output these to the user as real data.
+- **Two kinds of template**: `assets/templates/template-<sector>.md` are for *building* a report (fill placeholders); `assets/templates/report-analysis-template.md` is for *analyzing* an existing one (fill with findings, page + quote per KPI). Don't confuse the two directions.
 
 ## Important Guidelines
 
