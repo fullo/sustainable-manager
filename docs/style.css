@@ -477,6 +477,39 @@ code {
   font-size: 0.85rem;
 }
 
+/* === Book box === */
+.book-box {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.book-cover-link {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.book-cover {
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 640px) {
+  .book-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-box .hero-actions {
+    justify-content: center !important;
+  }
+}
+
 /* === Usage === */
 .usage-examples {
   display: grid;

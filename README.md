@@ -122,6 +122,10 @@ sustainable-manager/
 
 ## Changelog
 
+### v2.6.2 (luglio 2026) — Copertina del libro
+
+- Il box "The Book" sulla landing mostra la copertina del libro (ospitata localmente in `docs/assets/`, layout responsive con alt text)
+
 ### v2.6.1 (luglio 2026) — Il libro sul sito
 
 - La landing promuove il libro **[Sustainable IT — Il metodo pratico per la sostenibilità digitale](https://sustainableit.it)** (sezione dedicata "The Book" con link in nav), il caso di studio IT dichiara di seguirne il metodo, e sustainableit.it è nel footer di tutte le pagine
