@@ -126,6 +126,32 @@ I sei report reali usati per i test di regressione (v2.7.2, v2.7.3) sono stati u
 
 ## Changelog
 
+### v2.7.5 (ottobre 2026) — Chiarimenti da regressione 2.7.4
+
+Ambiguità e lacune segnalate dalle sei analisi cieche fatte con la 2.7.4, più le voci P2/P3 ancora aperte della valutazione 2.7.3. La modifica normativa (EUDR) è verificata sul testo in Cellar: Reg. (UE) 2023/1115, Allegato I; Reg. (UE) 2025/2650, art. 1(26); Reg. delegato (UE) 2026/2102, Allegato, punto (ww); Nomenclatura combinata 2026 (Reg. di esecuzione (UE) 2025/1926). Il profilo rifiuti per la doppia materialità è verificato su Reg. delegato (UE) 2023/2772 (ESRS 1 AR 16), Dir. 2018/851, Dir. 2018/850 e Dir. 2010/75/UE.
+
+- **Rubrica greenwashing, regole deterministiche** — greenwashing-detection, template:
+  - **R3**: i crediti calcolati e presentati come esito o attivo del progetto contano come "rivendicati", anche se non emessi; fa eccezione la stima esplicitamente illustrativa. L'assenza di un verificatore citato vale come assenza di verifica. I crediti acquistati da terzi ricadono in R2/M2.
+  - **"Entro 2 pagine"**: soglia inclusiva, contata su pagine fisiche; per le doppie pagine si contano i fogli.
+  - **Tema core**: l'attività principale dell'entità è sempre core, anche fuori dai primi tre temi della sua materialità.
+  - **Documenti brevi (≤5 pagine)**: ogni claim nel sommario o nel riquadro KPI è headline; se mancano, lo sono i claim di pagina 1.
+  - **M4**: copre anche le incongruenze qualitative (date, baseline, identità del sito, piano al futuro smentito da prove datate successive).
+  - **Tabella di decisione Misleading / Partially substantiated** per cifre corrette con perimetro o base non dichiarati o parziali.
+  - **Claim contraddetti dal documento stesso**: regola dedicata.
+  - **Obiettivi futuri di neutralità**: sono basati su offset solo se il documento lo dice. Rientra nella definizione anche la compensazione fatta dal fornitore.
+- **Coerenza interna** — SKILL.md, template, greenwashing-detection: tolleranza di arrotondamento definita (0,5 unità dell'ultima cifra stampata della cifra meno precisa; per i totali n × 0,5); livelli di gravità high/medium/low con criteri; si confrontano solo cifre con lo stesso perimetro, periodo e base (Italia/Gruppo = nota di perimetro).
+- **Screenshot senza anno**: l'anno si deduce confrontando giorno della settimana e data con il calendario, si scrive come *dedotto* e mai dentro una citazione — SKILL.md, template.
+- **Schema 1.3** (retrocompatibile: i 18 JSON delle regressioni 2.7.2-2.7.4 restano validi): `perimeter_assumptions`, `image_note` su KPI e claim, `printed_page` sui claim, `severity` e `printed_pages` sui flag; `strengths`, `weaknesses` e `recommendations` salgono a un massimo di 8. Il template lo dichiara: "fino a 8, anche meno".
+- **`quote_check.py`**: le citazioni da immagine non sono verificate in automatico. Lo script stampa la loro `image_note`; con `--strict`, una citazione `image` senza `image_note` fallisce (`NO NOTE`, uscita 1). Una citazione `image` con nota su una pagina senza immagini raster (grafico vettoriale) è accettata con l'avviso `NO RASTER`. SKILL.md e manual.html lo spiegano.
+- **EUDR, carta, stampati e prodotti fotografici**: tabella dei codici NC.
+  - In ambito: ex 47 (pasta di legno) ed ex 48 (carta e cartone, per esempio 4802 20 00, 4810, 4820 50 00).
+  - Esclusi da ex 48: corrispondenza e materiali di marketing o informativi che accompagnano un altro prodotto o sono forniti gratis.
+  - Fuori ambito: cap. 49 (cancellato) e 3703 (carta fotografica, mai inclusa).
+  - In ambito: ex 4414 (cornici di legno).
+  - La classificazione di un singolo prodotto (per esempio un fotolibro) resta una questione doganale. — `regulation-thresholds.md` §6
+- **Doppia materialità**: nuovo profilo generico "gestione rifiuti e servizi ambientali" (E5, E2, E1, S1 salute e sicurezza, S3, G1), con gli obiettivi UE di riciclo (55/60/65%) e di discarica (≤10% al 2035) — `dma-sector-iro.md`
+- **Altro**: citazioni da righe di tabella con etichetta su più righe (ultima riga dell'etichetta o puntini interni); unità "date"/"text" per i KPI non numerici; riga nel contesto normativo per gli standard sostituiti dopo la pubblicazione; struttura richiesta dall'utente rispettata mantenendo colonne, codice di regola e verifica; intestazioni solo nella lingua dell'utente.
+
 ### v2.7.4 (ottobre 2026) — Fix P1 da regressione 2.7.3
 
 Correzioni di priorità P1 emerse dalla regressione 2.7.3. La modifica normativa è verificata sul testo in Cellar (Reg. (UE) 2023/1115, Reg. (UE) 2025/2650, Dir. 2013/34/UE, Dir. delegata (UE) 2023/2775); la composizione del Tavolo UNI/PdR 179 sulla scheda UNI.

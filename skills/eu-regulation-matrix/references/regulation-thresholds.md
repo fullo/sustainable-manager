@@ -305,7 +305,7 @@ Companies must disclose these as KPIs in their management report, broken down by
 | 3 | Cocoa | Chocolate, cocoa butter, cocoa powder |
 | 4 | Coffee | Roasted coffee, instant coffee, coffee extracts |
 | 5 | Rubber | Natural rubber, tyres, latex products |
-| 6 | Wood | Timber, wood pulp (ex 47) and paper/paperboard (ex 48), furniture, charcoal — since Delegated Reg. (EU) 2026/2102 (in force 18/09/2026) the ch. 47-48 entries exclude used/second-hand, recovered (waste and scrap) and waste products, and packing used to support/protect/carry another product (products of bamboo, rattan and other woody materials are outside the "Wood" scope) — printed products (ex 49) REMOVED from Annex I by Reg. (EU) 2025/2650, art. 1(26) |
+| 6 | Wood | Timber, wood pulp (ex 47) and paper/paperboard (ex 48), furniture, charcoal — since Delegated Reg. (EU) 2026/2102 (in force 18/09/2026) the ch. 47-48 entries exclude used/second-hand, recovered (waste and scrap) and waste products, packing used to support/protect/carry another product, and (ex 48) correspondence and marketing/information materials accompanying another product or supplied free of charge — see the CN check below (products of bamboo, rattan and other woody materials are outside the "Wood" scope) — printed products (ex 49) REMOVED from Annex I by Reg. (EU) 2025/2650, art. 1(26) |
 | 7 | Cattle | Beef, tallow, gelatin (hides, skins and leather removed by Delegated Reg. (EU) 2026/2102) |
 
 ### Due Diligence Requirements
@@ -353,6 +353,18 @@ Companies must disclose these as KPIs in their management report, broken down by
 | Clarified exclusions | Samples for testing/analysis; waste; used/second-hand products; packing materials/containers ONLY when used to support, protect or carry another product placed on the market (packing materials placed on the market or exported on their own remain in scope; recital 16); products used to manufacture medicinal products |
 
 Earlier change by Reg. (EU) 2025/2650 (art. 1(26)): the Annex I line "ex 49 Printed books, newspapers, pictures and other products of the printing industry…" is **deleted** — printed products are no longer in scope.
+
+**Paper, printed and photographic products — CN check** (verified on the Annex I text of Reg. (EU) 2023/1115, Reg. (EU) 2025/2650 art. 1(26) and Delegated Reg. (EU) 2026/2102 Annex, point (ww); CN headings checked on the 2026 Combined Nomenclature, Implementing Reg. (EU) 2025/1926):
+
+| CN | Product | EUDR Annex I |
+|----|---------|--------------|
+| ex 47 | Pulp of wood | In scope — excluding used/second-hand products and recovered (waste and scrap) products and products derived from them |
+| ex 48 | Paper and paperboard; articles of paper pulp, of paper or of paperboard (e.g. 4802 20 00 base paper for photosensitive paper; 4810 coated paper; 4820 50 00 albums for samples or collections) | In scope — excluding waste (Dir. 2008/98/EC art. 3(1)); used/second-hand products; recovered products and products derived from them; single-use or reusable packing used exclusively to support, protect or carry another product and presented with it; **items of correspondence and marketing and information materials exclusively accompanying another product, or supplied free of charge for marketing or information purposes** |
+| ch. 49 (e.g. 4901 books, 4909 printed cards, 4910 calendars, 4911 91 00 pictures, designs and photographs) | Printed matter | **Not in scope** — the "ex 49" line was deleted by Reg. (EU) 2025/2650, art. 1(26) |
+| 3703 | Photographic paper, paperboard and textiles, sensitised, unexposed | Not listed in Annex I (ch. 37 has never been in Annex I) |
+| ex 4414 | Wooden frames for paintings, photographs, mirrors or similar objects | In scope (excluding used/second-hand products) |
+
+For a printer or photo-service company this means: the paper it buys (ch. 48) is in scope for whoever first places it on the EU market; its printed outputs classified in ch. 49 are not; outputs classified in ch. 48 (e.g. albums, stationery, paper articles) or ex 4414 (wooden frames) are. The CN classification of a specific product (e.g. a personalised photobook, ch. 49 vs ch. 48) is a customs question — confirm it (binding tariff information if needed) before concluding.
 
 **Products made from in-scope inputs**: an input can be in scope while the output is not (e.g. paper and paperboard, CN ch. 48, are in scope; printed products, ch. 49, no longer are). Always check the specific CN code of both input and output against the current Annex I. A company placing on the market products made from inputs already covered by a DDS is likely a "downstream operator" (Reg. (EU) 2025/2650, new definition and recital 5): no own DDS, but traceability records and, if non-SME, registration.
 

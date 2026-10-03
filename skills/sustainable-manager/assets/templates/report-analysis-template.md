@@ -4,7 +4,7 @@
 **Source document / Documento di origine:** [filename, pages read — and which pages were read visually]
 **Analysis date / Data dell'analisi:** [YYYY-MM-DD]
 **Standard(s) recognized / Standard riconosciuti:** [GRI / ESRS / VSME / TNFD / none]
-**Template version:** 1.2 — October 2026 (sustainable-manager v2.7.4; schema 1.2)
+**Template version:** 1.3 — October 2026 (sustainable-manager v2.7.5; schema 1.3)
 
 ---
 
@@ -15,7 +15,8 @@
 > 3. Delete guidance notes (blockquotes starting with ">") before delivering.
 > 4. Mirrors `assets/schemas/report-analysis-schema.json` — fill that JSON in parallel to feed charts and the comparative dashboard (`scripts/analysis_dashboard.py`).
 > 5. All judgments are working drafts to review, not certifications.
-> 6. Keep the section order and the table columns as given, so that analyses can be compared automatically.
+> 6. Keep the section order and the table columns as given, so that analyses can be compared automatically. If the user prescribes a different structure, follow it but keep the table columns, the rubric rule code and the verification section; write headings in the user's language only.
+> 7. Up to 8 items each for strengths, weaknesses and recommendations, up to 6 for the executive summary — fewer is fine, do not pad (schema `maxItems`).
 
 ---
 
@@ -25,6 +26,7 @@
 |---|---|
 | Reporting entity | [Company legal name] |
 | Perimeter | [legal entity / group (consolidated) / mixed — say which KPIs use which] |
+| Perimeter assumptions | [what you assumed when the document does not say it — schema `perimeter_assumptions`; "none" if all stated] |
 | Sector | [Main activity] |
 | Reporting period | [FY start — FY end] |
 | Framework status | [**in accordance** / **with reference to** / *inspired by* / none] — *"inspired by ESRS" is NOT ESRS compliance* |
@@ -39,7 +41,7 @@
 
 ## 2. Key metrics extracted / KPI estratti
 
-> Each row is source-anchored. `Page` = physical page in the file; if the figure appears on several pages list them (main page first); for spreads add the printed page in brackets. For **Scope 2, report both market-based and location-based** when the document gives them (as separate rows) — a single Scope 2 figure hides a gap that can exceed 50%. For table values quote the row label plus the cells in reading order, and make sure the quote contains the value. Quotes transcribed from a screenshot, map or scanned page: add *(image)* after the quote (schema `quote_source: "image"`). Reports using ISO 14064-1 categories: report the categories as published (mapping to Scopes in `references/greenwashing-detection.md`).
+> Each row is source-anchored. `Page` = physical page in the file; if the figure appears on several pages list them (main page first); for spreads add the printed page in brackets. For **Scope 2, report both market-based and location-based** when the document gives them (as separate rows) — a single Scope 2 figure hides a gap that can exceed 50%. For table values quote the row label plus the cells in reading order, and make sure the quote contains the value. Quotes transcribed from a screenshot, map or scanned page: add *(image)* after the quote (schema `quote_source: "image"`) and say where it was read (schema `image_note`: which image, which region) — image quotes are not checked automatically. A year inferred from a screenshot stamp is written as *inferred*, never inside a quote. Reports using ISO 14064-1 categories: report the categories as published (mapping to Scopes in `references/greenwashing-detection.md`).
 
 | Metric | Value | Unit | Page | Quote |
 |---|---|---|---|---|
@@ -68,9 +70,9 @@
 > What is absent is often more revealing than what is shown. Judge "missing" against the applicable framework and the sector's material topics — and verify an absence before asserting it (don't assume): check image-only pages, screenshots, charts and scanned letters (e.g. assurance statements) first.
 
 **Internal consistency / Coerenza interna**
-- [Mismatch — p.X vs p.Y: what differs; analyst recalculation if any]
+- [**high / medium / low** — Mismatch — p.X vs p.Y: what differs; analyst recalculation if any]
 
-> Standard step: recompute totals and % changes from the report's own tables and compare figures repeated in highlights, tables, annexes and content index. Write "No inconsistencies found" if the check was done and found nothing.
+> Standard step: recompute totals and % changes from the report's own tables and compare figures repeated in highlights, tables, annexes and content index; also look for qualitative inconsistencies (incompatible dates, baselines, site identity, a plan in the future tense contradicted by later dated evidence). Compare only figures with the same perimeter, period and basis — Group vs entity is a perimeter note (low). Differences within rounding of the last printed digit are not flagged (tolerance = 0.5 × 10^(−d), d = decimals of the less precise figure). Severity: **high** = headline/core figure ≥1%, highlights vs table, or qualitative inconsistency on a headline claim/core topic (rubric M4); **medium** = other figure ≥1% or qualitative on a non-core topic; **low** = <1%, editorial, perimeter note. Write "No inconsistencies found" if the check was done and found nothing.
 
 ---
 
@@ -90,13 +92,13 @@
 >
 > Check the **reduce-before-offset** hierarchy and **relative-vs-absolute** (an intensity or market-based "−X%" headline while absolute location-based emissions grow).
 >
-> **Overall risk rubric** (definitions and full text in `references/greenwashing-detection.md`; apply in order, highest level triggered wins): 🔴 R1 Misleading *headline* claim on a *core* topic not corrected nearby · R2 offset-based claim ≥10% of reported emissions or presented as a headline · R3 tradeable credits without third-party validation/verification — 🟡 M1 any other Misleading · M2 offset-based claim below R2 · M3 ≥3 distinct Unsubstantiated outcome claims · M4 material internal inconsistency · M5 no assurance + material gap — 🟢 none of these. State the rule code, the triggering claims and, if arguable, the single fact that would flip the level.
+> **Overall risk rubric** (definitions and full text in `references/greenwashing-detection.md`; apply in order, highest level triggered wins): 🔴 R1 Misleading *headline* claim on a *core* topic not corrected nearby · R2 offset-based claim ≥10% of reported emissions or presented as a headline · R3 tradeable credits without third-party validation/verification — 🟡 M1 any other Misleading · M2 offset-based claim below R2 · M3 ≥3 distinct Unsubstantiated outcome claims · M4 material internal inconsistency · M5 no assurance + material gap — 🟢 none of these. State the rule code, the triggering claims and, if arguable, the single fact that would flip the level. Key definitions (full text in the reference): core topic includes the entity's main activity even if its own ranking puts it below top 3; "within 2 pages" is inclusive, on physical pages; in documents of ≤5 pages every claim in the summary/KPI box (or, if none, on page 1) is headline; calculated credits presented as an outcome count as *claimed* for R3; M4 also covers qualitative inconsistencies. For a correct figure with unstated or partial perimeter/basis, and for claims contradicted by the document itself, use the decision rules in the reference.
 
 ---
 
 ## 5. Regulatory context / Contesto normativo (as of [date])
 
-> One line per relevant act: applicability to *this* entity (perimeter, size, sector) and source. Use `eu-regulation-matrix/references/regulation-thresholds.md` and `references/efrag-updates.md`; say when a point is an assumption or not verified.
+> One line per relevant act: applicability to *this* entity (perimeter, size, sector) and source. Use `eu-regulation-matrix/references/regulation-thresholds.md` and `references/efrag-updates.md`; say when a point is an assumption or not verified. If a standard or act the report relies on has been replaced since publication (e.g. a Recommendation replaced by a Regulation), add a row saying so.
 
 | Act | Status / dates | Applicability to the entity | Source |
 |---|---|---|---|

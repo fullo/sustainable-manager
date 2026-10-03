@@ -1,6 +1,6 @@
 # Pre-mapped IROs by Sector
 
-Reference file for the Double Materiality Assessment skill. Contains sector-specific Impacts, Risks, and Opportunities for each ESRS topical standard across five key sectors.
+Reference file for the Double Materiality Assessment skill. Contains sector-specific Impacts, Risks, and Opportunities for each ESRS topical standard across six key sectors.
 
 Use this as a starting point. Always adapt to the user's specific company context, value chain, and geographic scope.
 
@@ -374,4 +374,53 @@ Typical materiality ratings (HIGH / MEDIUM / LOW) indicate expected relevance fo
 - **Impact**: Corruption risk in public procurement and permitting processes. Anti-competitive practices in tender processes (bid rigging). Tax evasion and undeclared revenue in the construction sector.
 - **Risk**: Anti-mafia certification requirements (certificazione antimafia) for public works. Anti-corruption enforcement under Decree 231/2001. Exclusion from public tenders for governance violations. ANAC (Italian Anti-Corruption Authority) oversight of public procurement.
 - **Opportunity**: Robust compliance and anti-corruption programs (Modello 231) qualifying the company for large public works and EU-funded projects. Transparent governance as differentiator in PPP (public-private partnership) tenders.
+- **Typical materiality**: HIGH
+
+---
+
+## 6. Waste Management and Environmental Services (Collection, Sorting, Recycling, Treatment, Disposal)
+
+Generic profile for operators whose main activity is waste collection and treatment (often public or publicly owned utilities). The waste/circularity topic is the entity's main activity, so treat it as core even when the entity's own ranking places it lower. Sub-topics below follow ESRS 1, AR 16 (Delegated Reg. (EU) 2023/2772); from FY2027 check the revised ESRS (Delegated Reg. (EU) 2026/1563) for any reformulation of topics and datapoints.
+
+### E5 Resource Use and Circular Economy — Typical materiality: HIGH
+
+- **Impact**: The activity determines how much of the collected waste is prepared for re-use, recycled, recovered or landfilled (sub-topics: resource inflows, resource outflows related to products and services, waste). Residual fractions, sorting rejects and treatment residues (e.g. leachate, ashes) are the entity's own waste outflows.
+- **Risk**: Missing the EU municipal-waste targets passed on by public authorities through service contracts — preparing for re-use and recycling of at least 55% by 2025, 60% by 2030 and 65% by 2035 (Dir. 2008/98/EC art. 11(2), as amended by Dir. (EU) 2018/851) and landfill at most 10% by 2035 (Dir. 1999/31/EC art. 5(5), as amended by Dir. (EU) 2018/850). Price volatility of secondary raw materials.
+- **Opportunity**: Higher-quality separate collection and sorting raising recycling yields; sale of secondary raw materials, compost and biomethane.
+- **Disclosure note**: report collection rate, recycling rate and recovery rate as separately defined metrics — a separate-collection rate is not a recycling rate.
+- **Typical materiality**: HIGH
+
+### E2 Pollution — Typical materiality: HIGH
+
+- **Impact**: Air emissions from incineration/co-incineration and composting or anaerobic digestion plants; odours; leachate and potential soil and groundwater contamination from landfills; litter and microplastics from collection and sorting.
+- **Risk**: Permit conditions and emission limits — waste incineration and co-incineration plants are regulated by Chapter IV of the Industrial Emissions Directive (Dir. 2010/75/EU, as amended); landfills above the Annex I capacity thresholds need an integrated permit. Long-term liabilities for closed landfills.
+- **Opportunity**: Best available techniques reducing emissions and odour complaints; transparent monitoring data as a licence to operate.
+- **Typical materiality**: HIGH
+
+### E1 Climate Change — Typical materiality: HIGH
+
+- **Impact**: Methane from landfills and from biological treatment; CO2 from fossil carbon in incinerated waste; fuel use of the collection fleet.
+- **Risk**: Exposure to carbon pricing and to fleet-decarbonisation requirements in public tenders; physical risks to plants and collection services from extreme weather.
+- **Opportunity**: Landfill-gas capture, biomethane from organic waste, fleet electrification. Emissions avoided through recycling or energy recovery are not reductions of the entity's own inventory — report them separately.
+- **Typical materiality**: HIGH
+
+### S1 Own Workforce — Typical materiality: HIGH
+
+- **Impact**: Health and safety of collection and plant workers (traffic, manual handling, machinery, exposure to hazardous fractions, bio-aerosols); heavy use of subcontracted and temporary staff.
+- **Risk**: Injury-related costs and service disruption; labour shortages for driving and plant roles.
+- **Opportunity**: Ergonomic equipment and automated collection; training and certified H&S management systems. Report H&S with the ESRS S1-14 metrics (recordable accidents, rate, days lost, fatalities), own workforce and non-employees separately.
+- **Typical materiality**: HIGH
+
+### S3 Affected Communities — Typical materiality: MEDIUM
+
+- **Impact**: Nuisance (odour, noise, traffic) for communities near plants; acceptance of new facilities.
+- **Risk**: Local opposition delaying permits and investments.
+- **Opportunity**: Community engagement and transparent monitoring; service quality and fair tariffs for residents.
+- **Typical materiality**: MEDIUM
+
+### G1 Business Conduct — Typical materiality: HIGH
+
+- **Impact**: Corruption and bribery risks in concessions, public procurement, permitting and waste-transport chains; illegal waste trafficking in the value chain.
+- **Risk**: Exclusion from tenders, sanctions and reputational damage; dependence on regulated tariffs and public contracting authorities.
+- **Opportunity**: Robust anti-corruption and traceability systems qualifying the entity for public contracts.
 - **Typical materiality**: HIGH

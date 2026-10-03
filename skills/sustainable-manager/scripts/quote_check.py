@@ -11,13 +11,19 @@ exists on the page, not that the value or the judgement is right.
 
 Statuses (one line per item):
   OK         quote found in the text layer of the cited page
-  IMAGE      quote marked `"quote_source": "image"` and the cited page contains
-             images: image-sourced, manual check (not a failure)
+  IMAGE      quote marked `"quote_source": "image"`, not in the text layer, and
+             the cited page contains images (or, with an `image_note`, has no
+             raster image: vector chart): image-sourced, manual check (not a
+             failure). The script cannot read images: it prints the
+             `image_note` (where the quote was read) so a reviewer can check it.
   NOT FOUND  quote not on the cited page(s) (or page out of range) - failure
   NO QUOTE   KPI without a quote - failure
 Warnings (do not fail unless --strict):
   VALUE?     no number of the KPI `value` appears in its quote
   SHORT      quote under 12 characters, or found more than once on the page
+  NO IMAGE_NOTE  image-sourced quote without `image_note`; with --strict it is a
+             failure, status NO NOTE (an invented "image" quote cannot pass silently)
+  NO RASTER  image-sourced quote with `image_note` on a page without raster images
 
 Normalization: NFKC, ligatures, curly quotes and guillemets, dash variants,
 soft hyphens; line-end hyphenation is joined only between letters (so table
@@ -30,8 +36,9 @@ Usage:
 
 Requires poppler's `pdftotext` (and `pdfimages` for image-sourced quotes).
 Exit codes: 0 all quotes found (warnings and IMAGE items listed);
-1 at least one NOT FOUND / NO QUOTE / page out of range;
-2 usage, input or tool error; 3 only with --strict: no failure but warnings.
+1 at least one NOT FOUND / NO QUOTE / page out of range (or NO NOTE with --strict);
+2 usage, input or tool error; 3 only with --strict: no failure but warnings
+(with --strict an image-sourced quote without `image_note` is a failure: exit 1).
 """
 import argparse
 import json
@@ -213,21 +220,34 @@ def main():
                     break
             if found_on:
                 break
-        notes = []
+        notes, warn_img = [], []
         if found_on:
             status = "OK       "
             found += 1
         elif item.get("quote_source") == "image":
             if img_pages is None:
                 img_pages = pages_with_images(a.pdf)
-            with_img = [p for p in pages if 1 <= p <= n_pages and (img_pages is None or p in img_pages)]
-            if with_img:
+            in_range = [p for p in pages if 1 <= p <= n_pages]
+            with_img = [p for p in in_range if img_pages is None or p in img_pages]
+            note = str(item.get("image_note") or "").strip()
+            if with_img or (in_range and note):
                 status = "IMAGE    "
                 notes.append("image-sourced, manual check" + ("" if img_pages is not None else " (pdfimages not found)"))
                 images += 1
+                if not with_img:
+                    warn_img.append("NO RASTER (no embedded image on the page: vector chart? check the render)")
+                if note:
+                    notes.append(f"image_note: {note[:120]}")
+                elif a.strict:
+                    status = "NO NOTE  "
+                    notes.append("image-sourced quote without image_note (--strict failure): describe where it was read")
+                    images -= 1
+                    failed += 1
+                else:
+                    warn_img.append("NO IMAGE_NOTE (say where in the image the quote was read)")
             else:
                 status = "NOT FOUND"
-                notes.append("marked image-sourced but no image on the cited page(s)")
+                notes.append("marked image-sourced but no image on the cited page(s) and no image_note")
                 failed += 1
         else:
             status = "NOT FOUND"
@@ -240,7 +260,7 @@ def main():
                 notes.append(f"page(s) {empty} have no text layer: read visually and mark quote_source 'image'")
             if not pages:
                 notes.append("no valid page")
-        warn = []
+        warn = list(warn_img)
         qlen = len(" ".join(parts))
         if found_on and (qlen < 12 or max(count_in(parts, t) for t in texts[found_on - 1]) > 1):
             warn.append("SHORT" if qlen < 12 else "SHORT (appears more than once on the page)")
