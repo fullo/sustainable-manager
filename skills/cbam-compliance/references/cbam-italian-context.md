@@ -193,7 +193,8 @@ permette di valutare il reale livello di protezione offerto dal CBAM e l'equita 
 - [ ] Raccogliere e verificare i dati di emissione per ogni partita importata
 - [ ] Presentare la dichiarazione CBAM annuale e restituire i certificati entro il 30 settembre (prima scadenza: 30/09/2027 per le importazioni 2026)
 - [ ] Conservare la documentazione per almeno 4 anni
-- [ ] Monitorare aggiornamenti normativi e nuove guidance della Commissione
+- [ ] Monitorare aggiornamenti normativi e nuove guidance della Commissione (agosto 2026: dieci documenti di guidance per operatori extra-UE, 14/08; guidance su verifica e accreditamento, 24/08, con accesso dei verificatori al Registro CBAM dal 01/09/2026)
+- [ ] Seguire la proposta di estensione ai prodotti downstream (dicembre 2025): posizione del Parlamento europeo del 15/09/2026 (mandato per il negoziato con il Consiglio; avvio dei triloghi non confermato da fonti primarie al 2/10/2026), non ancora legge
 
 ### Supporto Disponibile
 

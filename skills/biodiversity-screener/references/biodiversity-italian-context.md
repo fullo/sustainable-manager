@@ -81,13 +81,8 @@
 ### Inquadramento Normativo
 - **Non è una norma nazionale**: è un documento di prassi di riferimento UNI, pubblicato ai sensi del Regolamento UE n.1025/2012
 - **In vigore dal 23 settembre 2025**, ratificata dal Presidente dell'UNI
-- **Elaborata dal Tavolo UNI/PdR "Monitoraggio e valorizzazione della biodiversità"**:
-  - Università Federico II di Napoli — Dipartimento di Agraria (soggetto firmatario)
-  - 3Bee srl (Project Leader: Simone Mazzola)
-  - Università di Torino
-  - CREA_AA (Consiglio per la ricerca in agricoltura e l'analisi dell'economia agraria)
-  - Climate Standard
-  - Revisione: CREA/MASAF (Direzione sviluppo rurale)
+- **Elaborata dal Tavolo UNI/PdR "Monitoraggio e valorizzazione della biodiversità"**, guidato da UNI con il Dipartimento di Agraria dell'Università Federico II di Napoli (soggetto firmatario); vi hanno partecipato università (Napoli Federico II, Torino), enti pubblici di ricerca (CREA), MASAF e soggetti privati del settore, tra cui l'impresa che ha avuto il ruolo di project leader (fonte: scheda UNI, https://store.uni.com/uni-pdr-179-2025, consultata il 3/10/2026)
+- **Conflitto d'interessi**: se si analizza un documento redatto secondo la PdR, controllare sulla scheda UNI se l'autore del documento, o chi gestisce la piattaforma di misura o emette i crediti, è tra i membri del Tavolo; in quel caso chiedere una validazione/verifica di terza parte indipendente (ISO/IEC 17029)
 
 ### Scopo e Applicabilità
 - Stabilisce criteri e metodologie per la **valutazione e gestione dell'impronta di biodiversità** e per la **generazione di Crediti di Biodiversità**
@@ -100,11 +95,13 @@
 - **TNFD LEAP**: il flusso di valutazione della PdR (driver di impatto, aree protette, specie a rischio) è complementare al LEAP approach
 - **Strategia Nazionale Biodiversità 2030**: allineamento con obiettivi 30x30, ripristino ecosistemi
 - **Nature Restoration Law (Reg. UE 2024/1991)**: la PdR cita esplicitamente la NRL come riferimento per la definizione dei target
-- **Direttiva UE 2024/825 (Green Claims)**: coerenza obbligatoria per i claim di biodiversità — le dichiarazioni devono essere accompagnate da informazioni verificabili e accessibili al pubblico
+- **Direttiva UE 2024/825 (EmpCo, non la Green Claims Directive)**: recepita in Italia con D.Lgs. 20 febbraio 2026, n. 30 (modifiche al Codice del Consumo), applicabile dal 27 settembre 2026 (né la direttiva né il D.Lgs. 30/2026 prevedono una clausola transitoria per le scorte); per i claim di biodiversità valgono il divieto dei claim generici e le regole generali sulle pratiche ingannevoli (il divieto sulla compensazione riguarda solo i gas serra); l'obbligo di impegni pubblici e verificabili è previsto testualmente per i claim su prestazioni future (art. 6(2)(d) UCPD) — per gli altri claim è buona pratica, non un obbligo testuale
 - **UNI/PdR 162:2024**: linee guida per la definizione di servizi ecosistemici in ambito urbano e periurbano — citata come riferimento per la valutazione dei servizi ecosistemici nella prioritizzazione dei siti critici
 - **ISO 14060 series**: i cambiamenti climatici come driver di impatto sono esclusi dalla PdR e rimandati agli standard ISO 14060
 
 ### Elementi Chiave
+
+> Contenuti della prassi riportati dalla skill, non verificati sul testo UNI al 2/10/2026 (sul catalogo UNI sono verificati solo esistenza, data di entrata in vigore e Project Leader).
 - **MSA (Mean Species Abundance)**: indice quantitativo obbligatorio, calcolato tramite modello GLOBIO basato sull'uso del suolo
 - **Crediti di Biodiversità**: formula CB = ΔMSA × ha × anni × 10, primo framework italiano strutturato per i biodiversity credits
 - **Approccio activity-based**: il valore dell'intervento è riconosciuto fin dall'attuazione, non solo a risultato raggiunto
@@ -142,7 +139,7 @@
 - **Filiera della pelle**: rischio deforestazione nella catena di approvvigionamento (allevamenti in Sud America)
 - **Tessile**: consumo idrico (cotone), inquinamento chimico (tintoria), microplastiche (fibre sintetiche)
 - **Distretti produttivi**: Toscana (Santa Croce sull'Arno), Veneto (Arzignano) — gestione reflui conciari
-- **Rilevanza EUDR**: la pelle bovina rientra tra le 7 commodities regolamentate
+- **Rilevanza EUDR**: i bovini rientrano tra le 7 commodities regolamentate, ma il Regolamento delegato (UE) 2026/2102 (GUUE 17 settembre 2026) elimina pelli e cuoio bovini dall'Allegato I: verificare i codici NC prima di concludere
 
 ### Estrazione di Marmo e Pietra
 - **Alpi Apuane (Carrara)**: impatto su ecosistemi carsici unici, alterazione del paesaggio, polveri

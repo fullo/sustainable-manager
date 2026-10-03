@@ -10,6 +10,7 @@ Riferimenti specifici per il coinvolgimento dei fornitori nel contesto imprendit
 - Il 95% delle imprese italiane sono micro/piccole (meno di 50 dipendenti)
 - Il 99,9% delle imprese ha meno di 250 dipendenti (PMI)
 - Capacita ESG limitata: poche risorse dedicate, conoscenza frammentaria delle normative
+- Tutela normativa (aggiornamento ottobre 2026): per gli esercizi che iniziano dal 1° gennaio 2027 i soggetti CSRD non possono chiedere a imprese fino a 1.000 dipendenti (media annua) dati di sostenibilita oltre i datapoint essenziali dell'Allegato II dello standard VSME (Reg. delegato (UE) 2026/1560, GUUE 21 settembre 2026), e solo nella misura necessaria alla propria conformita CSRD. La delega per recepire la Direttiva 2026/470 (termine 19 marzo 2027) è nel disegno di legge di delegazione europea 2026 (A.S. 2025), approvato dal CdM il 4/8/2026 e all'esame del Senato; non risulta approvato in via definitiva al 2/10/2026
 - Forte dipendenza da relazioni personali e fiducia nel rapporto cliente-fornitore
 
 ### Modello distrettuale e consortile

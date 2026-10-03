@@ -1,6 +1,6 @@
 # Sustainable IT — Contesto Italiano
 
-Riferimenti specifici per organizzazioni italiane. Ultima verifica: luglio 2026.
+Riferimenti specifici per organizzazioni italiane. Ultima verifica: ottobre 2026.
 
 ---
 
@@ -9,10 +9,10 @@ Riferimenti specifici per organizzazioni italiane. Ultima verifica: luglio 2026.
 | Ambito | Stato in Italia |
 |--------|-----------------|
 | **EED art. 12 (data centre)** | Reporting verso la banca dati europea tramite il canale nazionale; MASE è il ministero competente per l'efficienza energetica, con supporto tecnico ENEA/GSE. Verificare il canale operativo indicato dal MASE per la scadenza annuale del 15 maggio |
-| **Right to Repair (Dir. 2024/1799)** | Recepimento in corso: schema di decreto legislativo approvato in via preliminare dal CdM a inizio luglio 2026; termine di recepimento 31 luglio 2026. Monitorare la pubblicazione in GU per gli obblighi puntuali |
+| **Right to Repair (Dir. 2024/1799)** | Recepimento in ritardo: termine 31 luglio 2026 non rispettato; schema di decreto legislativo (Atto del Governo n. 426) trasmesso al Parlamento il 9 luglio 2026, approvato in via definitiva dal CdM il 16 settembre 2026; non risultava pubblicato in GU al 1° ottobre 2026. Monitorare la pubblicazione in GU per gli obblighi puntuali |
 | **AI Act / Digital Omnibus** | Regolamenti direttamente applicabili; AgID e ACN coinvolte nella governance nazionale AI |
 | **WEEE/RAEE** | D.Lgs. 49/2014; Centro di Coordinamento RAEE; iscrizione al Registro AEE per i produttori |
-| **EmpCo (2024/825)** | Recepimento nel Codice del Consumo atteso entro il 27 marzo 2026 per applicazione dal 27 settembre 2026; AGCM competente per pratiche commerciali scorrette (greenwashing) |
+| **EmpCo (2024/825)** | Recepito con D.Lgs. 20 febbraio 2026, n. 30 (GU 9 marzo 2026), che modifica il Codice del Consumo; applicabile dal 27 settembre 2026 (né la direttiva né il D.Lgs. 30/2026 prevedono una clausola transitoria per le scorte); AGCM competente per pratiche commerciali scorrette (greenwashing) |
 
 ## 2. Procurement pubblico — CAM ICT
 
@@ -28,7 +28,7 @@ Riferimenti specifici per organizzazioni italiane. Ultima verifica: luglio 2026.
 
 ## 4. Specificità di mercato
 
-- Il 95% delle imprese italiane è micro/piccola: per la supply chain IT italiana usare richieste dati proporzionate (cap VSME per fornitori <1.000 dipendenti)
+- Il 95% delle imprese italiane è micro/piccola: per la supply chain IT italiana usare richieste dati proporzionate (per gli esercizi dal 1° gennaio 2027 cap sui soli datapoint essenziali dell'Allegato II VSME per fornitori fino a 1.000 dipendenti, Reg. delegato (UE) 2026/1560; recepimento della Direttiva 2026/470 entro il 19 marzo 2027, delega nel disegno di legge di delegazione europea 2026, A.S. 2025, approvato dal CdM il 4/8/2026 e all'esame del Senato; non risulta approvato in via definitiva al 2/10/2026)
 - Distretti e consorzi ICT: canali utili per questionari collettivi e programmi di engagement
 - Refurbished e rigenerato: mercato italiano in crescita; leva prioritaria per ridurre l'impronta embodied dei device (vedi anche economia circolare / RAEE)
 
@@ -37,6 +37,6 @@ Riferimenti specifici per organizzazioni italiane. Ultima verifica: luglio 2026.
 | Claim | Problema |
 |-------|----------|
 | "Cloud 100% verde" | Generico: servono prove (GO/PPA, market-based) e specificità |
-| "App carbon neutral" (con offset) | Vietato come formulazione consumer da EmpCo dal 27/09/2026 |
+| "App carbon neutral" (con offset) | Vietato come formulazione consumer da EmpCo (D.Lgs. 30/2026) dal 27/09/2026 |
 | "Il laptop più sostenibile d'Italia" | Claim comparativo: richiede sostanziazione verificabile |
 | "Sito web a impatto zero" | Impossibile da sostanziare; riformulare con dati misurati (es. gCO2e/visita, metodologia dichiarata) |

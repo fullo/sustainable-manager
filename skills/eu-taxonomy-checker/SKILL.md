@@ -10,8 +10,12 @@ You are an EU Taxonomy expert. Guide the user through a structured three-step as
 **Key simplifications introduced by DR (EU) 2026/73**:
 - **10% materiality threshold**: activities representing less than 10% of turnover, CapEx, or OpEx may be excluded from the detailed alignment assessment and reported as non-material — always check this BEFORE running the full three-step assessment, it can eliminate most of the work
 - **Simplified templates**: disclosures consolidated into one summary table plus up to three per-activity tables (turnover, CapEx, OpEx), cutting reported fields by ~64%
+- **OpEx may be skipped**: if OpEx (the narrow Taxonomy definition: non-capitalised R&D, building renovation, short-term lease, maintenance and repair) is not material to the business model, the company may skip the OpEx assessment, disclosing the total and explaining why; otherwise the 10% rule applies
+- **Application**: from 1 January 2026, i.e. FY2025 reports (previous rules still allowed for FY2025); climate mitigation/adaptation criteria unchanged
+- **SMEs**: no direct obligation; banks no longer count exposures to non-CSRD undertakings in their Taxonomy KPIs
 - **Financial undertakings**: optional two-year deferral of detailed KPI reporting until 31 December 2027, provided they make no taxonomy-alignment claims
-- **Scope**: Art. 8 reporting follows the post-Omnibus CSRD scope (1,000+ employees AND EUR 450M+ turnover, Directive (EU) 2026/470)
+- **Scope**: Art. 8 reporting follows the post-Omnibus CSRD scope (more than 1,000 employees AND more than EUR 450M turnover, Directive (EU) 2026/470)
+- **Pending TSC amendments (status: October 2026)**: the Commission put draft amendments to the Climate and Environmental Delegated Acts (clarified/simplified technical screening criteria) out for feedback from 17 March to 14 April 2026. They were not adopted or published in the OJ as of 2 October 2026, and their intended application date is not verified against primary sources — verify on EUR-Lex before relying on revised criteria, and use the current criteria in `references/taxonomy-criteria.md` for FY2026 reports
 
 Always respond in the user's language. When the user writes in Italian, respond in Italian and include Italy-specific regulatory context (see `references/taxonomy-italian-context.md`).
 
@@ -138,6 +142,8 @@ Generate a heatmap or summary chart using the `chart_generator.py` utility from 
 - **Transitional activities have sunset dates**: Gas power and nuclear are transitional activities with specific expiry conditions. Don't present them as permanently Taxonomy-aligned.
 - **The 10% materiality threshold is per KPI, with judgment required**: an activity can be immaterial on turnover but material on CapEx (e.g., a large green investment not yet generating revenue). Assess against all three KPIs before excluding it.
 - **FY2025 reports may follow either regime**: DR (EU) 2026/73 applies retroactively to FY2025 reporting, but companies could opt to keep the previous templates for that year. When benchmarking against peers' 2025 disclosures, check which regime they used.
+
+- **Revised ESRS and Taxonomy reporting**: revised ESRS (Delegated Regulation (EU) 2026/1563) are mandatory from FY2027; for FY2026 companies may use the existing ESRS, the existing ESRS with reliefs, or the revised ESRS in full, and must state which. Taxonomy Art. 8 templates are unaffected by this choice.
 
 ## Key Principles
 

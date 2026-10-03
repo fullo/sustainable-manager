@@ -70,9 +70,9 @@ Six-digit codes structured as: Chapter (2 digits) - Subchapter (2 digits) - Code
 
 ## National Targets and Strategy
 
-### Italy Recycling Performance (2022 Data)
-- Overall recycling rate: 72% (well above EU average of ~48%)
-- Municipal waste recycling: 65%
+### Italy Recycling Performance
+- Overall recycling rate (all waste, special + municipal): 72% (well above EU average of ~48%) — figure not re-verified on the primary source at 2 October 2026
+- Municipal waste (ISPRA, Rapporto Rifiuti Urbani, 2025 edition, data 2024): separate collection 67.7%, preparation for reuse and recycling 52.3% (2023: 66.6% / 50.8%; 2022: 65.2% / 49.2%, 2023 edition). Separate collection is measured on total municipal waste production; the recycling rate follows Implementing Decision (EU) 2019/1004. Separate collection, municipal recycling and overall recycling have different denominators — never compare or mix them
 - Packaging recycling: 73.3%
 - Italy ranks 2nd in EU for circular economy index (after Netherlands)
 
@@ -92,6 +92,7 @@ Six-digit codes structured as: Chapter (2 digits) - Subchapter (2 digits) - Code
   - Green public procurement expansion
   - Innovation support for circular technologies
   - Traceability and digital product passport development
+- Update October 2026: D.Lgs. 20 febbraio 2026, n. 30 (recepimento EmpCo, Dir. 2024/825) applicabile dal 27 settembre 2026 — vietati claim ambientali generici, claim di neutralità GHG di prodotto basati su compensazione e claim su prestazioni future senza piano di attuazione verificato da esperto terzo indipendente; recepimento del diritto alla riparazione (Dir. 2024/1799) in ritardo (schema di D.Lgs., Atto del Governo n. 426, trasmesso al Parlamento il 9 luglio 2026; approvato in via definitiva dal CdM il 16 settembre 2026, non risultava pubblicato in GU al 1° ottobre 2026)
 
 ### MUD (Modello Unico di Dichiarazione Ambientale)
 - Annual environmental declaration required for waste producers/managers
@@ -111,8 +112,8 @@ Six-digit codes structured as: Chapter (2 digits) - Subchapter (2 digits) - Code
   - Milan as circular economy hub
   - Montello recycling district (Bergamo)
 - **Veneto**: advanced waste collection systems (pay-as-you-throw)
-  - Treviso model: >85% separate collection rate
-  - Contarina SpA as international best practice
+  - Province-level separate-collection rates: use the latest ISPRA Rapporto Rifiuti Urbani (province figures are not figures of any single operator)
+  - When analysing an operator's own report, rely on the report's data; use this file only for context, never as evidence of the operator's performance
 
 ### International Recognition
 - CONAI model studied and replicated internationally

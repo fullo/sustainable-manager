@@ -9,16 +9,16 @@
 6. [EFRAG Active Projects](#efrag-projects)
 7. [Implementation Resources](#implementation-resources)
 
-**Last updated**: July 2026. Reflects the adopted Omnibus I Directive (EU) 2026/470 (in force 18 March 2026) and the revised ESRS delegated act adopted by the European Commission on **3 July 2026** (together with the VSME voluntary standard).
+**Last updated**: October 2026. Reflects the adopted Omnibus I Directive (EU) 2026/470 (in force 18 March 2026) and the revised ESRS (Delegated Regulation (EU) 2026/1563, adopted 3 July 2026, **published in the Official Journal on 21 September 2026**) together with the VSME voluntary standard (Delegated Regulation (EU) 2026/1560, same OJ date).
 
 ---
 
 ## ESRS Simplification
 
-In response to the EU Omnibus I Proposal, EFRAG submitted its technical advice on simplified ESRS to the European Commission on December 3, 2025. The Commission published the draft delegated act ("ESRS 2.0") for consultation in spring 2026 and **adopted the final delegated act on 3 July 2026**, closely following EFRAG's advice. The Omnibus I Directive itself was adopted as **Directive (EU) 2026/470** (OJ 26 February 2026, in force 18 March 2026).
+In response to the EU Omnibus I Proposal, EFRAG submitted its technical advice on simplified ESRS to the European Commission on December 3, 2025. The Commission published the draft delegated act ("ESRS 2.0") for consultation in spring 2026 and **adopted the final delegated act on 3 July 2026** (Delegated Regulation (EU) 2026/1563, amending 2023/2772; published in the OJ on 21 September 2026), closely following EFRAG's advice. EFRAG published interactive versions of the revised ESRS and VSME on 28 July 2026 and its 2026 draft datapoints list on 28 August 2026. The Omnibus I Directive itself was adopted as **Directive (EU) 2026/470** (OJ 26 February 2026, in force 18 March 2026).
 
 ### Headline Changes
-- **61% reduction in mandatory datapoints** across all 12 standards
+- **Datapoint reduction** across all 12 standards — figures are estimates from the institutions, not stated in the text of Reg. 2026/1563: EFRAG's technical advice (3 December 2025) reports a **61% reduction of the datapoints required if material** ("shall" datapoints; 71% including voluntary ones); the Commission's 3 July 2026 announcement cites **over 60% fewer mandatory** and **over 70% fewer datapoints overall**, and over 30% lower expected reporting costs
 - **All voluntary datapoints removed** — if it's in the standard, it's mandatory
 - **Top-down materiality assessment** now permitted (no exhaustive bottom-up analysis required)
 - **Value chain data relief** — companies not required to perform exhaustive searches; sector/regional averages acceptable
@@ -112,14 +112,22 @@ The Omnibus I Proposal (February 2025) mandated simplification while maintaining
 | ESRS Knowledge Hub launched | December 4, 2025 |
 | Omnibus I Directive (EU) 2026/470 in force | March 18, 2026 |
 | European Commission delegated act adopted (revised ESRS + VSME) | **July 3, 2026** |
-| **Revised ESRS applicable from** | **FY 2027 (optional early use FY 2026)** |
+| Revised ESRS (2026/1563) and VSME act (2026/1560) published in the OJ | **September 21, 2026** |
+| VSME act in force | September 24, 2026 |
+| Revised ESRS in force | November 10, 2026 (different from the VSME act: the Directive requires the ESRS act to enter into force not earlier than four months after adoption (Art. 29b(1) Dir. 2013/34/EU; recital 7 and Art. 3 of Reg. 2026/1563); the VSME act enters into force on the third day after publication) |
+| **Revised ESRS mandatory from** | **FY 2027 (first reports in 2028)** |
+| FY 2024-2025 | Existing ESRS: Delegated Reg. (EU) 2023/2772 as last amended by Delegated Reg. (EU) 2025/1416 ('quick fix') — the 'existing' set referred to by Reg. 2026/1563 |
+| FY 2026 | Choice: existing ESRS (2023/2772 as amended by 2025/1416); existing ESRS with specified reliefs; or fully revised ESRS — the version applied must be disclosed (Art. 2 of Reg. 2026/1563) |
+| Voluntary reporters | Not bound by these dates: state which ESRS version is used and the datapoint coverage (e.g. "with reference to ESRS 2023/2772, 11 DRs") |
+| CSRD changes of Directive 2026/470: transposition deadline | March 19, 2027 |
+| CSDDD changes: transposition / application | July 26, 2028 / July 26, 2029 |
 
 ### Reporting Waves Under Final (Post-Omnibus) Timeline
 
 | Wave | Companies | First Reporting Year | Report Due |
 |------|-----------|---------------------|------------|
-| Wave 1 | Already under NFRD (large PIEs >500 emp.) meeting the new thresholds | FY 2024 under original ESRS; switch to revised ESRS from FY 2027; those below 1,000 empl. / EUR 450M exit the scope from FY 2027 | 2025 (original), 2028 (revised) |
-| Wave 2 | EU companies with 1,000+ employees AND EUR 450M+ turnover | FY 2027 under revised ESRS | 2028 |
+| Wave 1 | Already under NFRD (large PIEs >500 emp.) meeting the new thresholds | FY 2024 under original ESRS; switch to revised ESRS from FY 2027; those not exceeding 1,000 employees or EUR 450M turnover exit the scope from FY 2027 (Member States may already exempt them for FY 2025-2026: new derogation in Art. 5(2) Dir. 2022/2464, inserted by Dir. 2026/470; Italy: not transposed at 2 October 2026) | 2025 (original), 2028 (revised) |
+| Wave 2 | EU companies with more than 1,000 employees AND more than EUR 450M net turnover | FY 2027 under revised ESRS | 2028 |
 | Wave 3 (listed SMEs) | **Abolished** — out of mandatory scope; VSME voluntary | — | — |
 | Wave 4 | Non-EU companies (>EUR 450M EU revenue, with EU subsidiary/branch >EUR 200M) | FY 2028 | 2029 |
 
@@ -146,9 +154,10 @@ Instead:
 ## SME Standards
 
 ### VSME (Voluntary SME Standard)
-- **Adopted as a delegated act on 3 July 2026** together with the revised ESRS (upgraded from the earlier Commission recommendation)
-- Designed for SMEs (listed and non-listed) that report voluntarily — typically to answer data requests from banks and CSRD-scope customers
-- **Value chain cap**: CSRD reporters cannot demand more than VSME content from value chain partners below 1,000 employees
+- **Adopted as a delegated act on 3 July 2026** together with the revised ESRS (upgraded from the earlier Commission recommendation); **Delegated Regulation (EU) 2026/1560, published in the OJ on 21 September 2026**, in force 24 September 2026 and available immediately for voluntary use
+- Designed for SMEs (listed and non-listed) but, legally, open to **any undertaking not subject to mandatory CSRD reporting** (Art. 2) — typically used to answer data requests from banks and CSRD-scope customers
+- **Replaces Commission Recommendation (EU) 2025/1710** (30 July 2025): from 24 September 2026 the Recommendation is "considered as no longer producing any legal effects" (recital 5). A FY2025 report prepared under the Recommendation is still a valid VSME-based report; from FY2026 reference the Regulation
+- **Value chain cap** (Art. 3; applies for financial years beginning on or after 1 January 2027 under Art. 4): CSRD reporters cannot require undertakings not exceeding an average of 1,000 employees in the preceding financial year to provide data beyond the essential ESG datapoints in Annex II of the VSME act, limited to what the requester needs for its own CSRD reporting
 - Simplified structure with fewer datapoints; digital template and XBRL taxonomy in development
 
 ### LSME (Listed SME Standard)
@@ -161,7 +170,7 @@ Instead:
 
 | Project | Status | Relevance |
 |---------|--------|-----------|
-| ESRS Simplification | Submitted (Dec 2025) | Core — affects all reporting |
+| ESRS Simplification | Delivered: revised ESRS published in OJ 21 Sep 2026 | Core — affects all reporting |
 | VSME XBRL Taxonomy | Research phase | Digital reporting for SMEs |
 | Sector Classification (SEC1&2) | Research phase | May inform future sector guidance |
 | Financial Institutions standard | Active (research) | Banking, insurance, asset management |
@@ -178,7 +187,7 @@ Instead:
 - **Implementation Guidance (IG)**: Series of guidance documents
   - IG 1: Materiality assessment
   - IG 2: Value chain
-  - IG 3: List of datapoints (revision expected Q1 2026)
+  - IG 3: List of datapoints (EFRAG 2026 draft list published 28 August 2026)
 - **ESRS Q&A Platform**: Technical questions and clarifications
 
 ### Key External Resources

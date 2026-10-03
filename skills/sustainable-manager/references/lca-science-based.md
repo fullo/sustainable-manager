@@ -88,6 +88,8 @@ Translation of LCI data into environmental impact categories:
 ### SBTi (Science Based Targets initiative)
 A partnership between CDP, UNGC, WRI, and WWF that helps companies set emission reduction targets aligned with climate science.
 
+**Version note (October 2026)**: the figures below follow the Corporate Net-Zero Standard v1.x. The SBTi published Net-Zero Standard v2.0 on 11 June 2026; target setting under v2.0 opens in February 2027 and it becomes mandatory for new submissions from 1 February 2028. Under SBTi rules, carbon credits do not count toward achieving reduction targets.
+
 ### Key Concepts
 
 **1.5C alignment**: Targets must be consistent with limiting warming to 1.5C above pre-industrial levels (Paris Agreement).

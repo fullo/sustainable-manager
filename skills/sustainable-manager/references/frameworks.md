@@ -32,10 +32,10 @@ The **CSRD (Directive 2022/2464)** replaced and vastly expanded the NFRD, bringi
 The **European Sustainability Reporting Standards (ESRS)** are the mandatory reporting standards under the **Corporate Sustainability Reporting Directive (CSRD)**.
 
 ### Applicability
-- Large EU companies (>250 employees or >40M revenue or >20M total assets — 2 of 3)
-- Listed SMEs (with transitional provisions)
-- Non-EU companies with significant EU operations (>150M EU revenue)
-- Phased rollout: large companies from FY2024, listed SMEs from FY2026
+- Post-Omnibus (Directive (EU) 2026/470; CSRD changes to be transposed by 19 March 2027): EU companies with >1,000 employees AND >EUR 450M turnover
+- Listed SMEs removed from mandatory scope (VSME voluntary standard, Delegated Regulation (EU) 2026/1560)
+- Non-EU companies with significant EU operations (>EUR 450M EU turnover in each of the last two consecutive financial years, with an EU subsidiary/branch >EUR 200M in the preceding financial year)
+- Revised ESRS (Delegated Regulation (EU) 2026/1563, OJ 21 September 2026) mandatory from FY2027; for FY2026 companies may use the existing ESRS, existing ESRS with reliefs, or the revised ESRS, and must disclose which
 
 ### The 12 ESRS Standards
 
@@ -97,10 +97,10 @@ The **Global Reporting Initiative** standards are the most widely used sustainab
 - GRI 305: Emissions (305-1 Scope 1, 305-2 Scope 2, 305-3 Scope 3)
 - GRI 306: Waste
 
-**New climate/energy topic standards (effective 1 January 2027):**
-- **GRI 102: Climate Change 2025** — supersedes climate content of GRI 305 for climate impacts (transition plans, adaptation, just transition); designed to be complementary to IFRS S2
+**New climate/energy topic standards (effective for reports or other materials published on or after 1 January 2027):**
+- **GRI 102: Climate Change 2025** — on taking effect, GRI 305-1 to 305-5 and GRI 201-2 are withdrawn (305-6 and 305-7 remain); covers climate impacts (transition plans, adaptation, just transition); designed to be complementary to IFRS S2
 - **GRI 103: Energy 2025** — supersedes GRI 302
-- Reports covering FY2026 published in 2027 must apply them; early adoption possible
+- The trigger is the **publication date**, not the reporting period: a FY2026 report published in 2027 must apply them, a FY2026 report published in December 2026 need not; early adoption encouraged
 
 **Social (400 series):**
 - GRI 401: Employment
@@ -123,8 +123,8 @@ EFRAG and GRI have published an interoperability mapping. Many ESRS disclosures 
 - Focus on **financial materiality** (investor-oriented)
 - Metrics are quantitative and comparable within industries
 - IFRS S1 (General sustainability disclosures) and IFRS S2 (Climate) build on SASB + TCFD
-- **Adoption status (April 2026)**: 28 jurisdictions have adopted or introduced ISSB standards (voluntary or mandatory), with a further ~12 planning to; IFRS S2 received targeted amendments in December 2025
-- **Nature next**: an ISSB exposure draft on nature-related disclosures is targeted for CBD COP17 (October 2026), building on TNFD
+- **Adoption status (2026)**: according to the IFRS Foundation, more than 40 jurisdictions have decided to use or are taking steps to introduce ISSB standards (voluntary or mandatory); IFRS S2 received targeted amendments in December 2025 (GHG emissions disclosures), effective for annual periods beginning on or after 1 January 2027
+- **Nature next**: an ISSB exposure draft on nature-related disclosures is targeted for CBD COP17 (October 2026), building on TNFD (not yet published as of 2 October 2026; it is an exposure draft of an IFRS Practice Statement, not an amendment to IFRS S1/S2). TNFD reported its technical guidance work complete in its September 2026 status report; 733 organisations had committed to TNFD-aligned reporting as of November 2025
 
 ### SASB's Five Dimensions
 1. Environment

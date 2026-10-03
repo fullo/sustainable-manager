@@ -415,7 +415,7 @@
 | Policy | Scope | Key elements |
 |---|---|---|
 | [e.g., Product safety policy] | [All products] | [REACH compliance, chemical safety] |
-| [e.g., Responsible marketing / anti-greenwashing policy] | [All communications] | [Substantiated environmental claims, EU Green Claims Directive readiness] |
+| [e.g., Responsible marketing / anti-greenwashing policy] | [All communications] | [Substantiated environmental claims, EmpCo (Dir. (EU) 2024/825) compliance] |
 | [e.g., Consumer data protection / privacy policy] | [E-commerce, retail] | [...] |
 | [e.g., Product transparency and labelling policy] | [All products] | [Care labels, material composition, origin] |
 
@@ -430,7 +430,7 @@
 | Products with Digital Product Passport (DPP) | N (%) | [N] ([%]) | [N] ([%]) |
 | Green claims substantiated / verified | % | [N] | [N] |
 
-> *Nota: La Direttiva UE sulle dichiarazioni ambientali (Green Claims Directive) richiedera la verifica delle affermazioni di sostenibilita. Documentare il processo di verifica delle dichiarazioni ambientali sui prodotti.*
+> *Nota: la Direttiva (UE) 2024/825 (EmpCo; in Italia D.Lgs. 30/2026, applicabile dal 27 settembre 2026) vieta i claim ambientali generici e quelli di neutralita basati su compensazione; la proposta di Green Claims Directive e pendente (ferma in Consiglio) e non e legge. Documentare il processo di verifica delle dichiarazioni ambientali sui prodotti.*
 
 ---
 

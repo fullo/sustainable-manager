@@ -291,7 +291,7 @@ Typical materiality ratings (HIGH / MEDIUM / LOW) indicate expected relevance fo
 ### S4 Consumers and End-users — Typical materiality: MEDIUM
 
 - **Impact**: Product safety regarding chemical residues in garments (formaldehyde, allergenic dyes, PFAS in waterproof treatments) in contact with skin. Misleading sustainability claims influencing consumer choices.
-- **Risk**: EU Green Claims Directive enforcement against unsubstantiated "sustainable" or "eco-friendly" labels. Product safety recalls for non-compliant chemical content.
+- **Risk**: Enforcement of the Empowering Consumers Directive (EmpCo, Dir. (EU) 2024/825, applicable since 27 September 2026) against unsubstantiated "sustainable" or "eco-friendly" labels. Product safety recalls for non-compliant chemical content.
 - **Opportunity**: Verified sustainability labels (EU Ecolabel, GOTS, Cradle to Cradle) driving consumer trust. Digital Product Passport enabling transparency-as-a-service.
 - **Typical materiality**: MEDIUM
 

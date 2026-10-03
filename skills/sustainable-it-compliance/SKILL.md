@@ -41,7 +41,7 @@ Ask the user progressively (not all at once) about their IT footprint:
 4. **Devices**: fleet size (laptops, smartphones, tablets), refresh cycle, end-of-life management
 5. **Software products**: do they develop software/digital services for customers?
 6. **Communication**: do they make green/sustainability claims about their IT or digital products?
-7. **CSRD status**: is the company in CSRD scope (1,000+ employees AND EUR 450M+ turnover)? IT data feeds ESRS E1/E5 if so.
+7. **CSRD status**: is the company in CSRD scope (more than 1,000 employees AND more than EUR 450M turnover)? IT data feeds ESRS E1/E5 if so.
 
 ## Step 2 — Obligation Mapping
 
@@ -50,11 +50,11 @@ Evaluate the profile against each regulatory area and produce an applicability t
 | # | Area | Key Question |
 |---|------|-------------|
 | 1 | **EED Art. 12 — data centre reporting** | Does any data centre have installed IT power demand ≥ 500 kW? If yes: annual reporting (deadline 15 May) of energy KPIs (PUE, WUE, ERF, REF) to the European database — use `references/eed-reporting-checklist.md` to run the data-gap assessment |
-| 2 | **AI Act / Digital Omnibus — AI energy** | GPAI model providers must document training energy consumption (in force since Aug 2025). High-risk system obligations postponed by the Digital Omnibus (Dec 2027 / Aug 2028) |
-| 3 | **Right to Repair (Dir. (EU) 2024/1799)** | Do they sell or heavily procure repairable-category devices (smartphones, tablets, displays, **servers**)? Transposition deadline 31 July 2026 |
-| 4 | **Energy labelling & ecodesign** | Smartphones/tablets: EU energy label with repairability index (since June 2025, EPREL registry). Battery passport for batteries >2 kWh from Feb 2027 |
-| 5 | **ESPR / Digital Product Passport** | DPP registry operational since July 2026; ICT product obligations expected toward 2029 — flag for procurement planning, not immediate action |
-| 6 | **Green claims on IT (EmpCo, Dir. (EU) 2024/825)** | From 27 Sept 2026 generic environmental claims ("green cloud", "carbon-neutral app" based on offsets) are banned. Audit existing IT marketing claims |
+| 2 | **AI Act / Digital Omnibus — AI energy** | GPAI model providers must document the model's known or estimated energy consumption (Annex XI; in force since Aug 2025). High-risk system obligations postponed by the Digital Omnibus (Reg. (EU) 2026/1744, in force since 27 July 2026) (Dec 2027 / Aug 2028) |
+| 3 | **Right to Repair (Dir. (EU) 2024/1799)** | Do they sell or heavily procure repairable-category devices (smartphones, tablets, displays, **servers**)? Transposition deadline 31 July 2026 already passed — several Member States, Italy included, are late |
+| 4 | **Energy labelling & ecodesign** | Smartphones/tablets: EU energy label with repairability index (since June 2025, EPREL registry). Battery passport from Feb 2027 for LMT batteries, industrial batteries >2 kWh and EV batteries (battery due diligence postponed to Aug 2027) |
+| 5 | **ESPR / Digital Product Passport** | DPP registry live since 20 July 2026 (Implementing Reg. (EU) 2026/1778); no dedicated ICT product group in the ESPR working plan 2025-2030: ICT is covered by horizontal measures on repairability (2027) and recycled content/recyclability of electronics (2029) — flag for procurement planning, not immediate action |
+| 6 | **Green claims on IT (EmpCo, Dir. (EU) 2024/825)** | Applicable since 27 Sept 2026 (Italy: D.Lgs. 30/2026) — generic environmental claims ("green cloud"), offset-based neutrality claims ("carbon-neutral app") and future-performance claims ("net zero by 2030") without an independently verified implementation plan are banned toward consumers. Audit existing IT marketing claims |
 | 7 | **European Accessibility Act (Dir. (EU) 2019/882)** | Applicable since 28 June 2025: do they sell products/services in scope (e-commerce, banking services, e-books, consumer devices, self-service terminals)? Digital accessibility (EN 301 549 / WCAG) is the social pillar of sustainable IT and feeds ESRS S4 |
 | 8 | **F-gas Regulation (EU) 2024/573** | Do they own/operate mechanical cooling (DC, server rooms)? HFC phase-down, GWP limits on new equipment from 2027, mandatory leak checks — factor into cooling CapEx decisions |
 | 9 | **WEEE / e-waste** | Device disposal must go through reuse cascade + certified WEEE channels with documentation; producers/importers of equipment have register and take-back obligations |
@@ -111,9 +111,9 @@ For organizations at Defined maturity or above (Step 0), close with a governance
 ## Gotchas
 
 - **The 500 kW EED threshold is installed IT power demand, not consumption**: a data centre can be half-empty and still be in scope. Colocation customers are NOT the reporting entity — the operator is; but CSRD reporters still need the data for Scope 3.
-- **EED reporting is already operational, not upcoming**: the annual 15 May deadline has been live since 2024. The EU rating scheme for data centres is the piece still pending (delegated act not yet final as of July 2026) — don't confuse the two.
+- **EED reporting is already operational, not upcoming**: the first report was due 15 September 2024 and the annual deadline has been 15 May since 2025 (Delegated Reg. (EU) 2024/1364). The EU rating scheme for data centres is the newer piece: delegated regulation C(2026) 3472 adopted 21 September 2026, in the two-month scrutiny period, first labels due by 15 August 2027 — don't confuse the two.
 - **The Digital Omnibus moved high-risk AI dates, not GPAI energy documentation**: high-risk obligations slip to Dec 2027 (standalone) / Aug 2028 (embedded), but GPAI providers' duty to document training compute and energy consumption applies since August 2025. The indicative GPAI threshold is 10^23 FLOP of training compute.
-- **"Carbon neutral cloud" claims become illegal wording after 27 Sept 2026**: EmpCo bans offset-based neutrality claims toward consumers. IT marketing pages are the most common place these claims survive unaudited.
+- **"Carbon neutral cloud" claims are illegal wording since 27 Sept 2026**: EmpCo bans offset-based neutrality claims toward consumers. IT marketing pages are the most common place these claims survive unaudited.
 - **SCI is a rate, not a total**: SCI measures gCO2e per functional unit (per user, per request, per transaction). It cannot be summed into a corporate inventory — use GHG Protocol for totals, SCI for software improvement tracking.
 - **W3C WSG are not a standard**: the Web Sustainability Guidelines remain a W3C Group Note (draft). Cite them as best practice, never as a compliance requirement.
 - **Servers are in the Right to Repair scope**: most organizations map the directive to consumer devices only and miss that servers are a covered category — relevant for data centre procurement and refresh policies.

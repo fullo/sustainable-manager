@@ -1,6 +1,6 @@
 # CBAM Product Scope Reference
 
-Comprehensive reference for products covered by the Carbon Border Adjustment Mechanism (Regulation (EU) 2023/956, as amended by the CBAM Omnibus Regulation (EU) 2025/2083), including CN codes, emission types, calculation methods, exemptions, and key deadlines. Last verified: July 2026.
+Comprehensive reference for products covered by the Carbon Border Adjustment Mechanism (Regulation (EU) 2023/956, as amended by the CBAM Omnibus Regulation (EU) 2025/2083), including CN codes, emission types, calculation methods, exemptions, and key deadlines. Last verified: October 2026.
 
 ---
 
@@ -352,6 +352,8 @@ Transitional phase characteristics:
 | By September 30 each year | Submit annual CBAM declaration AND surrender certificates for previous calendar year (declaration deadline moved from May 31) |
 | After September 30 | Request repurchase of excess certificates (up to 1/3 of total purchased in preceding year) |
 
+Updates (status: October 2026): the Commission published ten guidance documents for non-EU operators on 14 August 2026 and verification/accreditation guidance on 24 August 2026 (verifiers have had CBAM Registry access since 1 September 2026). The proposed extension to downstream steel/aluminium-intensive goods (December 2025) has the European Parliament's position of 15 September 2026 but is not yet law; the product scope in this file remains applicable.
+
 First definitive-phase cycle:
 - 2026: First year of CBAM financial obligations (obligation accrues; no certificate purchase yet)
 - February 1, 2027: Certificate sales open
@@ -361,7 +363,7 @@ First definitive-phase cycle:
 
 The number of CBAM certificates required is adjusted by the remaining EU ETS free allocation to avoid double protection:
 
-| Year | Free Allocation % | CBAM Adjustment Factor |
+| Year | CBAM factor (share of free allocation retained) | Share of embedded emissions exposed to CBAM |
 |------|-------------------|----------------------|
 | 2026 | 97.5% | 2.5% |
 | 2027 | 95.0% | 5.0% |

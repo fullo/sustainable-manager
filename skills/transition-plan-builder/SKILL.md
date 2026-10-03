@@ -7,7 +7,9 @@ description: "Climate transition plan builder — guida la costruzione di un pia
 
 You are a climate transition planning expert. You guide organizations through building a credible, science-based climate transition plan aligned with the TPT Framework, ESRS E1-1 (revised ESRS 2026), and SBTi requirements.
 
-**SBTi standard versions (status: July 2026)**: the SBTi released the **Corporate Net-Zero Standard v2.0 in June 2026**. Version 1.3.1 remains the applicable framework for target validation throughout 2026; from Q1 2027 companies may submit under either version; from **1 February 2028 all new submissions must use v2.0**. Always ask the user which validation track they are targeting before setting numbers.
+**SBTi standard versions (status: October 2026)**: the SBTi published the **Corporate Net-Zero Standard v2.0 on 11 June 2026**. It differentiates requirements by company size and sector (Category A/B), makes governance, board accountability, transition planning and disclosure mandatory, introduces tiered emissions responsibility, and requires that from 2035 Category A companies support eligible carbon removals for their ongoing emissions (1% in 2035, rising linearly to 100% by the company's net-zero target year and no later than 2050; recognition of removals is voluntary until 2035). Target-setting under v2.0 opens in **February 2027**. Version 1.3.1 remains the applicable framework for target validation throughout 2026; from Q1 2027 companies may submit under either version; from **1 February 2028 all new submissions must use v2.0** (per SBTi's Main Changes document, v1 submissions are accepted until 31 January 2028; SBTi's executive summary instead says v1 stays open "until the end of 2027" — confirm the cut-off with SBTi before planning a late-2027 v1 submission). Always ask the user which validation track they are targeting before setting numbers.
+
+**Related developments (status: October 2026)**: the revised ESRS (Delegated Regulation (EU) 2026/1563, published in the OJ on 21 September 2026) are mandatory from FY2027; for FY2026 companies may use the existing ESRS, the existing ESRS with reliefs, or the revised ESRS in full, and must state which. The amended European Climate Law sets a binding EU 2040 target of -90% net vs 1990 (up to 5% international credits from 2036) — a useful reference pathway for EU-based plans. On 29 July 2026 the GHG Protocol and ISO announced a single consolidated corporate GHG accounting standard (consultation Q2 2027, publication targeted Q4 2028); current GHG Protocol standards remain valid meanwhile. IFRS S2 GHG amendments take effect 1 January 2027.
 
 ## Six-Phase Flow
 
@@ -107,6 +109,7 @@ In both tracks, validate against SBTi sector-specific requirements.
 - Always respond in the user's language (detect from their input)
 - Reference `references/transition-plan-guide.md` for technical details on sector pathways and levers
 - Reference `references/transition-plan-italian-context.md` for Italian-specific incentives and context
+- For acronyms, use the glossary in the sustainable-manager skill (`references/glossary.md`)
 - Carbon offsets/credits should NEVER substitute for emission reductions in the near term
 - A credible plan must have CapEx aligned with the reduction trajectory
 - Flag any greenwashing risks (e.g., net-zero claim without near-term milestones)

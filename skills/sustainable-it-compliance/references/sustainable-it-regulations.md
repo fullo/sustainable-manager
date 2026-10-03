@@ -1,6 +1,6 @@
 # Sustainable IT Regulations — Technical Reference
 
-Thresholds, dates, and KPI definitions for EU digital sustainability obligations. Last verified: July 2026.
+Thresholds, dates, and KPI definitions for EU digital sustainability obligations. Last verified: October 2026.
 
 ---
 
@@ -14,7 +14,7 @@ Thresholds, dates, and KPI definitions for EU digital sustainability obligations
 |---------|--------|
 | Threshold | Data centres with **installed IT power demand ≥ 500 kW** |
 | Who reports | The data centre operator (owner/colocation provider) |
-| Deadline | **15 May each year**, covering the previous calendar year |
+| Deadline | **15 May each year** (from 2025; the first report was due 15 September 2024), covering the previous calendar year |
 | Where | European database on data centres (national channel per Member State) |
 
 ### Key KPIs
@@ -30,7 +30,7 @@ Plus: total energy consumption, IT equipment energy, temperature set points, was
 
 ### Status of the EU rating scheme
 
-A Commission delegated act establishing a **data centre sustainability rating scheme** was under consultation in spring 2026 (consultation closed April 2026); adoption was expected Q2 2026 but is **not yet final as of July 2026**. Track before advising on rating-based procurement criteria.
+The Commission adopted on **21 September 2026** a delegated regulation (C(2026) 3472) establishing the **data centre sustainability rating scheme** (data centres with at least 500 kW IT power demand): A-G classes for PUE and WUE plus indicators on energy sourcing, grid flexibility and waste-heat reuse; first electronic labels due by **15 August 2027**. It is in the two-month Parliament/Council scrutiny period (not yet in force at 2 October 2026), so cite it as adopted-but-pending. In parallel, a public consultation on **minimum performance standards** for data centres runs until 14 December 2026, with the Commission planning to adopt a proposal in Q2 2027.
 
 ### Reference standards
 - EN 50600 series (data centre facilities)
@@ -57,7 +57,7 @@ For companies assessing Taxonomy alignment (see eu-taxonomy-checker skill):
 
 ## 2. AI Act — Energy and Sustainability Aspects (as amended by the Digital Omnibus)
 
-**Legal basis**: Regulation (EU) 2024/1689 (AI Act), amended by the Digital Omnibus on AI (adopted June 2026).
+**Legal basis**: Regulation (EU) 2024/1689 (AI Act), amended by the Digital Omnibus on AI, Regulation (EU) 2026/1744 (OJ 24 July 2026, in force since 27 July 2026). Article 50 transparency obligations keep their 2 August 2026 date, but providers of generative AI systems placed on the market before 2 August 2026 have until **2 December 2026** to comply with the Art. 50(2) marking obligation; the new Art. 5 prohibitions added by the Omnibus apply from 2 December 2026.
 
 ### Timeline (post Digital Omnibus)
 
@@ -77,7 +77,7 @@ For companies assessing Taxonomy alignment (see eu-taxonomy-checker skill):
 
 ## 3. Software & Cloud Measurement Standards (voluntary)
 
-| Standard | Status (July 2026) | Notes |
+| Standard | Status (last verified July 2026) | Notes |
 |----------|--------------------|-------|
 | **SCI** — Software Carbon Intensity | **ISO/IEC 21031:2024** | `SCI = ((E × I) + M) / R` — rate per functional unit; not summable into inventories |
 | **SCI for AI** | **Ratified by GSF, December 2025** | Provider scope and Consumer scope; covers training and inference |
@@ -95,9 +95,9 @@ For companies assessing Taxonomy alignment (see eu-taxonomy-checker skill):
 | Instrument | Key dates | Content |
 |-----------|-----------|---------|
 | **Energy label smartphones/tablets** (Reg. 2023/1669 + ecodesign Reg. 2023/1670) | Applicable since **20 June 2025** | Energy class, battery endurance, **repairability index**, EPREL registration |
-| **Right to Repair Directive (EU) 2024/1799** | Transposition by **31 July 2026** | Repair obligation beyond legal guarantee at reasonable price/time; covered categories include smartphones, tablets, displays and **servers**; repair information access |
-| **Battery Regulation (EU) 2023/1542** | **Battery passport from 18 February 2027** for batteries > 2 kWh | QR code, carbon footprint, recycled content — relevant for UPS and e-mobility fleets |
-| **ESPR (EU) 2024/1781 + Digital Product Passport** | DPP registry operational since **19 July 2026**; ICT product groups expected toward **2029** (working plan 2025-2030) | Plan procurement data flows now; no immediate ICT obligation |
+| **Right to Repair Directive (EU) 2024/1799** | Transposition deadline **31 July 2026** (missed by several Member States, Italy included: draft decree AG 426 transmitted to Parliament on 9 July 2026, final Council of Ministers approval 16 September 2026, not in the Gazzetta Ufficiale up to 1 October 2026) | Repair obligation beyond legal guarantee at reasonable price/time; covered categories include smartphones, tablets, displays and **servers** (Annex II; Delegated Directive (EU) 2026/74 added domestic local space heaters); repair information access |
+| **Battery Regulation (EU) 2023/1542** | **Battery passport from 18 February 2027** for LMT batteries, industrial batteries > 2 kWh and EV batteries (Art. 77); battery due diligence obligations postponed to **18 August 2027** (Reg. (EU) 2025/1561) | QR code, carbon footprint, recycled content — relevant for UPS and e-mobility fleets |
+| **ESPR (EU) 2024/1781 + Digital Product Passport** | DPP registry (Implementing Reg. (EU) 2026/1778, OJ 17 July 2026) live since **20 July 2026** (rules in force 6 August 2026); no dedicated ICT product group in the working plan 2025-2030 (COM(2025) 187): ICT is covered by horizontal measures on repairability (**2027**) and recycled content/recyclability of electronics (**2029**) | Plan procurement data flows now; no immediate ICT obligation |
 | **WEEE Directive 2012/19/EU** | In force | E-waste collection/recovery; national registers for producers |
 
 ### WEEE / e-waste — operational flow
@@ -130,8 +130,8 @@ For the IT estate (not just producers placing equipment on the market):
 
 | Instrument | Status | Effect |
 |-----------|--------|--------|
-| **Empowering Consumers Directive (EU) 2024/825 (EmpCo)** | Applicable from **27 September 2026** | Bans generic environmental claims ("green", "eco-friendly", "climate neutral") without recognized excellent performance, and **offset-based neutrality claims**. Applies to "green cloud", "carbon-neutral app/website" marketing |
-| **Green Claims Directive** | **Proposal frozen (June 2025)** — not adopted | Do not cite as upcoming law; EmpCo is the operative reference |
+| **Empowering Consumers Directive (EU) 2024/825 (EmpCo)** | **Applicable since 27 September 2026** (neither the directive nor Italy's D.Lgs. 30/2026 contains a transitional clause for stock) | Bans generic environmental claims ("green", "eco-friendly", "energy efficient") without recognized excellent performance; **claims based on GHG offsetting that a product has a neutral, reduced or positive GHG impact** ("climate neutral", "CO2 neutral"); uncertified sustainability labels; whole-product claims covering only one aspect; and **future-performance claims** ("net zero by 2030") without a detailed, realistic implementation plan verified by an independent third-party expert. Applies to "green cloud", "carbon-neutral app/website" marketing toward consumers |
+| **Green Claims Directive** | **Proposal COM(2023) 166 pending (stalled in Council), not withdrawn** — not adopted | Do not cite as upcoming law; EmpCo is the operative reference |
 
 Typical IT claims to audit: "100% green energy" (check market-based evidence quality), "carbon-neutral hosting" (offset-based → banned wording), "most sustainable laptop" (comparative claims need substantiation).
 
@@ -148,4 +148,4 @@ Typical IT claims to audit: "100% green energy" (check market-based evidence qua
 | Data centre water use | E3 (water), especially in water-stressed locations |
 | AI training energy/water | E1/E3 where material; AI Act documentation as source |
 
-Note: revised ESRS (2026, applicable FY2027) reduced datapoints — verify each mapping against the current set. Companies below CSRD thresholds meet these data through customer requests capped at VSME content.
+Note: revised ESRS (Delegated Reg. (EU) 2026/1563, OJ 21 Sept 2026; mandatory from FY2027, FY2026 optional) reduced datapoints — verify each mapping against the current set. For financial years beginning on or after 1 January 2027, suppliers with up to 1,000 employees can be asked only for VSME Annex II essential datapoints (Delegated Reg. (EU) 2026/1560), limited to the requester's own CSRD needs.

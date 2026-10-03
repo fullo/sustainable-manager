@@ -310,7 +310,9 @@ Science Based Targets for Nature translates global sustainability goals into act
 
 ### Regulation Overview
 - EU Deforestation Regulation (2023/1115), entered into force June 2023, twice postponed and simplified (targeted revision adopted December 2025)
-- Application date: December 30, 2026 (all operators and traders), June 30, 2027 (micro and small operators)
+- Regulation (EU) 2025/2650 revision; application date: December 30, 2026 (large and medium operators and traders), June 30, 2027 (micro and small operators)
+- Delegated Regulation (EU) 2026/2102 (OJ 17 September 2026) narrows Annex I scope (removed: cattle hides/skins and leather, vulcanised rubber articles, conveyor/transmission belts, aircraft/motor-vehicle seats; added: soluble coffee, certain palm oil derivatives, frozen cattle tongues; retreaded tyres narrowed to tyre treads, which stay in scope); newly added products apply from 30 December 2027. Implementing Regulation (EU) 2026/1565 on the information system: adopted 13 July 2026, OJ 14 July 2026, in force 17 July 2026 (Art. 1(2)(c) from 15 October 2026)
+- Downstream operators and traders: no due diligence statement, but must inform authorities if they hold information on non-compliance
 - Replaces EU Timber Regulation (EUTR)
 
 ### 7 Regulated Commodities
@@ -320,7 +322,7 @@ Science Based Targets for Nature translates global sustainability goals into act
 4. **Coffee**: all forms (Central/South America, Africa, Asia)
 5. **Rubber**: tires, industrial products (Southeast Asia)
 6. **Wood**: timber, pulp, paper, furniture (global)
-7. **Cattle**: beef, leather, dairy (South America, particularly Brazil)
+7. **Cattle**: beef, dairy (South America, particularly Brazil); leather/hides removed from scope by Delegated Regulation (EU) 2026/2102
 
 ### Due Diligence Requirements
 - **Geolocation**: GPS coordinates of production plots (mandatory for all commodities)
@@ -348,11 +350,11 @@ Science Based Targets for Nature translates global sustainability goals into act
 
 ### Overview
 
-La UNI/PdR 179:2025 (Prassi di Riferimento UNI, in vigore dal 23 settembre 2025) stabilisce criteri e metodologie per:
+La UNI/PdR 179:2025 (Prassi di Riferimento UNI, in vigore dal 23 settembre 2025 — esistenza e data verificate sul catalogo UNI; clausole, formula dei crediti e ruolo dell'MSA riportati dalla skill e non verificati sul testo UNI al 2/10/2026) stabilisce criteri e metodologie per:
 - La valutazione e gestione dell'impronta di biodiversità delle organizzazioni
 - La realizzazione di progetti di rigenerazione per la generazione di Crediti di Biodiversità
 
-Elaborata dal Tavolo UNI/PdR "Monitoraggio e valorizzazione della biodiversità" (Università Federico II di Napoli — Dip. Agraria, 3Bee, CREA, Università di Torino, Climate Standard). Non è una norma nazionale ma un documento di prassi condivisa ex Regolamento UE n.1025/2012.
+Elaborata dal Tavolo UNI/PdR "Monitoraggio e valorizzazione della biodiversità", guidato da UNI con l'Università Federico II di Napoli — Dip. Agraria, con università, enti di ricerca (CREA) e soggetti privati del settore (composizione sulla scheda UNI: https://store.uni.com/uni-pdr-179-2025). Non è una norma nazionale ma un documento di prassi condivisa ex Regolamento UE n.1025/2012.
 
 Si applica a **tutte le tipologie di organizzazioni**, sia a livello di singolo sito che di intera azienda/catena di fornitura. I punti 5 (impronta) e 6 (crediti) sono sezioni distinte e autonome: l'organizzazione può implementare una sola delle due.
 
@@ -369,7 +371,7 @@ La prassi si fonda su quattro principi (originariamente applicati ai progetti di
 
 - UNI CEI EN ISO/IEC 17029 — Valutazione della conformità (organismi di validazione e verifica)
 - UNI CEI EN ISO/IEC 17050 — Dichiarazione di conformità del fornitore
-- Direttiva (UE) 2024/825 — Green Claims (responsabilizzazione consumatori, pratiche sleali)
+- Direttiva (UE) 2024/825 — EmpCo (responsabilizzazione consumatori, pratiche sleali; applicabile dal 27 settembre 2026; Italia: D.Lgs. 30/2026)
 - Regolamento (UE) 2024/1991 — Nature Restoration Law (ripristino della natura)
 
 ---
@@ -469,7 +471,7 @@ Approccio activity-based: il valore dell'intervento è riconosciuto fin dall'att
 
 #### 6.3 Processo di Generazione dei Crediti
 
-1. **Validazione ex-ante**: l'organismo di V&V approva il progetto. Può avvenire retroattivamente per progetti avviati fino a 3 anni prima
+1. **Validazione ex-ante**: l'organismo di V&V approva il progetto. Può avvenire retroattivamente per progetti avviati fino a 3 anni prima (data di decorrenza: in assenza di indicazioni esplicite, considerare l'avvio del progetto — es. data di impianto — e segnalarlo come ipotesi da verificare sul testo UNI; clausole e date della UNI/PdR 179:2025 riportate nella skill non verificate su fonte UNI al 2/10/2026)
 2. **Monitoraggio transitorio** (1 anno): verifica implementazione effettiva
 3. **Verifica ex-post**: l'ente verifica coerenza con il piano, miglioramento MSA → rilascia attestato di verifica → emissione Crediti con codice univoco
 4. **Verifiche successive**: ogni 3 anni (anno 1, poi ogni 3), con verifiche intermedie facoltative
@@ -550,6 +552,11 @@ Dove:
 | Urban area | 0.05** |
 
 *(\* media per vegetazione secondaria su periodi variabili; \*\* città densamente popolate senza spazi verdi significativi)*
+
+**Note di applicazione** (indicazioni operative della skill, non testo della prassi):
+- **Scala**: i valori della tabella e la formula usano la scala 0-1. Se un documento esprime l'MSA su scala 0-100, dividere per 100 prima di confrontare o calcolare ΔMSA e Crediti, e dichiarare la conversione.
+- **"Bare area" = 1.0** indica superfici nude *naturali* (roccia, dune, ghiaioni). Un suolo agricolo compattato o nudo non è "bare area": usare la classe agricola corrispondente (es. Extensive/Intensive cropland) e motivare la scelta. Per i terreni agricoli abbandonati GLOBIO non usa un valore fisso: l'MSA cresce con il tempo trascorso dall'abbandono (PBL, GLOBIO 3.5, Fig. 2.1).
+- **Valori intermedi** (es. 32,1 su 100): sono plausibili solo come media ponderata per area di più classi; se il documento non fornisce aree e classi, il valore non è verificabile.
 
 #### Bonus Pratiche Rigenerative
 

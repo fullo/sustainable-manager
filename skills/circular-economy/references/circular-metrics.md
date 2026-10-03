@@ -267,9 +267,12 @@ life-cycle assessment demonstrating better overall environmental outcomes.
 - Access to repair information and tools
 - Prohibition of practices preventing independent repair
 - Repair scoring/index for consumers
+- Already in law: Right to Repair Directive (EU) 2024/1799 (transposition deadline 31 July 2026; Italy late — decree approved in final reading by the Council of Ministers on 16 September 2026, awaiting publication in the Gazzetta Ufficiale)
+- Green claims on circularity (durability, recyclability, "circular") fall under EmpCo (Dir. (EU) 2024/825), applicable since 27 September 2026
 
 **Digital Product Passport (DPP):**
-- Mandatory for batteries (already in force), textiles, electronics
+- Mandatory for batteries from 18 February 2027 (Battery Regulation); textiles, electronics and other groups depend on ESPR delegated acts still pending
+- EU DPP registry live since 20 July 2026 (Implementing Reg. (EU) 2026/1778, OJ 17 July 2026, in force 6 August 2026)
 - Contains: material composition, recycled content, repairability score, disassembly instructions
 - QR code or RFID-based access
 - Interoperable EU-wide registry

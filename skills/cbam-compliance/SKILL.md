@@ -117,7 +117,7 @@ If a carbon price has been effectively paid in the country of origin:
 - Deduct from certificate obligation
 
 ### EU ETS Free Allocation Phase-Out
-Factor in the declining free allocation:
+Factor in the declining free allocation. The percentages below are the "CBAM factor" of the ETS Directive (Art. 10a(1a) Dir. 2003/87/EC as amended by Dir. (EU) 2023/959): the share of benchmark-based free allocation still granted to CBAM sectors; from 2034 no CBAM factor applies, i.e. no free allocation for CBAM goods:
 - 2026: 97.5% free allocation remaining (2.5% CBAM)
 - 2027: 95% (5% CBAM)
 - 2028: 90% (10% CBAM)
@@ -127,6 +127,8 @@ Factor in the declining free allocation:
 - 2032: 26.5% (73.5% CBAM)
 - 2033: 14% (86% CBAM)
 - 2034: 0% (100% CBAM)
+
+This is the schedule in force. The ETS revision proposal COM(2026) 616 (17 July 2026) would slow the phase-out for CBAM sectors (a changed CBAM-factor path from 2028, 15% for 2034-2037 and 0% from 2038) — a proposal only; use it as a sensitivity scenario, not as the base case.
 
 ### Cost Estimation
 ```
@@ -153,6 +155,12 @@ Key deadlines (as amended by Reg. (EU) 2025/2083):
 - **Certificate surrender**: Together with the annual declaration (first: Sept 30, 2027).
 - **Quarterly holding requirement**: Declarants must hold certificates covering at least **50%** of embedded emissions of goods imported since the start of the year (reduced from 80%).
 - **Certificate repurchase**: Excess certificates can be sold back (up to 1/3 purchased in previous year).
+
+Regulatory updates (status: October 2026):
+- **Guidance for non-EU operators**: on 14 August 2026 the Commission published ten guidance documents for non-EU operators (four general documents plus sector documents for cement, hydrogen, fertilisers, iron/steel, aluminium and electricity), covering embedded emissions and the free allocation adjustment — point non-EU suppliers to them.
+- **Verification**: guidance on verification/accreditation for verifiers and National Accreditation Bodies was published on 24 August 2026; verifiers have had access to the CBAM Registry since 1 September 2026. Accreditation rules are in Delegated Regulation (EU) 2025/2551 (applicable from 1 January 2026) — check verifier availability early.
+- **Certificate price**: the Commission publishes the quarterly price (Q1 2026: EUR 75.36, published 7 April 2026; Q2 2026: EUR 75.28, published 6 July 2026); a draft delegated regulation on certificate sale and repurchase was open for feedback 9 July - 6 August 2026 (not adopted as of 2 October 2026; certificate sales start on 1 February 2027 under the CBAM Regulation).
+- **Downstream extension (proposal, not law)**: the December 2025 proposal COM(2025) 989 to extend CBAM to downstream steel/aluminium-intensive goods and add anti-circumvention measures received the European Parliament's plenary position on 15 September 2026 (referred back to committee for interinstitutional negotiations; Commission ~180 additional products, Council general approach ~200, ENVI committee report ~457). The start of trilogues was not confirmed by primary sources as of 2 October 2026. The current product scope applies until an amending regulation is adopted.
 
 ---
 
@@ -204,8 +212,9 @@ Provide a ready-to-use supplier data request template covering:
 
 - **Default values include a markup**: When companies use EU default values instead of actual emissions, the values include a surcharge. This makes reporting actual data financially advantageous.
 - **Carbon price credit requires documentation**: A carbon price paid in the origin country can be deducted, but only with verified payment receipts. Verbal assurances from suppliers are not sufficient.
-- **CBAM and EU ETS free allocation overlap**: Free allocation is being phased out (2026: 97.5%, declining to 0% by 2034). The CBAM certificate cost adjusts for remaining free allocation.
+- **CBAM and EU ETS free allocation overlap**: Free allocation is being phased out through the CBAM factor (97.5% of benchmark free allocation in 2026, declining to no free allocation for CBAM goods from 2034 under current law; COM(2026) 616 proposes 0% only from 2038). The CBAM certificate cost adjusts for remaining free allocation.
 - **De minimis is cumulative, not per product**: A common misreading. 50 tonnes is the total net mass of ALL CBAM goods imported in the year (hydrogen and electricity excluded from the exemption). An importer bringing in 30t of steel and 30t of aluminium is above the threshold.
+- **Verification capacity is a bottleneck**: verifiers only gained CBAM Registry access on 1 September 2026 — book a verifier well before the 30 September 2027 declaration if using actual emissions data.
 - **2026 is a "pay later" year**: The financial obligation accrues on 2026 imports, but certificates only go on sale from Feb 1, 2027 and the first declaration is due Sept 30, 2027. Budget for the retroactive purchase — the price is the quarterly average EU ETS price of the import period, not the price at purchase.
 
 ## Key Principles

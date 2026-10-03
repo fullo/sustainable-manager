@@ -21,14 +21,14 @@ A sustainability matter is material if it is material from either or both perspe
 
 ### Post-Omnibus Simplification — Now in Force
 
-The Omnibus simplification is no longer a proposal: the Omnibus I Directive (EU) 2026/470 entered into force on 18 March 2026, and the **revised ESRS (2026) were adopted as a delegated act on 3 July 2026** (applicable FY2027, voluntary early use FY2026). Key changes for the DMA:
+The Omnibus simplification is no longer a proposal: the Omnibus I Directive (EU) 2026/470 entered into force on 18 March 2026, and the **revised ESRS (2026) were adopted as a delegated act on 3 July 2026 and published in the OJ on 21 September 2026 as Delegated Regulation (EU) 2026/1563** (in force 10 November 2026, mandatory from FY2027; for FY2026 companies may choose the existing or the revised ESRS and disclose which). Key changes for the DMA:
 
 - **Top-down approach permitted**: Companies no longer need to start from an exhaustive analysis of all sub-sub-topics
 - **Information Materiality Filter**: Companies may omit data points within material topics if not decision-relevant (omissions documented)
 - **Fair presentation principle**: Replaces the checklist mentality — the report must fairly present material IROs
 - **Wider use of estimates** without "undue cost or effort", especially for value chain data
-- **Value chain cap**: Data requests to value chain partners below 1,000 employees are capped at VSME content
-- **61% fewer mandatory datapoints** overall in the revised ESRS; all voluntary datapoints removed
+- **Value chain cap**: Data requests to value chain partners with up to 1,000 employees are capped at VSME content
+- **Over 60% fewer mandatory datapoints** in the revised ESRS (Commission, 3 July 2026; EFRAG's December 2025 advice: -61% of datapoints required if material — institutional estimates, not in the Regulation text); all voluntary datapoints removed
 
 ---
 

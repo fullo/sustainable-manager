@@ -2,115 +2,494 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "report-analysis-schema",
   "title": "Sustainability Report Analysis",
-  "description": "Structured, source-anchored output of the sustainable-manager Document Analysis / Greenwashing Detection workflow. One object per analyzed report. Feeds report-analysis-template.md (human-readable) and analysis_dashboard.py (comparative dashboard). Anti-fabrication rule: every value in key_metrics MUST carry a page and a verbatim quote; if a figure is not in the document it goes in completeness.missing, never in key_metrics.",
+  "description": "Structured, source-anchored output of the sustainable-manager Document Analysis / Greenwashing Detection workflow. One object per analyzed report. Feeds report-analysis-template.md (human-readable) and analysis_dashboard.py (comparative dashboard). Anti-fabrication rule: every value in key_metrics MUST carry a page and a verbatim quote; if a figure is not in the document it goes in completeness.missing, never in key_metrics. Schema 1.1 (v2.7.3): 'page' accepts an integer or an array of integers; optional blocks for regulatory context, derived values (analyst calculations, never KPIs) and internal-consistency flags. Schema 1.2 (v2.7.4): optional 'quote_source' (text/image) on KPIs and claims; optional verification.method_type; 'verification.performed' defined (true only after an independent re-reading pass). All 1.0 and 1.1 outputs remain valid.",
   "type": "object",
-  "required": ["company", "reporting_period", "framework", "key_metrics", "completeness", "greenwashing", "strengths", "weaknesses"],
+  "required": [
+    "company",
+    "reporting_period",
+    "framework",
+    "key_metrics",
+    "completeness",
+    "greenwashing",
+    "strengths",
+    "weaknesses"
+  ],
   "additionalProperties": false,
   "properties": {
-    "company": { "type": "string", "description": "Reporting entity legal name (and group/perimeter if relevant)." },
-    "sector": { "type": "string", "description": "Business sector / main activity." },
-    "reporting_period": { "type": "string", "description": "Period the report covers, e.g. 'FY2025 (1 Jan – 31 Dec 2025)'." },
-    "source_file": { "type": "string", "description": "Filename or reference of the analyzed document." },
-    "pages_read": { "type": "string", "description": "Which pages of the document were actually read, e.g. '1-72 all' or '1-40, 100-120'." },
+    "company": {
+      "type": "string",
+      "description": "Reporting entity legal name (and group/perimeter if relevant)."
+    },
+    "sector": {
+      "type": "string",
+      "description": "Business sector / main activity."
+    },
+    "reporting_period": {
+      "type": "string",
+      "description": "Period the report covers, e.g. 'FY2025 (1 Jan – 31 Dec 2025)'."
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Filename or reference of the analyzed document."
+    },
+    "pages_read": {
+      "type": "string",
+      "description": "Which pages of the document were actually read, e.g. '1-72 all' or '1-40, 100-120'. Mention the pages read visually (image-only pages, screenshots, scanned letters), e.g. '1-120 text; 2, 116-117 visually'."
+    },
+    "analysis_date": {
+      "type": "string",
+      "description": "Date of the analysis (ISO 8601, e.g. '2026-10-02'); the regulatory context is stated as of this date."
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Version of this schema used, e.g. '1.2'."
+    },
     "framework": {
       "type": "object",
-      "required": ["status", "standards"],
+      "required": [
+        "status",
+        "standards"
+      ],
       "additionalProperties": false,
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["in_accordance", "with_reference", "inspired_by", "none"],
+          "enum": [
+            "in_accordance",
+            "with_reference",
+            "inspired_by",
+            "none"
+          ],
           "description": "Reporting status. 'inspired_by' (e.g. 'ispirato agli ESRS') is NOT compliance — keep the distinction explicit."
         },
-        "standards": { "type": "array", "items": { "type": "string" }, "description": "Declared or recognizable standards: GRI, ESRS, VSME, TNFD, SASB, ISSB, UNI/PdR, etc." }
+        "standards": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Declared or recognizable standards: GRI, ESRS, VSME, TNFD, SASB, ISSB, UNI/PdR, etc."
+        },
+        "scope_note": {
+          "type": "string",
+          "description": "Regulatory position of the report, e.g. 'voluntary — entity outside post-Omnibus CSRD scope', 'subsidiary included in group consolidated report', 'VSME basis: Recommendation (EU) 2025/1710 (FY2025)'."
+        }
       }
     },
     "assurance": {
       "type": "object",
-      "required": ["present"],
+      "required": [
+        "present"
+      ],
       "additionalProperties": false,
       "properties": {
-        "present": { "type": "boolean" },
-        "type": { "type": "string", "description": "e.g. 'limited assurance, ISAE 3000, SGS Italia', or 'absent'." }
+        "present": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string",
+          "description": "e.g. 'limited assurance, ISAE 3000, SGS Italia', or 'absent'."
+        }
       }
     },
-    "executive_summary": { "type": "array", "items": { "type": "string" }, "maxItems": 6, "description": "3-6 bullet takeaways." },
+    "executive_summary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6,
+      "description": "3-6 bullet takeaways."
+    },
     "key_metrics": {
       "type": "array",
       "description": "Quantitative KPIs actually present in the document. For Scope 2 report BOTH market-based and location-based when available (as separate entries).",
       "items": {
         "type": "object",
-        "required": ["name", "value", "unit", "page", "quote"],
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "page",
+          "quote"
+        ],
         "additionalProperties": false,
         "properties": {
-          "name": { "type": "string" },
-          "value": { "type": "string" },
-          "unit": { "type": "string" },
-          "page": { "type": "integer", "description": "Physical page in the file (not the printed page number)." },
-          "quote": { "type": "string", "description": "Short verbatim quote from the document supporting the value." }
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "page": {
+            "description": "Physical page(s) in the file (not the printed page number): an integer, or an array of integers when the item appears on several pages (main page first).",
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 1
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "minItems": 1
+              }
+            ]
+          },
+          "quote": {
+            "type": "string",
+            "description": "Short verbatim quote from the document supporting the value."
+          },
+          "quote_source": {
+            "type": "string",
+            "enum": [
+              "text",
+              "image"
+            ],
+            "description": "OPTIONAL. Where the quote was read: 'text' (text layer, default) or 'image' (screenshot, map, scanned page: transcribed visually). scripts/quote_check.py reports image-sourced quotes as 'IMAGE — manual check', not as failures."
+          },
+          "printed_page": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "description": "OPTIONAL. Printed page number when it differs from the physical page (e.g. spreads with 2 printed pages per sheet)."
+          },
+          "perimeter": {
+            "type": "string",
+            "description": "OPTIONAL. Perimeter of the figure, e.g. 'legal entity', 'group', 'Italy only'."
+          },
+          "basis": {
+            "type": "string",
+            "description": "OPTIONAL. Calculation basis, e.g. 'market-based', 'location-based', 'ISO 14064-1 Cat. 2'."
+          }
         }
       }
     },
     "completeness": {
       "type": "object",
-      "required": ["present", "missing"],
+      "required": [
+        "present",
+        "missing"
+      ],
       "additionalProperties": false,
       "properties": {
-        "present": { "type": "array", "items": { "type": "string" }, "description": "Key disclosures present (e.g. 'Scope 1 & 2', 'GRI 305-1', 'double materiality')." },
-        "missing": { "type": "array", "items": { "type": "string" }, "description": "Expected but absent disclosures (e.g. 'Scope 3', 'external assurance', 'SBTi baseline')." }
+        "present": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Key disclosures present (e.g. 'Scope 1 & 2', 'GRI 305-1', 'double materiality')."
+        },
+        "missing": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Expected but absent disclosures (e.g. 'Scope 3', 'external assurance', 'SBTi baseline')."
+        }
       }
     },
     "greenwashing": {
       "type": "object",
-      "required": ["overall_risk", "flagged_claims"],
+      "required": [
+        "overall_risk",
+        "flagged_claims"
+      ],
       "additionalProperties": false,
       "properties": {
-        "overall_risk": { "type": "string", "enum": ["low", "medium", "high"], "description": "Overall greenwashing risk." },
+        "overall_risk": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "description": "Overall greenwashing risk."
+        },
         "flagged_claims": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["claim", "rating", "page", "reason"],
+            "required": [
+              "claim",
+              "rating",
+              "page",
+              "reason"
+            ],
             "additionalProperties": false,
             "properties": {
-              "claim": { "type": "string" },
+              "claim": {
+                "type": "string"
+              },
               "rating": {
                 "type": "string",
-                "enum": ["substantiated", "partially_substantiated", "unsubstantiated", "misleading"],
+                "enum": [
+                  "substantiated",
+                  "partially_substantiated",
+                  "unsubstantiated",
+                  "misleading"
+                ],
                 "description": "Per references/greenwashing-detection.md claim rating methodology."
               },
-              "page": { "type": "integer" },
-              "reason": { "type": "string" }
+              "page": {
+                "description": "Physical page(s) in the file (not the printed page number): an integer, or an array of integers when the item appears on several pages (main page first).",
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "minItems": 1
+                  }
+                ]
+              },
+              "quote": {
+                "type": "string",
+                "description": "OPTIONAL. Short verbatim quote of the claim from the document."
+              },
+              "quote_source": {
+                "type": "string",
+                "enum": [
+                  "text",
+                  "image"
+                ],
+                "description": "OPTIONAL. Where the quote was read: 'text' (text layer, default) or 'image' (screenshot, map, scanned page: transcribed visually). scripts/quote_check.py reports image-sourced quotes as 'IMAGE — manual check', not as failures."
+              },
+              "reason": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "overall_risk_rule": {
+          "type": "string",
+          "description": "OPTIONAL. Which rule of the Overall Risk Rubric (references/greenwashing-detection.md) triggered overall_risk."
+        }
+      }
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Concrete, prioritized next steps.",
+      "maxItems": 6
+    },
+    "verification": {
+      "type": "object",
+      "description": "OPTIONAL but recommended: record what was actually done. 'performed' is true ONLY after an independent re-reading pass — /adversarial-verify, or a self-check that re-opens every cited page and re-derives every KPI value and claim rating (record findings in 'issues'). Running scripts/quote_check.py alone, with or without a visual look at a few pages, is NOT a verification: record it as performed=false, method_type='automated_quote_check', with the script result in 'summary'. The core skill does not orchestrate multi-agent verification on its own.",
+      "required": [
+        "performed"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "performed": {
+          "type": "boolean",
+          "description": "true only if method_type is 'adversarial_verify' or 'self_check_reopened_pages' (see the block description); false for none or an automated quote check only."
+        },
+        "confidence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Overall confidence in the verified analysis."
+        },
+        "hallucinations": {
+          "type": "integer",
+          "description": "Count of cited values/pages that do not exist in the document."
+        },
+        "summary": {
+          "type": "string"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "claim",
+              "verdict",
+              "evidence"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "claim": {
+                "type": "string"
+              },
+              "verdict": {
+                "type": "string",
+                "enum": [
+                  "confirmed",
+                  "imprecise",
+                  "refuted",
+                  "unverifiable"
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              },
+              "severity": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "critical"
+                ]
+              }
+            }
+          }
+        },
+        "method": {
+          "type": "string",
+          "description": "OPTIONAL. Free-text description, e.g. 'adversarial-verify (2 lenses)', 'automated quote check only (quote_check.py: 58/58)' — do not present a quote check as an adversarial verification."
+        },
+        "method_type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "automated_quote_check",
+            "self_check_reopened_pages",
+            "adversarial_verify"
+          ],
+          "description": "OPTIONAL. Controlled value for 'method'. performed=true requires 'self_check_reopened_pages' or 'adversarial_verify'."
+        }
+      },
+      "if": {
+        "required": [
+          "method_type"
+        ],
+        "properties": {
+          "method_type": {
+            "enum": [
+              "none",
+              "automated_quote_check"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "performed": {
+            "const": false
+          }
+        }
+      }
+    },
+    "regulatory_context": {
+      "type": "array",
+      "description": "OPTIONAL. Acts relevant to the entity as of analysis_date (template §5).",
+      "items": {
+        "type": "object",
+        "required": [
+          "act",
+          "applicability"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "act": {
+            "type": "string",
+            "description": "e.g. 'CSRD as amended by Dir. (EU) 2026/470'."
+          },
+          "status": {
+            "type": "string",
+            "description": "Legal status/dates, e.g. 'in force 18/3/2026; transposition by 19/3/2027'."
+          },
+          "applicability": {
+            "type": "string",
+            "description": "e.g. 'out of scope (686 employees)', 'applies from FY2027', 'possible — verify CN codes'."
+          },
+          "source": {
+            "type": "string",
+            "description": "Skill reference or primary source used."
+          }
+        }
+      }
+    },
+    "derived_values": {
+      "type": "array",
+      "description": "OPTIONAL. Values computed by the analyst (totals, % changes, ratios). Never KPIs: they are not in the document.",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "computed_from"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "computed_from": {
+            "type": "string",
+            "description": "Formula and inputs, e.g. '8,504 + 2,338 (p.78)'."
+          },
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
             }
           }
         }
       }
     },
-    "strengths": { "type": "array", "items": { "type": "string" }, "maxItems": 6 },
-    "weaknesses": { "type": "array", "items": { "type": "string" }, "maxItems": 6 },
-    "recommendations": { "type": "array", "items": { "type": "string" }, "description": "Concrete, prioritized next steps." },
-    "verification": {
-      "type": "object",
-      "description": "OPTIONAL. Populated only when an independent verification pass was run (e.g. /adversarial-verify or a self-check re-reading the source). The core skill does not orchestrate multi-agent verification on its own.",
-      "required": ["performed"],
-      "additionalProperties": false,
-      "properties": {
-        "performed": { "type": "boolean" },
-        "confidence": { "type": "integer", "minimum": 0, "maximum": 100, "description": "Overall confidence in the verified analysis." },
-        "hallucinations": { "type": "integer", "description": "Count of cited values/pages that do not exist in the document." },
-        "summary": { "type": "string" },
-        "issues": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["claim", "verdict", "evidence"],
-            "additionalProperties": false,
-            "properties": {
-              "claim": { "type": "string" },
-              "verdict": { "type": "string", "enum": ["confirmed", "imprecise", "refuted", "unverifiable"] },
-              "evidence": { "type": "string" },
-              "severity": { "type": "string", "enum": ["low", "medium", "critical"] }
-            }
+    "data_quality_flags": {
+      "type": "array",
+      "description": "OPTIONAL. Internal inconsistencies found in the document (sums that do not add up, figures differing between sections).",
+      "items": {
+        "type": "object",
+        "required": [
+          "issue",
+          "pages"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "issue": {
+            "type": "string"
+          },
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "minItems": 1
+          },
+          "analyst_calculation": {
+            "type": "string",
+            "description": "OPTIONAL. Recalculation supporting the flag."
           }
         }
       }

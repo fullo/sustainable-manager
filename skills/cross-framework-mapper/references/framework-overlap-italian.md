@@ -103,6 +103,13 @@ Le banche italiane devono pubblicare informazioni ESG nel Pillar 3. Sovrapposizi
   - 2026 (FY): PMI quotate (con opt-out fino a 2028)
 - Sanzioni: confermate sanzioni amministrative Consob per mancata/incompleta rendicontazione
 
+### Aggiornamento post-Omnibus (ottobre 2026)
+- La Direttiva (UE) 2026/470 (Omnibus I) restringe il perimetro CSRD a >1.000 dipendenti E >450 milioni di EUR di fatturato; recepimento delle modifiche CSRD entro il 19 marzo 2027
+- Il disegno di legge di delegazione europea 2026 (A.S. 2025), approvato dal CdM il 4/8/2026, presentato al Senato il 2/9/2026 e assegnato alla 4ª Commissione (Politiche dell'Unione europea) in sede referente il 17/9/2026, è in corso di esame in commissione (ultima seduta 30/9/2026): non è legge al 2/10/2026. L'art. 6 detta i criteri di delega per recepire la Direttiva 2026/470: modifiche al D.Lgs. 125/2024, al D.Lgs. 136/2015, al D.Lgs. 39/2010, a TUF, TUB e Codice delle assicurazioni private; poteri di vigilanza e sanzionatori di CONSOB (emittenti quotati) e di MEF/CONSOB (attestazione); esercizio delle opzioni della direttiva; disciplina secondaria MEF/CONSOB. Il 1/10/2026 la Conferenza Stato-Regioni ha reso il proprio parere sul disegno di legge
+- La tempistica 2026 per le PMI quotate qui sopra va letta come storica: le PMI quotate sono uscite dal perimetro obbligatorio (VSME volontario, Regolamento delegato (UE) 2026/1560)
+- Stop-the-clock recepito con l'art. 10, comma 1-bis, del D.L. 95/2025, introdotto dalla legge di conversione 8 agosto 2025, n. 118 (art. 17 D.Lgs. 125/2024: esercizi dal 1/1/2027 per le altre grandi imprese, dal 1/1/2028 per le PMI quotate); ESRS rivisti (Reg. delegato (UE) 2026/1563, GUUE 21 settembre 2026) obbligatori dal FY2027
+- Attestazione: resta la limited assurance, ora permanente (abbandonato il passaggio alla reasonable assurance); standard di limited assurance atteso entro il 1° luglio 2027
+
 ### Gold-plating italiano
 - Nessun gold-plating significativo rispetto alla CSRD
 - Mantenimento del ruolo Consob come autorita di vigilanza

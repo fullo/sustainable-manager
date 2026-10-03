@@ -1,6 +1,6 @@
 # EU Sustainability Regulation Thresholds — Comprehensive Reference
 
-Last updated: July 2026
+Last updated: October 2026
 
 ---
 
@@ -10,39 +10,51 @@ Last updated: July 2026
 
 ### Original Scope (pre-Omnibus)
 
-Companies meeting **2 of 3 criteria**:
+Large undertakings exceeding **2 of 3 criteria** (Art. 3(4) Dir. 2013/34/EU, size criteria as adjusted by Delegated Directive (EU) 2023/2775, OJ 21 December 2023):
 
 | Criterion | Threshold |
 |-----------|-----------|
-| Employees | 250+ |
-| Net turnover | EUR 40M+ |
-| Total assets | EUR 20M+ |
+| Employees | more than 250 (average) |
+| Net turnover | more than EUR 50M (was EUR 40M before 2023/2775) |
+| Balance sheet total | more than EUR 25M (was EUR 20M before 2023/2775) |
 
 ### Post-Omnibus Scope (Directive (EU) 2026/470)
 
-Significantly narrowed. Companies must meet **both criteria**:
+Significantly narrowed. Companies must exceed **both criteria** on their balance sheet date (on a consolidated basis for parent undertakings of a group):
 
 | Criterion | Threshold |
 |-----------|-----------|
-| Employees | 1,000+ |
-| Net turnover | EUR 450M+ |
+| Employees | more than 1,000 (average during the financial year) |
+| Net turnover | more than EUR 450M |
+
+Directive text: undertakings which "exceed a net turnover of EUR 450 000 000 and an average number of 1 000 employees during the financial year" (Dir. (EU) 2026/470, amending Art. 19a/29a Dir. 2013/34/EU). Exactly 1,000 employees or exactly EUR 450M = not in scope.
 
 This change removes an estimated 80% of companies from the original scope.
+
+Member State transposition deadline for the CSRD changes: **19 March 2027**.
+
+Assurance: the planned move to reasonable assurance was dropped — **limited assurance is permanent**; the limited-assurance standard is due by **1 July 2027**.
+
+### Perimeter: Entity vs Group, Subsidiaries, MTF Listing
+
+- Apply the thresholds to the **reporting entity**: individual figures for Art. 19a, consolidated figures for a parent undertaking under Art. 29a. Always state which perimeter the report (and each KPI) covers.
+- A **subsidiary** exceeding the thresholds is exempt from its own sustainability statement if it is included in the parent's consolidated sustainability reporting (Art. 19a(9) Dir. 2013/34/EU; Art. 29a(8) for intermediate parents), subject to the conditions of that paragraph; the exemption already covered public-interest entities except large PIEs listed on an EU regulated market (Art. 2(1)(a)); Dir. (EU) 2026/470 replaced Art. 19a(10) and 29a(9) and removed that carve-out, so listed subsidiaries can now also be exempt. Check the conditions before concluding.
+- **PIE status** requires securities admitted to trading on a **regulated market** (Art. 2(1)(a) Dir. 2013/34/EU). A listing on an MTF (e.g. Euronext Growth Milan) does not make the company a PIE.
 
 ### Listed SMEs
 
 | Detail | Value |
 |--------|-------|
 | Scope | **Removed from mandatory CSRD reporting** by Directive (EU) 2026/470 (former Wave 3 abolished) |
-| Voluntary option | VSME (voluntary standard for non-listed and listed SMEs, adopted as delegated act on 3 July 2026) |
+| Voluntary option | Voluntary standard (VSME) — Delegated Regulation (EU) 2026/1560, adopted 3 July 2026, OJ 21 September 2026, in force 24 September 2026; open to **any undertaking not subject to mandatory reporting** (Art. 2), not only SMEs. It replaces Commission Recommendation (EU) 2025/1710, which no longer produces legal effects from 24 September 2026 (recital 5) |
 | Practical driver | Data requests from CSRD-scope customers and banks, capped at VSME content (value chain cap) |
 
 ### Non-EU Companies
 
 | Detail | Value |
 |--------|-------|
-| Threshold | EUR 450M+ net turnover generated in the EU (raised from EUR 150M) |
-| Condition | Must have at least one EU subsidiary or branch with EUR 200M+ turnover |
+| Threshold | More than EUR 450M net turnover generated in the EU in each of the last two consecutive financial years (raised from EUR 150M) |
+| Condition | Must have at least one EU subsidiary or branch with net turnover exceeding EUR 200M in the preceding financial year |
 | Applicable from | FY2028 (reporting in 2029) |
 | Standard | Separate non-EU ESRS set |
 
@@ -50,18 +62,19 @@ This change removes an estimated 80% of companies from the original scope.
 
 | Phase | Applicable from | Companies |
 |-------|----------------|-----------|
-| Wave 1 | FY2024 (report in 2025) | Large PIEs already under NFRD (500+ employees); those below the new 1,000-empl / EUR 450M thresholds exit the scope from FY2027 |
-| Wave 2 | FY2027 (report in 2028) — postponed 2 years by Directive (EU) 2025/794 | Only companies meeting the new thresholds (1,000+ employees AND EUR 450M+ turnover) |
+| Wave 1 | FY2024 (report in 2025) | Large PIEs already under NFRD (more than 500 employees); those not exceeding the new thresholds exit the scope from FY2027, and Member States **may exempt them already for FY2025-2026** (new derogation in Art. 5(2) Dir. 2022/2464, inserted by Dir. 2026/470) — check national transposition (Italy: not enacted as of 2 October 2026) |
+| Wave 2 | FY2027 (report in 2028) — postponed 2 years by Directive (EU) 2025/794 | Only companies exceeding the new thresholds (more than 1,000 employees AND more than EUR 450M turnover) |
 | Wave 3 (listed SMEs) | Abolished | Out of mandatory scope; VSME voluntary |
-| Wave 4 | FY2028 (report in 2029) | Non-EU companies with EUR 450M+ EU revenue |
-| Revised ESRS (2026) | FY2027 (report in 2028); voluntary early use FY2026 | Delegated act adopted 3 July 2026: mandatory datapoints reduced 61%, voluntary datapoints removed |
+| Wave 4 | FY2028 (report in 2029) | Non-EU companies with more than EUR 450M EU turnover |
+| Revised ESRS (2026) | Mandatory FY2027 (report in 2028); FY2026 options: existing ESRS, existing ESRS with reliefs, or revised ESRS in full (must state which is applied) | Delegated Regulation (EU) 2026/1563 (amends 2023/2772), adopted 3 July 2026, OJ 21 September 2026, in force 10 November 2026: voluntary datapoints removed; datapoint reduction per EFRAG's technical advice (3 Dec 2025): -61% of datapoints required if material; per the Commission's 3 July 2026 release: over 60% fewer mandatory, over 70% fewer in total (estimates, not in the Regulation text) |
 
 **Note**: The combined effect of Stop-the-Clock + Omnibus I is that Wave 2 companies below the new thresholds never enter mandatory reporting, and Wave 1 companies below them exit from FY2027.
 
 ### Value Chain Data Cap
 
-- Entities with fewer than **1,000 employees** may refuse data requests from value chain partners for ESRS reporting purposes
-- This was introduced by the Omnibus package to relieve burden on SMEs
+- Value-chain entities **not exceeding an average of 1,000 employees** in the preceding financial year ("protected undertakings", Dir. (EU) 2026/470) may decline requests that go beyond the value chain cap
+- This was introduced by the Omnibus package to relieve burden on SMEs and small mid-caps
+- For financial years beginning on or after **1 January 2027** (Delegated Regulation (EU) 2026/1560, Art. 3, applicable under Art. 4), reporters may not request from those entities more than the Annex II datapoints of Reg. (EU) 2026/1560
 
 ### Key ESRS Standards
 
@@ -85,10 +98,10 @@ Materiality assessment determines which topical standards (E1-E5, S1-S4, G1) are
 
 | Criterion | Threshold |
 |-----------|-----------|
-| Employees | 5,000+ |
-| Worldwide net turnover | EUR 1.5B+ |
+| Employees | more than 5,000 (average) |
+| Worldwide net turnover | more than EUR 1.5B |
 
-Both criteria must be met. Originally the directive targeted companies with 500+ employees and EUR 150M+ turnover — the Omnibus raised these thresholds by approximately 10x.
+Both criteria must be exceeded (Dir. (EU) 2026/470: "more than 5 000 employees on average and ... a net worldwide turnover of more than EUR 1 500 000 000"). The original Directive 2024/1760 applied (in phases) to companies with more than 1,000 employees and more than EUR 450M turnover — the Omnibus raised the employee threshold 5x and the turnover threshold above 3x. Franchising/licensing: EUR 75M+ royalties and EUR 275M+ turnover.
 
 ### Key Timeline
 
@@ -97,17 +110,21 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 | Directive entered into force | July 2024 |
 | Original transposition deadline | July 2026 |
 | Revised transposition deadline (Directive (EU) 2026/470) | 26 July 2028 |
-| Application to companies | From 26 July 2029 |
+| Application to companies | From 26 July 2029 (single date; replaces the 2027/2028/2029 phase-in) |
+| Reporting on due diligence | From FY2030 |
 
 ### Scope Details
 
 | Element | Detail |
 |---------|--------|
 | Due diligence scope | Human rights and environmental impacts across the value chain |
-| Climate transition plan | Adoption/implementation obligation REMOVED by Omnibus (transition plan disclosure remains under CSRD/ESRS E1 for companies in CSRD scope) |
-| Civil liability | Maintained but narrowed — burden of proof adjustments |
+| Climate transition plan | Adoption/implementation obligation (former Art. 22) REMOVED by Omnibus (transition plan disclosure remains under CSRD/ESRS E1 for companies in CSRD scope) |
+| Civil liability | Art. 29 amended, not deleted: para. 1 (harmonised EU liability conditions) and para. 7 (overriding mandatory application) deleted; liability arises under national law, and where a company is held liable the right to full compensation remains |
+| Penalties | Maximum fine capped at 3% of worldwide net turnover (previously: maximum not lower than 5%) |
+| Risk-based approach | Scoping exercise across own operations, subsidiaries and business partners where impacts are most likely, then in-depth assessment of identified areas — not limited to tier 1; direct partners may be prioritised at equal risk. Reassessment at least every 5 years and after significant changes |
+| Requests to partners < 5,000 employees | Only information that is necessary and cannot reasonably be obtained otherwise |
 | Sector-specific | No sector-specific thresholds (uniform application) |
-| Non-EU companies | EUR 1.5B+ net turnover generated in the EU |
+| Non-EU companies | More than EUR 1.5B net turnover generated in the EU |
 
 ### Due Diligence Obligations
 
@@ -143,6 +160,7 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 | Effect | Importers at or below this threshold are exempt from CBAM obligations |
 | Impact | Removes approximately 90% of transitional period reporters (~99% of embedded emissions still covered) |
 | Applies from | Definitive phase (January 2026) |
+| Earlier simplification | Reg. (EU) 2025/2083 in force 20 October 2025 |
 
 ### Timeline (as amended by Reg. (EU) 2025/2083)
 
@@ -152,6 +170,16 @@ Both criteria must be met. Originally the directive targeted companies with 500+
 | Definitive phase begins | 1 Jan 2026 | Financial obligation accrues; authorized declarant status required (imports allowed while application pending if filed by 31 Mar 2026) |
 | CBAM certificate sales start | 1 Feb 2027 | Certificates for 2026 imports purchased retroactively at quarterly average EU ETS price |
 | First declaration + surrender | 30 Sept 2027 | Annual CBAM declaration and certificate surrender for 2026 imports (declaration deadline moved from 31 May) |
+
+### Updates (status: October 2026)
+
+| Item | Detail |
+|------|--------|
+| Guidance for non-EU operators | Ten guidance documents published 14 August 2026 (four general, six sector documents: cement, hydrogen, fertilisers, iron/steel, aluminium, electricity; embedded emissions and free allocation adjustment) |
+| Verification | Guidance for verifiers and National Accreditation Bodies published 24 August 2026; verifiers access the CBAM Registry from 1 September 2026; accreditation rules in Delegated Regulation (EU) 2025/2551 |
+| Certificate price | Quarterly price published by the Commission (Q1 2026: EUR 75.36, 7 April 2026; Q2 2026: EUR 75.28, 6 July 2026); draft delegated regulation on certificate sale/repurchase consulted 9 July - 6 August 2026, not yet adopted |
+| Downstream extension | Commission proposal COM(2025) 989 (December 2025) to extend scope to steel/aluminium-intensive downstream goods (~180 products; Council general approach ~200, EP ENVI committee report ~457) and add anti-circumvention rules; European Parliament plenary position 15 September 2026 (mandate for negotiations); start of trilogues not confirmed by primary sources at 2 October 2026 — not law, current scope applies |
+| ETS revision proposal | COM(2026) 616 (17 July 2026) would slow the phase-out of free allocation for CBAM sectors (changed CBAM-factor path from 2028; 15% for 2034-2037, 0% from 2038 instead of 2034) — proposal only |
 
 ### Emission Calculation
 
@@ -221,7 +249,8 @@ Companies must disclose these as KPIs in their management report, broken down by
 | Environmental DA (2023/2486) | Technical screening criteria for objectives 3-6 |
 | Complementary DA (2022/1214) | Nuclear and gas activities under specific conditions |
 | Art. 8 DA (2021/2178) | Disclosure methodology and templates |
-| Simplification DA (2026/73) | OJ 8 Jan 2026, retroactive from FY2025 (opt-out available): 10% materiality threshold on turnover/CapEx/OpEx, simplified templates (-64% fields), optional 2-year deferral for financial undertakings until 31 Dec 2027 |
+| Pending TSC amendments (status Oct 2026) | Draft amendments to the Climate and Environmental DAs (clarified/simplified technical screening criteria) open for feedback 17 March - 14 April 2026; not adopted (no OJ publication) as of 2 October 2026; intended application date not verified |
+| Simplification DA (2026/73) | OJ 8 Jan 2026, applies from 1 January 2026, i.e. to FY2025 reports (previous rules may still be used for FY2025): 10% materiality threshold on turnover/CapEx/OpEx (non-material activities still disclosed separately), OpEx assessment may be skipped if OpEx is not material to the business model (with explanation), simplified templates (-64% datapoints for non-financial companies, -89% for financial companies), optional 2-year deferral until 31 Dec 2027 for financial undertakings that make no Taxonomy claims |
 
 ---
 
@@ -235,7 +264,7 @@ Companies must disclose these as KPIs in their management report, broken down by
 |---------|--------|
 | Who is covered | All producers, importers, distributors, and fillers of packaging placed on the EU market |
 | What is covered | All packaging regardless of material (plastic, paper, glass, metal, wood, composite) |
-| General application date | 12 August 2026 — but phased: at that date only substance restrictions (incl. PFAS ban in food-contact packaging) apply; labelling from 12 Aug 2028; recyclability and recycled content from 2030 |
+| General application date | 12 August 2026 (Art. 71) — obligations without a later date in their own article apply from then, incl. substance restrictions (PFAS ban in food-contact packaging); several material requirements are deferred: labelling from 12 Aug 2028 (Art. 12); recyclability (Art. 6) and recycled content (Art. 7) from 1 Jan 2030 — in each case or later, if the implementing/delegated acts arrive late ("whichever is the latest") |
 
 ### Key Targets and Deadlines
 
@@ -265,7 +294,7 @@ Companies must disclose these as KPIs in their management report, broken down by
 
 ## 6. EUDR (EU Deforestation Regulation)
 
-**Legal basis**: Regulation (EU) 2023/1115, as amended by the targeted revision adopted in December 2025 (postponement and simplification)
+**Legal basis**: Regulation (EU) 2023/1115, as amended by Regulation (EU) 2025/2650 (targeted revision adopted in December 2025: postponement and simplification), and by Delegated Regulation (EU) 2026/2102 on product scope (adopted by the Commission 13 July 2026, OJ 17 September 2026). The simplification review COM(2026) 191 (4 May 2026) proposed no further amendments.
 
 ### Covered Commodities
 
@@ -276,8 +305,8 @@ Companies must disclose these as KPIs in their management report, broken down by
 | 3 | Cocoa | Chocolate, cocoa butter, cocoa powder |
 | 4 | Coffee | Roasted coffee, instant coffee, coffee extracts |
 | 5 | Rubber | Natural rubber, tyres, latex products |
-| 6 | Wood | Timber, paper, pulp, printed products, furniture, charcoal |
-| 7 | Cattle | Beef, leather, tallow, gelatin |
+| 6 | Wood | Timber, wood pulp (ex 47) and paper/paperboard (ex 48), furniture, charcoal — since Delegated Reg. (EU) 2026/2102 (in force 18/09/2026) the ch. 47-48 entries exclude used/second-hand, recovered (waste and scrap) and waste products, and packing used to support/protect/carry another product (products of bamboo, rattan and other woody materials are outside the "Wood" scope) — printed products (ex 49) REMOVED from Annex I by Reg. (EU) 2025/2650, art. 1(26) |
+| 7 | Cattle | Beef, tallow, gelatin (hides, skins and leather removed by Delegated Reg. (EU) 2026/2102) |
 
 ### Due Diligence Requirements
 
@@ -301,24 +330,40 @@ Companies must disclose these as KPIs in their management report, broken down by
 | Milestone | Date |
 |-----------|------|
 | Entry into force | 29 June 2023 |
-| Application — all operators and traders | 30 December 2026 (second postponement, adopted December 2025) |
-| Application — micro and small operators | 30 June 2027 |
+| Application — large and medium operators and traders | 30 December 2026 (second postponement, adopted December 2025) |
+| Application — micro and small operators | 30 June 2027 for those established by 31 December 2024 (30 December 2026 if already subject to the EU Timber Regulation) |
+| Delegated Regulation (EU) 2026/2102 on product scope | Adopted 13 July 2026, OJ 17 September 2026; newly added products apply from 30 December 2027 |
+| Implementing Regulation (EU) 2026/1565 on the EUDR information system | Adopted 13 July 2026, OJ 14 July 2026, in force 17 July 2026; Art. 1(2)(c) applies from 15 October 2026 (simplified declarations for micro/small primary operators, updated API specifications) |
 | Commission impact/burden report | By 30 April 2026 |
 
 ### Simplifications (December 2025 revision)
 
 | Element | Detail |
 |---------|--------|
-| Due diligence statement | Only the operator that FIRST places a product on the EU market submits the DDS; downstream operators and traders are relieved |
-| Micro/small primary operators | One-off simplified declaration instead of recurring DDS |
-| Small operators definition | Under 50 employees and product-related turnover below EUR 10M |
+| Due diligence statement | Only the operator that FIRST places a product on the EU market submits the DDS; downstream operators do not perform due diligence or submit a DDS, but keep traceability records and must inform the competent authorities if they hold information on potential non-compliance |
+| Micro/small primary operators | One-off simplified declaration instead of recurring DDS (Art. 4a). "Micro or small primary operator" (Art. 2(15a)): a natural person or micro/small undertaking established in a **low-risk** country placing on the market or exporting products it has itself grown, harvested or raised there; an operator exceeding the size limits still qualifies if the parts of its balance sheet, turnover and staff related to the relevant commodities/products stay within them |
+| Micro/small undertakings definition | Art. 2(30) (SMEs, as replaced by Reg. (EU) 2025/2650; medium: Art. 3(3)) and Art. 38(3) refer to Art. 3(1) and Art. 3(2), **first subparagraph**, Dir. 2013/34/EU: not exceeding at least 2 of 3 criteria — micro: balance sheet EUR 450,000, net turnover EUR 900,000, 10 employees; small: balance sheet EUR 5M, net turnover EUR 10M, 50 employees (monetary limits as adjusted by Delegated Dir. (EU) 2023/2775; the higher Member State options of the second subparagraph are not referenced). There is no "product-related turnover" test outside the primary-operator rule above. The 30 June 2027 date applies only to those established as such by 31 December 2024 (Art. 38(3)) |
+
+### Product Scope Changes (Delegated Regulation (EU) 2026/2102)
+
+| Change | Products |
+|--------|---------|
+| Removed from Annex I | Cattle hides, skins and leather; retreaded tyres other than tyre treads (ex 4012 narrowed to ex 4012 90 30, treads stay in scope); soybeans for sowing; articles of vulcanised rubber; conveyor and transmission belts; aircraft and motor-vehicle seats |
+| Added | Soluble coffee; certain palm oil derivatives; frozen cattle tongues |
+| Clarified exclusions | Samples for testing/analysis; waste; used/second-hand products; packing materials/containers ONLY when used to support, protect or carry another product placed on the market (packing materials placed on the market or exported on their own remain in scope; recital 16); products used to manufacture medicinal products |
+
+Earlier change by Reg. (EU) 2025/2650 (art. 1(26)): the Annex I line "ex 49 Printed books, newspapers, pictures and other products of the printing industry…" is **deleted** — printed products are no longer in scope.
+
+**Products made from in-scope inputs**: an input can be in scope while the output is not (e.g. paper and paperboard, CN ch. 48, are in scope; printed products, ch. 49, no longer are). Always check the specific CN code of both input and output against the current Annex I. A company placing on the market products made from inputs already covered by a DDS is likely a "downstream operator" (Reg. (EU) 2025/2650, new definition and recital 5): no own DDS, but traceability records and, if non-SME, registration.
+
+The "Covered Commodities" table above lists indicative derived products — check the current Annex I before concluding on a specific CN code (e.g. leather is no longer in scope).
 
 ### Operator Size Categories
 
 | Category | Threshold | Simplified DD available? |
 |----------|-----------|------------------------|
 | Large operators | Default | No — full due diligence required |
-| Micro/small operators | <50 employees, <EUR 10M product turnover | Yes — one-off simplified declaration; apply from 30 June 2027 |
+| Micro/small operators | Micro/small undertaking per Art. 3(1)-(2), first subpara., Dir. 2013/34/EU (2 of 3: EUR 5M balance sheet, EUR 10M turnover, 50 employees for small) | Later date (30 June 2027, if established by 31 Dec 2024); one-off simplified declaration only for micro/small **primary** operators in low-risk countries |
 
 ---
 
@@ -371,12 +416,13 @@ Key mandatory PAI indicators include:
 - Board gender diversity
 - Controversial weapons exposure
 
-### SFDR 2.0 — Revision in Progress (status: July 2026)
+### SFDR 2.0 — Revision in Progress (status: October 2026)
 
 The Commission published the SFDR 2.0 proposal in November 2025. Current legislative status:
 - Proposed product categories replacing Art. 8/9: **Sustainable** (Art. 9), **Transition** (Art. 7), **ESG Basics** (Art. 8)
-- Council negotiating mandate agreed 24 June 2026; European Parliament position in preparation (ECON vote expected July 2026)
-- Trilogue negotiations expected from Q4 2026 — the final text may differ; current Art. 6/8/9 classification remains applicable until the revision is adopted
+- Proposal COM(2025) 841 (20 November 2025); at least 70% of investments must be consistent with the product category
+- Council negotiating mandate agreed 24 June 2026; ECON committee vote and decision to open interinstitutional negotiations 10 September 2026 (report A10-0234/2026 tabled 15 September 2026)
+- Trilogue negotiations to follow — the final text may differ; current Art. 6/8/9 classification remains applicable until the revision is adopted
 
 ---
 
@@ -386,7 +432,7 @@ The Commission published the SFDR 2.0 proposal in November 2025. Current legisla
 
 | Element | Detail |
 |---------|--------|
-| Transposition instrument | **D.Lgs. 125/2024** (recepimento Direttiva 2022/2464/UE); da adeguare alla Direttiva (EU) 2026/470 — monitorare il decreto correttivo |
+| Transposition instrument | **D.Lgs. 125/2024** (recepimento Direttiva 2022/2464/UE); da adeguare alla Direttiva (EU) 2026/470 — la delega al Governo per recepirla è nel disegno di legge di delegazione europea 2026 (A.S. 2025, art. 6), approvato dal CdM il 4/8/2026, assegnato alla 4ª Commissione del Senato in sede referente ed in esame in commissione — non è legge al 2/10/2026 (il 1/10/2026 la Conferenza Stato-Regioni ha reso il parere); Stop-the-clock già recepito con il D.L. 95/2025, art. 10, c. 1-bis, inserito dalla L. di conversione 118/2025 (date spostate al 1/1/2027 e 1/1/2028) |
 | Supervisory authority (listed entities) | **Consob** (Commissione Nazionale per le Societa e la Borsa) |
 | Supervisory authority (banks/insurance) | **Banca d'Italia** / **IVASS** |
 | Accounting body | **OIC** (Organismo Italiano di Contabilita) |
@@ -397,7 +443,7 @@ The Commission published the SFDR 2.0 proposal in November 2025. Current legisla
 | Status | Detail |
 |--------|--------|
 | Current status | Remains in force for entities not yet transitioned to CSRD/ESRS |
-| Applicable to | Enti di interesse pubblico (EIP) with 500+ employees and EUR 40M+ turnover or EUR 20M+ total assets |
+| Applicable to | Enti di interesse pubblico (EIP) with more than 500 employees on average and either net turnover above EUR 40M or total assets above EUR 20M |
 | Reporting standard | GRI Standards (most common) or other recognized frameworks |
 | Phase-out | Entities in CSRD Wave 1 (FY2024) report under ESRS; D.Lgs. 254 becomes residual for remaining EIPs |
 | Full sunset | Expected when all in-scope entities transition to CSRD/ESRS |
@@ -425,7 +471,7 @@ The Commission published the SFDR 2.0 proposal in November 2025. Current legisla
 |---------|--------|
 | Competent authority | **MASE** (Ministero dell'Ambiente e della Sicurezza Energetica) |
 | Enforcement | Coordination with Guardia di Finanza and Agenzia delle Dogane |
-| Key sectors impacted | Furniture/wood (Distretto del Mobile), leather/cattle, food/agri (coffee, cocoa imports) |
+| Key sectors impacted | Furniture/wood (Distretto del Mobile), food/agri (coffee, cocoa imports); leather/cattle hides removed from scope by Delegated Reg. (EU) 2026/2102 (cattle meat and other derivatives remain) |
 
 ### PPWR in Italy
 
@@ -442,10 +488,10 @@ The Commission published the SFDR 2.0 proposal in November 2025. Current legisla
 |------|--------------------------------|
 | 2024 | FY2024 reporting: Wave 1 entities (large EIPs) begin CSRD/ESRS reporting |
 | 2025 | CBAM transitional period ends (Dec); Stop-the-Clock Directive postpones Wave 2/3; CBAM Omnibus Reg. 2025/2083 adopted (Oct); EUDR second postponement adopted (Dec) |
-| 2026 | CBAM definitive phase begins (Jan — financial obligation accrues, certificates from Feb 2027); Omnibus I Directive (EU) 2026/470 in force (18 Mar); Taxonomy Simplification DA 2026/73 applicable (FY2025 reports); revised ESRS adopted (3 Jul); PPWR general application (12 Aug); EUDR applies to all operators (30 Dec) |
-| 2027 | CBAM certificate sales start (1 Feb); EUDR applies to micro/small operators (30 Jun); first CBAM declaration and certificate surrender (30 Sept); FY2027 = first year under revised ESRS and new CSRD thresholds |
-| 2028 | FY2027 CSRD reports published; CSDDD transposition deadline (26 Jul); non-EU companies with EUR 450M+ EU revenue in scope from FY2028 |
-| 2029 | CSDDD applies to companies (26 Jul); DRS mandatory implementation (PPWR) |
+| 2026 | CBAM definitive phase begins (Jan — financial obligation accrues, certificates from Feb 2027); Omnibus I Directive (EU) 2026/470 in force (18 Mar); Taxonomy Simplification DA 2026/73 applicable (FY2025 reports); revised ESRS adopted (3 Jul; OJ 21 Sep as Reg. (EU) 2026/1563, in force 10 Nov); PPWR general application (12 Aug); EUDR applies to large and medium operators (30 Dec) |
+| 2027 | IFRS S2 GHG amendments effective (periods from 1 Jan) and GRI 102/103 effective (reports or other materials published from 1 Jan, regardless of the reporting period); CBAM certificate sales start (1 Feb); battery passport (18 Feb); CSRD Omnibus transposition deadline (19 Mar); CSRD limited-assurance standard due (1 Jul); EUDR applies to micro/small operators (30 Jun); battery due diligence (18 Aug); first CBAM declaration and certificate surrender (30 Sept); FY2027 = first year under revised ESRS and new CSRD thresholds |
+| 2028 | ETS2 starts (postponed from 2027); FY2027 CSRD reports published; CSDDD transposition deadline (26 Jul); non-EU companies with more than EUR 450M EU turnover in scope from FY2028 |
+| 2029 | CSDDD applies to companies (26 Jul; reporting from FY2030); DRS mandatory implementation (PPWR) |
 
 ### Key Italian Institutional References
 
@@ -460,6 +506,23 @@ The Commission published the SFDR 2.0 proposal in November 2025. Current legisla
 | **IVASS** | Supervisory authority for insurance on sustainability reporting | ivass.it |
 | **CONAI** | National packaging consortium; EPR coordination | conai.org |
 | **EFRAG** | European standards body that developed ESRS (reference for OIC) | efrag.org |
+
+---
+
+## 9. Other Developments to Watch (status: 2 October 2026)
+
+| Item | Status |
+|------|--------|
+| ESPR Digital Product Passport registry | Implementing Regulation (EU) 2026/1778 (OJ 17 July 2026), in force 6 August 2026; registry live since 20 July 2026 |
+| Batteries Regulation | Due diligence obligations postponed to 18 August 2027 by Reg. (EU) 2025/1561; battery passport required from 18 February 2027 |
+| ESG Ratings Regulation | Regulation (EU) 2024/3005 applicable from 2 July 2026 (ESG rating providers authorised/supervised by ESMA) |
+| Environmental Omnibus (Omnibus VIII) | Package presented 10 December 2025; its proposal COM(2025) 982 concerns the PPWR EPR authorised-representative rules (procedure 2025/0395(COD), committee stage at 2 October 2026) |
+| Chemicals Omnibus (Omnibus VI) | Stop-the-clock part adopted as Reg. (EU) 2025/2439; the main proposal (CLP, cosmetics, fertilising products) reached provisional agreement in June 2026 but was not formally adopted as of September 2026 — check each component |
+| EU Climate Law | Amended by Reg. (EU) 2026/667 (OJ 18 March 2026, in force 7 April 2026): binding 2040 target of -90% net vs 1990, international credits from 2036 up to 5% of 1990 net emissions (a 2031-2035 pilot period is only an element the Commission must consider in future proposals, not an operational rule); ETS2 postponed to 2028 |
+| EU ETS revision | Proposal COM(2026) 616 (17 July 2026): slower cap reduction after 2030, slower free-allocation phase-out for CBAM sectors, up to 260 million international credits from 2036 — proposal only |
+| Waste shipments | Reg. (EU) 2024/1157: export of plastic waste to non-OECD countries banned from 21 November 2026 |
+| ESPR unsold goods | Destruction of unsold apparel, accessories and footwear banned for large companies from 19 July 2026 (medium from 19 July 2030); derogations in Delegated Reg. (EU) 2026/296 |
+| ISSB | IFRS S2 GHG amendments effective 1 January 2027; nature-related exposure draft (IFRS Practice Statement) targeted for COP17 (October 2026), not yet published at 2 October 2026 |
 
 ---
 
@@ -483,8 +546,8 @@ Use this table for rapid initial assessment:
 
 | Regulation | Size Gate | Sector Gate | Geography Gate |
 |-----------|----------|-------------|---------------|
-| CSRD | 1000+ empl. AND EUR 450M+ rev (or non-EU with EUR 450M+ EU rev); listed SMEs out of mandatory scope | All sectors | EU entities (or non-EU with EU presence) |
-| CSDDD | 5000+ empl. AND EUR 1.5B+ rev | All sectors | EU entities (or non-EU with EUR 1.5B+ EU rev) |
+| CSRD | >1,000 empl. AND >EUR 450M turnover (or non-EU with >EUR 450M EU turnover); listed SMEs out of mandatory scope | All sectors | EU entities (or non-EU with EU presence) |
+| CSDDD | >5,000 empl. AND >EUR 1.5B turnover | All sectors | EU entities (or non-EU with >EUR 1.5B EU turnover) |
 | CBAM | No size gate (de minimis: 50t/year cumulative across CBAM goods, excl. H2/electricity) | Importers of specific products | Imports from non-EU countries |
 | EU Taxonomy | Follows CSRD scope | All sectors (activity-specific screening) | EU entities under CSRD |
 | PPWR | No size gate | Packaging producers/importers/fillers | EU market |

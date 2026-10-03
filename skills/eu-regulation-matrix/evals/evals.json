@@ -6,7 +6,7 @@
       "prompt": "Siamo un'azienda manifatturiera italiana con 350 dipendenti e 60M di fatturato. Quali regolamenti di sostenibilit\u00e0 si applicano a noi?",
       "expected_output": "Matrix showing CSRD applies (original thresholds), EU Taxonomy Art. 8 applies, CSDDD does not apply, CBAM depends on imports.",
       "assertions": [
-        "Correctly identifies CSRD applicability under original thresholds (>250 employees, >40M revenue)",
+        "Correctly identifies CSRD applicability under original thresholds (>250 employees, >EUR 50M revenue as adjusted by Dir. 2023/2775)",
         "Notes that post-Omnibus threshold (1000 employees) would exclude them from FY2027",
         "Asks about imports to determine CBAM applicability",
         "Confirms CSDDD does not apply (<5000 employees)"
